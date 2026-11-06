@@ -1,5 +1,5 @@
 {
-  "versao": 1,
+  "versao": 2,
   "atualizado_em": "2026-11-06T17:35:00-03:00",
   "data_pregao": "2026-11-06",
   "rodada": { "tipo": "teste", "rotulo": "Rodada de teste" },
@@ -357,13 +357,125 @@
       "variacao_nota": null
     }
   ],
+  "frentes": {
+    "daytrade": {
+      "resumo": "Leitura feita após o fechamento de sexta, para a próxima sessão. O cenário externo (techs em queda, payroll) e o petróleo instável aumentam o risco de qualquer operação de curtíssimo prazo, e boa parte dos gatilhos de balanço já apareceu nos preços.",
+      "papeis": [
+        {
+          "ticker": "ASAI3", "nome": "Assaí",
+          "vies": "alta", "confianca": "baixa",
+          "gatilho": "Balanço do 3T26 com lucro recorrente +55% e recompra de até 11 milhões de ações (matérias de 6/11).",
+          "ja_reagiu": true,
+          "risco_nivel": "alto",
+          "invalidacao": "Devolução do ganho recente sem novo fato que a sustente.",
+          "justificativa": "O fundamento é forte, mas a ação já foi citada entre as maiores altas da manhã de 6/11, o que reduz o espaço para a notícia ainda render.",
+          "riscos": ["Alta já realizada", "Realização de lucros", "Cenário externo negativo"],
+          "evento_ids": ["e2"],
+          "variacao_pct": 5.09, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+        },
+        {
+          "ticker": "LREN3", "nome": "Lojas Renner",
+          "vies": "baixa", "confianca": "baixa",
+          "gatilho": "Balanço do 3T26 com lucro -11,8%, vendas nas mesmas lojas -2,5% e projeção de receita cancelada (matérias de 6/11).",
+          "ja_reagiu": true,
+          "risco_nivel": "alto",
+          "invalidacao": "Se a alta da manhã de 6/11 se sustentar, a leitura negativa perde força.",
+          "justificativa": "Fundamentos fracos, mas a ação subiu apesar do balanço, sinal de que o mercado esperava algo pior. Operar contra o movimento é arriscado.",
+          "riscos": ["Rebote de papel muito vendido", "Resultado menos ruim que o temido"],
+          "evento_ids": ["e2"],
+          "variacao_pct": 4.62, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+        },
+        {
+          "ticker": "RECV3", "nome": "PetroReconcavo",
+          "vies": "alta", "confianca": "baixa",
+          "gatilho": "Lucro do 3T26 de R$ 236 milhões (+94%), de uma única fonte (NC News, 6/11).",
+          "ja_reagiu": null,
+          "risco_nivel": "alto",
+          "invalidacao": "Nova queda forte do Brent ou ausência de reação positiva da ação ao balanço.",
+          "justificativa": "Resultado forte, mas o petróleo caminhava para uma queda semanal superior a 13% e a reação da ação é desconhecida.",
+          "riscos": ["Brent volátil", "Uma única fonte", "Reação desconhecida"],
+          "evento_ids": ["e4", "e7"],
+          "variacao_pct": null, "variacao_nota": null
+        },
+        {
+          "ticker": "PETR4", "nome": "Petrobras",
+          "vies": "neutro", "confianca": "baixa",
+          "gatilho": "Brent +3,88% na quinta (ataques a navios no Oriente Médio) e perda semanal superior a 13% com as negociações EUA-Irã.",
+          "ja_reagiu": null,
+          "risco_nivel": "alto",
+          "invalidacao": "Um avanço ou fracasso claro nas negociações EUA-Irã desfaz a leitura de neutralidade.",
+          "justificativa": "O petróleo se move por manchetes geopolíticas e o sinal muda em minutos. Sem direção clara, o papel fica sujeito a ruído.",
+          "riscos": ["Manchetes geopolíticas", "Volatilidade do Brent"],
+          "evento_ids": ["e7"],
+          "variacao_pct": -1.33, "variacao_nota": "Queda citada pelo Investing.com para a quinta (5/11)."
+        }
+      ]
+    },
+    "dividendos": {
+      "resumo": "Poucos dados de proventos foram levantados nesta rodada de teste. Dividend yield e payout só aparecem quando uma fonte traz o número; onde não achei, está em branco.",
+      "papeis": [
+        {
+          "ticker": "ITUB4", "nome": "Itaú Unibanco",
+          "leitura": "favoravel", "confianca": "media",
+          "justificativa": "Lucro recorrente de R$ 12,6 bi (+6,7%), ROAE de 23,6% e guidance mantido sustentam a capacidade de distribuir. O banco paga JCP mensal desde o início de 2026.",
+          "proventos": {
+            "descricao": "JCP mensal de R$ 0,01765 bruto por ação em 2026, pago no primeiro dia útil de cada mês (matéria de dez/2025; valor não confirmado em fonte mais recente).",
+            "valor_por_acao": 0.01765, "data_com": null, "data_pagamento": null
+          },
+          "dy_estimado_pct": null, "payout_pct": null,
+          "sustentabilidade": "alta",
+          "riscos": ["Inadimplência do varejo em alta", "Selic alta por mais tempo", "Mudanças regulatórias ou tributárias sobre proventos"],
+          "evento_ids": ["e8", "e6"],
+          "fontes": [
+            { "nome": "Seu Dinheiro", "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/", "data": "2026-11-03" },
+            { "nome": "Investidor10", "url": "https://investidor10.com.br/amp/noticias/itau-itub4-pagara-jcp-mensais-em-2026-veja-calendario-117260/", "data": "2025-12-09" }
+          ]
+        },
+        {
+          "ticker": "VALE3", "nome": "Vale",
+          "leitura": "atencao", "confianca": "media",
+          "justificativa": "O lucro do 3T26 caiu 54% e o minério realizado ficou 10% menor, o que pressiona a geração de caixa. A política de proventos para os próximos trimestres não foi detalhada nas fontes lidas.",
+          "proventos": {
+            "descricao": "R$ 2,0307 por ação (JCP e dividendos), cerca de R$ 8,6 bi, anunciado em 31/07/2026; equivale a cerca de 2,7% sobre a cotação de 30/07 (R$ 75,98). Nova recompra de até 100 milhões de ações aprovada.",
+            "valor_por_acao": 2.0307, "data_com": "2026-08-11", "data_pagamento": "2026-09-02"
+          },
+          "dy_estimado_pct": null, "payout_pct": null,
+          "sustentabilidade": "media",
+          "riscos": ["Preço do minério", "Demanda da China", "Proventos menores se o lucro seguir em queda"],
+          "evento_ids": ["e9"],
+          "fontes": [
+            { "nome": "Forbes Brasil", "url": "https://forbes.com.br/forbes-money/2026/07/vale-distribui-r-203-por-acao-e-lanca-nova-recompra-de-ate-100-milhoes-de-papeis/", "data": "2026-07-31" },
+            { "nome": "Investidor10", "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/", "data": "2026-10-29" }
+          ]
+        },
+        {
+          "ticker": "SBSP3", "nome": "Sabesp",
+          "leitura": "neutra", "confianca": "baixa",
+          "justificativa": "Proventos de R$ 2,6 bi aprovados com o 3T26, mas o lucro ajustado caiu 13,8% (com Ebitda +15,2%). Valor por ação e datas não foram encontrados nesta rodada.",
+          "proventos": {
+            "descricao": "R$ 2,6 bi em proventos aprovados com o balanço do 3T26 (NC News, 6/11); valor por ação e datas não confirmados.",
+            "valor_por_acao": null, "data_com": null, "data_pagamento": null
+          },
+          "dy_estimado_pct": null, "payout_pct": null,
+          "sustentabilidade": "media",
+          "riscos": ["Lucro ajustado em queda", "Detalhes do provento não confirmados"],
+          "evento_ids": ["e3"],
+          "fontes": [
+            { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" }
+          ]
+        }
+      ]
+    }
+  },
   "historico": [],
   "limitacoes": [
     "Fechamento do Ibovespa e do dólar de 6/11 ainda não confirmado nesta rodada.",
     "Relatórios de RI lidos via notícias, não direto na CVM ou no site de RI das empresas.",
     "O Prio (3T26) não foi encontrado nesta rodada.",
     "Variações de preço de 6/11 vêm de uma única matéria (Investing.com) e a base de cálculo não está esclarecida.",
-    "Cotações e cálculo da carteira são feitos pelo navegador, não pelo motor."
+    "Cotações e cálculo da carteira são feitos pelo navegador, não pelo motor.",
+    "Frente de dividendos: dividend yield e payout não foram levantados; só entram quando uma fonte traz o número.",
+    "Frente de day trade: sem cotação intradiária, o motor não indica preço de entrada, alvo ou stop."
   ],
   "aviso": "Não é recomendação de investimento."
 }

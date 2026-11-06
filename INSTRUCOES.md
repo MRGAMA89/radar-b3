@@ -37,11 +37,19 @@ O tipo da rodada vem no prompt da tarefa: `pre_abertura`, `horaria` ou `pos_fech
 - `confianca`: `alta` só com 2 ou mais fontes concordando e dado de RI; `media` com uma fonte boa ou sinais mistos; `baixa` com pouca informação ou quando a ação já reagiu em sentido contrário.
 - Inclua no máximo ~8 papéis de alta e ~8 de baixa, ordenados por confiança. Sempre com `justificativa` (1–2 frases) e `riscos`.
 
+## As duas frentes
+
+`papeis` continua sendo a visão geral por notícia (usada para a carteira do usuário). Além dele, cada rodada preenche `frentes`, com duas leituras **separadas**: o mesmo papel pode aparecer nas duas com conclusões diferentes.
+
+**Day trade (`frentes.daytrade`)** — horizonte de minutos a um pregão. Só entra papel com gatilho concreto e recente (balanço, fato relevante, notícia de commodity ou macro que mexe com o papel) e liquidez alta (prefira componentes do Ibovespa). Para cada papel: `vies` (alta/baixa/neutro), `gatilho` (o que aconteceu e quando), `ja_reagiu` (true/false/null: a ação já se moveu forte com a notícia?), `risco_nivel` (baixo/medio/alto; use "alto" se já reagiu, se a notícia é ambígua ou se o macro está volátil), `invalidacao` (o que desmentiria a leitura, em texto) e `riscos`. **Não dê preço-alvo, entrada nem stop numérico**: o motor não tem cotação intradiária. Se não houver bom gatilho, deixe a lista curta ou vazia e explique no `resumo`. Lembre que as notícias chegam com atraso de minutos a horas.
+
+**Dividendos (`frentes.dividendos`)** — horizonte de anos, foco em renda. Para cada papel: `leitura` (favoravel/neutra/atencao), `proventos` (último provento anunciado: descrição, valor por ação, data com, data de pagamento, quando achados), `dy_estimado_pct` e `payout_pct` (só se uma fonte trouxer o número; senão `null`, nunca calcule por conta própria sem preço), `sustentabilidade` (alta/media/baixa/desconhecida, com base em lucro, geração de caixa, dívida e política de proventos do RI) e `riscos`. Dividendos mudam devagar: nas rodadas horárias mantenha a lista anterior e altere só o que teve notícia nova (balanço, proventos, mudança de política); a rodada `pos_fechamento` revisa tudo. Pesquise "proventos", "JCP", "data com", "dividend yield" e "payout" nas fontes e no RI.
+
 ## Formato de `dados.json`
 
 ```json
 {
-  "versao": 1,
+  "versao": 2,
   "atualizado_em": "2026-11-06T17:35:00-03:00",
   "data_pregao": "2026-11-06",
   "rodada": { "tipo": "pre_abertura|horaria|pos_fechamento|teste", "rotulo": "texto curto" },
@@ -71,6 +79,38 @@ O tipo da rodada vem no prompt da tarefa: `pre_abertura`, `horaria` ou `pos_fech
       "variacao_pct": null, "variacao_nota": "..."
     }
   ],
+  "frentes": {
+    "daytrade": {
+      "resumo": "2–3 frases: há gatilho bom hoje? qual o risco do dia?",
+      "papeis": [
+        {
+          "ticker": "ASAI3", "nome": "Assaí",
+          "vies": "alta|baixa|neutro", "confianca": "baixa|media|alta",
+          "gatilho": "o que aconteceu e quando",
+          "ja_reagiu": true,
+          "risco_nivel": "baixo|medio|alto",
+          "invalidacao": "o que desmentiria a leitura",
+          "justificativa": "...", "riscos": ["..."], "evento_ids": ["e2"],
+          "variacao_pct": null, "variacao_nota": null
+        }
+      ]
+    },
+    "dividendos": {
+      "resumo": "2–3 frases sobre renda e proventos no momento",
+      "papeis": [
+        {
+          "ticker": "VALE3", "nome": "Vale",
+          "leitura": "favoravel|neutra|atencao", "confianca": "baixa|media|alta",
+          "justificativa": "...",
+          "proventos": { "descricao": "...", "valor_por_acao": null, "data_com": null, "data_pagamento": null },
+          "dy_estimado_pct": null, "payout_pct": null,
+          "sustentabilidade": "alta|media|baixa|desconhecida",
+          "riscos": ["..."], "evento_ids": ["e9"],
+          "fontes": [ { "nome": "...", "url": "...", "data": "2026-07-31" } ]
+        }
+      ]
+    }
+  },
   "historico": [ { "atualizado_em": "...", "tipo": "...", "resumo": "...", "evento_ids": ["..."] } ],
   "limitacoes": ["o que não foi possível confirmar nesta rodada"],
   "aviso": "Não é recomendação de investimento."
