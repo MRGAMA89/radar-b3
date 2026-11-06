@@ -1,5 +1,369 @@
 {
-  "atualizado_em": null,
-  "rodada": null,
-  "eventos": []
+  "versao": 1,
+  "atualizado_em": "2026-11-06T17:35:00-03:00",
+  "data_pregao": "2026-11-06",
+  "rodada": { "tipo": "teste", "rotulo": "Rodada de teste" },
+  "resumo": "Sexta (6/11) abriu perto de 166 mil pontos no Ibovespa, pressionada pelo tombo das techs em Nova York na véspera e pelos dados de emprego dos EUA. No Brasil, a Selic ficou em 13,75% e o fiscal segue no radar. Na temporada de balanços do 3T26: Suzano em linha com alavancagem maior, Renner fraca, Assaí forte. O fechamento de hoje ainda não foi confirmado nesta rodada.",
+  "mercado": {
+    "ibovespa": {
+      "fechamento_anterior": { "data": "2026-11-05", "pontos": 166191.45, "variacao_pct": -0.82 },
+      "intradia": { "data": "2026-11-06", "hora": "10:05", "pontos": 166005.49, "variacao_pct": -0.11 },
+      "fechamento_hoje": null,
+      "nota": "A Forbes/Reuters trouxe dado preliminar de 5/11 (166.595,71; -0,58%). O valor final, segundo o Investing.com, é 166.191,45."
+    },
+    "dolar": { "data": "2026-11-05", "valor": 5.4886, "variacao_pct": 0.68 },
+    "selic": 13.75,
+    "brent": { "data": "2026-11-05", "usd": 98.29, "variacao_pct": 3.88, "nota": "Recuava na manhã de 6/11; semana caminhava para perda superior a 13%." }
+  },
+  "eventos": [
+    {
+      "id": "e1",
+      "titulo": "Suzano: lucro sobe 6%, mas alavancagem aumenta",
+      "categoria": "balanco",
+      "resumo": "A Suzano (SUZB3) lucrou cerca de R$ 2,1 bilhões no 3T26 (+6% em um ano), com Ebitda ajustado de R$ 5,7 bilhões (+9%). Os veículos divergem: um diz que o Ebitda ficou em linha com as estimativas, outro, um pouco abaixo. O ponto de atenção é a dívida líquida/Ebitda em dólar, que subiu para 3,7x (era 3,3x um ano antes).",
+      "sentimento": "neutro",
+      "tickers": [
+        { "ticker": "SUZB3", "nome": "Suzano", "variacao_pct": null, "variacao_nota": "Reação da ação ao balanço não confirmada nesta rodada." }
+      ],
+      "vies": {
+        "direcao": "neutro",
+        "justificativa": "Crescimento de lucro e Ebitda em linha com o esperado, compensado pela alavancagem maior. Dólar mais alto ajuda exportadoras como a Suzano.",
+        "riscos": ["Alavancagem em alta", "Reversão do câmbio", "Preço da celulose"],
+        "confianca": "baixa"
+      },
+      "ri": {
+        "empresa": "Suzano",
+        "trimestre": "3T26",
+        "destaques": ["Lucro líquido ~R$ 2,1 bi (+6%)", "Receita líquida R$ 16,5 bi", "Ebitda ajustado R$ 5,7 bi (+9%)", "Dívida líquida/Ebitda 3,7x"],
+        "fonte_tipo": "noticia",
+        "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/"
+      },
+      "fontes": [
+        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" },
+        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+      ]
+    },
+    {
+      "id": "e2",
+      "titulo": "Varejo e consumo: Renner decepciona, Assaí surpreende",
+      "categoria": "balanco",
+      "resumo": "A Renner (LREN3) teve lucro de R$ 246,4 milhões (-11,8%); sem efeitos extraordinários, a queda foi de 24,5%. As vendas nas mesmas lojas caíram 2,5% e a projeção de receita foi cancelada. O Assaí (ASAI3) teve lucro recorrente de R$ 248 milhões (+55%) e aprovou recompra de até 11 milhões de ações. Apesar do resultado fraco, a Renner aparece entre as altas citadas na manhã de 6/11, sinal de que o mercado esperava algo pior.",
+      "sentimento": "misto",
+      "tickers": [
+        { "ticker": "LREN3", "nome": "Lojas Renner", "variacao_pct": 4.62, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (quinta/pré-mercado; base não esclarecida)." },
+        { "ticker": "ASAI3", "nome": "Assaí", "variacao_pct": 5.09, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (quinta/pré-mercado; base não esclarecida)." }
+      ],
+      "vies": {
+        "direcao": "misto",
+        "justificativa": "Fundamentos opostos: Assaí com lucro forte e recompra; Renner com queda de lucro, vendas mais fracas e sem projeção. A Renner já subiu apesar do balanço, o que reduz o espaço para alta.",
+        "riscos": ["Consumo de moda fraco", "Serviços financeiros da Renner", "Alta já realizada nos papéis"],
+        "confianca": "media"
+      },
+      "ri": null,
+      "fontes": [
+        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" },
+        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+      ]
+    },
+    {
+      "id": "e3",
+      "titulo": "Sabesp: R$ 2,6 bi em proventos, mas lucro ajustado cai 13,8%",
+      "categoria": "balanco",
+      "resumo": "A Sabesp (SBSP3) aprovou R$ 2,6 bilhões em proventos. O lucro ajustado foi de R$ 1,107 bilhão (-13,8%), mesmo com Ebitda 15,2% maior. A ação aparece entre as maiores altas citadas na manhã de 6/11.",
+      "sentimento": "misto",
+      "tickers": [
+        { "ticker": "SBSP3", "nome": "Sabesp", "variacao_pct": 6.35, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (quinta/pré-mercado; base não esclarecida)." }
+      ],
+      "vies": {
+        "direcao": "neutro",
+        "justificativa": "Proventos elevados sustentam a ação, mas o lucro menor e a alta já realizada pedem cautela.",
+        "riscos": ["Lucro em queda", "Alta recente já no preço"],
+        "confianca": "baixa"
+      },
+      "ri": {
+        "empresa": "Sabesp",
+        "trimestre": "3T26",
+        "destaques": ["Proventos de R$ 2,6 bi aprovados", "Lucro ajustado R$ 1,107 bi (-13,8%)", "Ebitda +15,2%"],
+        "fonte_tipo": "noticia",
+        "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/"
+      },
+      "fontes": [
+        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" },
+        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+      ]
+    },
+    {
+      "id": "e4",
+      "titulo": "Outros balanços do 3T26: Localiza, Allos, PetroReconcavo e Dasa crescem; Grendene e Eztec recuam",
+      "categoria": "balanco",
+      "resumo": "Localiza (RENT3) lucrou cerca de R$ 1,1 bilhão (+29%), dentro do esperado. Allos (ALOS3) mais que dobrou o lucro, para R$ 291 milhões, acima das projeções. PetroReconcavo (RECV3) teve lucro de R$ 236 milhões (+94%) e Dasa (DASA3), R$ 173 milhões (+79%). Do lado fraco, o lucro ajustado da Grendene (GRND3) caiu 18,2% e o da Eztec (EZTC3) recuou 53%.",
+      "sentimento": "misto",
+      "tickers": [
+        { "ticker": "RENT3", "nome": "Localiza", "variacao_pct": null, "variacao_nota": null },
+        { "ticker": "ALOS3", "nome": "Allos", "variacao_pct": null, "variacao_nota": null },
+        { "ticker": "RECV3", "nome": "PetroReconcavo", "variacao_pct": null, "variacao_nota": null },
+        { "ticker": "GRND3", "nome": "Grendene", "variacao_pct": null, "variacao_nota": null },
+        { "ticker": "EZTC3", "nome": "Eztec", "variacao_pct": null, "variacao_nota": null }
+      ],
+      "vies": {
+        "direcao": "misto",
+        "justificativa": "Resultados acima do esperado em Allos e PetroReconcavo pesam a favor; Grendene e Eztec com queda de lucro pesam contra. Só uma fonte cobre o conjunto.",
+        "riscos": ["Reação das ações ainda desconhecida", "Dependência de uma única fonte", "Petróleo em queda na semana (para RECV3)"],
+        "confianca": "baixa"
+      },
+      "ri": null,
+      "fontes": [
+        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" }
+      ]
+    },
+    {
+      "id": "e5",
+      "titulo": "Techs derretem em Nova York e Ásia sente; payroll dos EUA no radar",
+      "categoria": "macro",
+      "resumo": "Na quinta, o Nasdaq caiu 5,52% e entrou em correção; S&P 500 e Dow Jones recuaram 4,36% e 3,44%. A venda refletiu dúvidas sobre o retorno dos investimentos em IA e o receio de mais fiscalização de data centers após a vitória democrata nas eleições legislativas. Na Ásia, o Kospi acionou o circuit breaker. Na sexta, saía o payroll de outubro (mediana esperada: 60 mil vagas) e o mercado dava cerca de 67% de chance de alta de juros pelo Fed em dezembro.",
+      "sentimento": "negativo",
+      "tickers": [],
+      "vies": {
+        "direcao": "negativo",
+        "justificativa": "Aversão a risco global costuma pressionar bolsa e câmbio de emergentes. Um payroll forte reforçaria a aposta de juros mais altos nos EUA.",
+        "riscos": ["Dado de emprego forte ou fraco demais", "Contágio das techs para outros setores", "Possível rebote técnico"],
+        "confianca": "media"
+      },
+      "ri": null,
+      "fontes": [
+        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" },
+        { "nome": "Forbes Brasil (Reuters)", "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/", "data": "2026-11-05" }
+      ]
+    },
+    {
+      "id": "e6",
+      "titulo": "Selic mantida em 13,75%, atividade fraca e fiscal no radar",
+      "categoria": "juros_fiscal",
+      "resumo": "O Banco Central interrompeu o ciclo de cortes e manteve a Selic em 13,75%. A produção industrial caiu 0,8% em setembro, mais que o esperado (-0,2%). O mercado segue preocupado com o fiscal após a reeleição de Lula: o ministro da Fazenda disse que as medidas ficam para a segunda quinzena de novembro, e Lula deve falar no domingo. Das 40 instituições consultadas, 39 esperam manutenção da Selic em dezembro.",
+      "sentimento": "negativo",
+      "tickers": [
+        { "ticker": "ITUB4", "nome": "Itaú Unibanco", "variacao_pct": null, "variacao_nota": null },
+        { "ticker": "BBAS3", "nome": "Banco do Brasil", "variacao_pct": 3.88, "variacao_nota": "Alta citada pelo Investing.com na manhã de 6/11 (base não esclarecida); a matéria não liga a alta a este evento." }
+      ],
+      "vies": {
+        "direcao": "negativo",
+        "justificativa": "Juros altos por mais tempo e incerteza fiscal pesam sobre setores sensíveis a juros e sobre o prêmio de risco. Bancos tendem a lidar melhor com juros altos, mas sofrem com crédito e atividade fracos.",
+        "riscos": ["Anúncio de medidas fiscais melhor ou pior que o esperado", "Dados de inflação", "Efeito misto sobre bancos"],
+        "confianca": "media"
+      },
+      "ri": null,
+      "fontes": [
+        { "nome": "Forbes Brasil (Reuters)", "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/", "data": "2026-11-05" },
+        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+      ]
+    },
+    {
+      "id": "e7",
+      "titulo": "Petróleo sobe com ataques no Oriente Médio, mas semana é de queda forte",
+      "categoria": "commodities",
+      "resumo": "O Brent subiu 3,88% na quinta, a US$ 98,29, após novos ataques a navios na região. Na manhã de sexta, o petróleo recuava, e Brent e WTI caminhavam para perdas acima de 13% na semana, com as negociações entre EUA e Irã no radar. A Petrobras PN recuou 1,33% na quinta.",
+      "sentimento": "misto",
+      "tickers": [
+        { "ticker": "PETR4", "nome": "Petrobras", "variacao_pct": -1.33, "variacao_nota": "Queda citada pelo Investing.com para a quinta (5/11)." },
+        { "ticker": "RECV3", "nome": "PetroReconcavo", "variacao_pct": null, "variacao_nota": null }
+      ],
+      "vies": {
+        "direcao": "misto",
+        "justificativa": "A volatilidade do Brent depende das negociações EUA-Irã: avanço derruba o preço (negativo para petroleiras), nova escalada o eleva.",
+        "riscos": ["Manchetes geopolíticas mudam o preço em minutos", "Dados sobre a oferta de petróleo"],
+        "confianca": "baixa"
+      },
+      "ri": null,
+      "fontes": [
+        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" },
+        { "nome": "Forbes Brasil (Reuters)", "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/", "data": "2026-11-05" }
+      ]
+    },
+    {
+      "id": "e8",
+      "titulo": "Itaú: lucro de R$ 12,6 bi em linha, inadimplência de 90 dias sobe",
+      "categoria": "balanco",
+      "resumo": "O Itaú (ITUB4) teve lucro recorrente de R$ 12,6 bilhões no 3T26 (+6,7% em um ano), em linha com o consenso, e ROAE de 23,6%. A inadimplência acima de 90 dias subiu 0,1 p.p., para 2%, e o custo do crédito cresceu 10,2% em um ano, pressionado pelo varejo de pessoas físicas. O guidance foi mantido, exceto a alíquota efetiva de impostos, que foi reduzida.",
+      "sentimento": "neutro",
+      "tickers": [
+        { "ticker": "ITUB4", "nome": "Itaú Unibanco", "variacao_pct": null, "variacao_nota": null }
+      ],
+      "vies": {
+        "direcao": "neutro",
+        "justificativa": "Resultado em linha, rentabilidade alta e guidance mantido, com sinal de atenção na qualidade do crédito do varejo.",
+        "riscos": ["Inadimplência de pessoa física", "Selic alta por mais tempo", "Atividade fraca"],
+        "confianca": "media"
+      },
+      "ri": {
+        "empresa": "Itaú Unibanco",
+        "trimestre": "3T26",
+        "destaques": ["Lucro recorrente R$ 12,6 bi (+6,7%)", "ROAE 23,6%", "Inadimplência 90d: 2,0%", "Carteira ampliada R$ 1,54 tri (+10,9%)"],
+        "fonte_tipo": "noticia",
+        "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/"
+      },
+      "fontes": [
+        { "nome": "Seu Dinheiro", "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/", "data": "2026-11-03" },
+        { "nome": "Times Brasil (calendário de balanços)", "url": "https://timesbrasil.com.br/empresas-e-negocios/balancos-do-3t26-itau-prio-suzano-e-vivara-divulgam-resultados-nesta-semana-veja-lista-completa/", "data": "2026-11-02" }
+      ]
+    },
+    {
+      "id": "e9",
+      "titulo": "Vale: lucro cai 54% com minério mais barato e custos maiores",
+      "categoria": "balanco",
+      "resumo": "A Vale (VALE3) lucrou US$ 1,25 bilhão no 3T26 (-54% em um ano), abaixo dos cerca de US$ 1,5 bilhão esperados. O Ebitda proforma de US$ 3,5 bilhões ficou um pouco acima da mediana de analistas. O preço realizado do minério caiu 10%, para cerca de US$ 85 por tonelada, e o custo de produção até o porto subiu 12%. Real mais forte, diesel e frete mais caros também pesaram. Os veículos arredondam a queda em 53% ou 54%.",
+      "sentimento": "negativo",
+      "tickers": [
+        { "ticker": "VALE3", "nome": "Vale", "variacao_pct": null, "variacao_nota": null }
+      ],
+      "vies": {
+        "direcao": "negativo",
+        "justificativa": "Lucro abaixo do esperado, minério e margens mais fracos e custo maior. O Ebitda acima da mediana e a menção do CFO a oportunidades de recompra atenuam parte do quadro.",
+        "riscos": ["Preço do minério", "Demanda da China", "Possível recompra ou proventos como suporte"],
+        "confianca": "media"
+      },
+      "ri": {
+        "empresa": "Vale",
+        "trimestre": "3T26",
+        "destaques": ["Lucro US$ 1,25 bi (-54%)", "Ebitda proforma US$ 3,508 bi (-20%)", "Minério realizado ~US$ 85,10/t (-10%)", "Dívida líquida US$ 16,41 bi"],
+        "fonte_tipo": "noticia",
+        "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/"
+      },
+      "fontes": [
+        { "nome": "Investidor10", "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/", "data": "2026-10-29" },
+        { "nome": "Times Brasil (calendário de balanços)", "url": "https://timesbrasil.com.br/empresas-e-negocios/balancos-do-3t26-itau-prio-suzano-e-vivara-divulgam-resultados-nesta-semana-veja-lista-completa/", "data": "2026-11-02" }
+      ]
+    }
+  ],
+  "papeis": [
+    {
+      "ticker": "ASAI3",
+      "nome": "Assaí",
+      "vies": "alta",
+      "confianca": "media",
+      "justificativa": "Lucro recorrente cresceu cerca de 55% e a empresa aprovou recompra de até 11 milhões de ações em 12 meses.",
+      "riscos": ["A ação já subiu forte na manhã de 6/11", "Consumo fraco"],
+      "evento_ids": ["e2"],
+      "variacao_pct": 5.09,
+      "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+    },
+    {
+      "ticker": "ALOS3",
+      "nome": "Allos",
+      "vies": "alta",
+      "confianca": "baixa",
+      "justificativa": "Lucro mais que dobrou, para R$ 291 milhões, acima das projeções. Só uma fonte.",
+      "riscos": ["Reação da ação ainda desconhecida", "Uma única fonte"],
+      "evento_ids": ["e4"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "RECV3",
+      "nome": "PetroReconcavo",
+      "vies": "alta",
+      "confianca": "baixa",
+      "justificativa": "Lucro de R$ 236 milhões (+94%) no 3T26. O petróleo em forte queda na semana é um contrapeso.",
+      "riscos": ["Brent em queda", "Uma única fonte"],
+      "evento_ids": ["e4", "e7"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "LREN3",
+      "nome": "Lojas Renner",
+      "vies": "baixa",
+      "confianca": "baixa",
+      "justificativa": "Lucro caiu 11,8% (24,5% sem extraordinários), vendas nas mesmas lojas recuaram 2,5% e a projeção de receita foi cancelada. A ação, porém, subiu na manhã de 6/11, o que reduz a confiança no sinal.",
+      "riscos": ["Mercado pode ter achado o resultado menos ruim que o temido", "Rebote de papéis muito vendidos"],
+      "evento_ids": ["e2"],
+      "variacao_pct": 4.62,
+      "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+    },
+    {
+      "ticker": "VALE3",
+      "nome": "Vale",
+      "vies": "baixa",
+      "confianca": "media",
+      "justificativa": "Lucro 54% menor e abaixo do esperado, com minério mais barato e custo maior.",
+      "riscos": ["Ebitda acima da mediana", "Recompra/proventos como suporte", "Rebote do minério"],
+      "evento_ids": ["e9"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "EZTC3",
+      "nome": "Eztec",
+      "vies": "baixa",
+      "confianca": "baixa",
+      "justificativa": "Lucro trimestral recuou 53%. Faltam detalhes e há uma única fonte.",
+      "riscos": ["Pouca informação", "Efeitos pontuais não esclarecidos"],
+      "evento_ids": ["e4"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "GRND3",
+      "nome": "Grendene",
+      "vies": "baixa",
+      "confianca": "baixa",
+      "justificativa": "Lucro ajustado caiu 18,2%, para cerca de R$ 151 milhões. Só uma fonte.",
+      "riscos": ["Reação da ação ainda desconhecida"],
+      "evento_ids": ["e4"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "SUZB3",
+      "nome": "Suzano",
+      "vies": "neutro",
+      "confianca": "baixa",
+      "justificativa": "Lucro e Ebitda cresceram e ficaram em linha, mas a alavancagem subiu para 3,7x.",
+      "riscos": ["Alavancagem", "Câmbio", "Preço da celulose"],
+      "evento_ids": ["e1"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "ITUB4",
+      "nome": "Itaú Unibanco",
+      "vies": "neutro",
+      "confianca": "media",
+      "justificativa": "Lucro em linha com o consenso e guidance mantido; inadimplência de 90 dias e custo do crédito em alta no varejo.",
+      "riscos": ["Crédito pessoa física", "Selic alta"],
+      "evento_ids": ["e8", "e6"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    },
+    {
+      "ticker": "SBSP3",
+      "nome": "Sabesp",
+      "vies": "neutro",
+      "confianca": "baixa",
+      "justificativa": "Proventos de R$ 2,6 bilhões contra lucro ajustado 13,8% menor; ação já subiu forte.",
+      "riscos": ["Alta já realizada", "Lucro em queda"],
+      "evento_ids": ["e3"],
+      "variacao_pct": 6.35,
+      "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+    },
+    {
+      "ticker": "RENT3",
+      "nome": "Localiza",
+      "vies": "neutro",
+      "confianca": "baixa",
+      "justificativa": "Lucro de cerca de R$ 1,1 bilhão (+29%), dentro das expectativas.",
+      "riscos": ["Reação da ação ainda desconhecida"],
+      "evento_ids": ["e4"],
+      "variacao_pct": null,
+      "variacao_nota": null
+    }
+  ],
+  "historico": [],
+  "limitacoes": [
+    "Fechamento do Ibovespa e do dólar de 6/11 ainda não confirmado nesta rodada.",
+    "Relatórios de RI lidos via notícias, não direto na CVM ou no site de RI das empresas.",
+    "O Prio (3T26) não foi encontrado nesta rodada.",
+    "Variações de preço de 6/11 vêm de uma única matéria (Investing.com) e a base de cálculo não está esclarecida.",
+    "Cotações e cálculo da carteira são feitos pelo navegador, não pelo motor."
+  ],
+  "aviso": "Não é recomendação de investimento."
 }
