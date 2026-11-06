@@ -6,7 +6,7 @@ O tipo da rodada vem no prompt da tarefa: `pre_abertura`, `horaria` ou `pos_fech
 
 ## Passo a passo
 
-1. Clone `MRGAMA89/radar-b3` (add_repo com acesso de escrita, depois `git clone --depth 1`). Leia `dados.json` e `acompanhar.json`.
+1. Clone `MRGAMA89/radar-b3` (add_repo com acesso de escrita, depois `git clone --depth 1`). Leia `dados.json`, `acompanhar.json` e consulte `empresas.json` (catálogo de todas as ações da B3).
 2. Veja a data/hora atual. Se não houve pregão (fim de semana ou feriado da B3), grave uma rodada com `resumo` dizendo isso, sem eventos novos, e encerre.
 3. Pesquise com WebSearch (consultas curtas) e leia as matérias com WebFetch. **Confirme a data de cada matéria**: os resultados de busca misturam anos; descarte o que não for do período. Fontes preferidas: Reuters, Valor, InfoMoney, Money Times, CNN Brasil, Investing.com, Seu Dinheiro, Forbes Brasil, Estadão/Broadcast.
 4. Para cada empresa citada, procure o último relatório: fatos relevantes na CVM, comunicados da B3 e o site de RI da empresa (release de resultados). Se só achar a matéria sobre o relatório, registre `fonte_tipo: "noticia"`.
@@ -20,6 +20,17 @@ O tipo da rodada vem no prompt da tarefa: `pre_abertura`, `horaria` ou `pos_fech
 - **pre_abertura (~09:10):** o que aconteceu desde o último fechamento: bolsas de NY, Ásia e Europa, futuros, petróleo, minério, dólar, agenda do dia (balanços, dados econômicos) e resultados divulgados após o fechamento. Termine com o que pode mexer com a B3 no dia.
 - **horaria (10:43 às 16:43):** notícias novas da última hora. Mantenha os eventos ainda relevantes do dia, atualize os que mudaram e reordene por importância.
 - **pos_fechamento (~18:06):** fechamento do Ibovespa e do dólar, maiores altas e baixas, o que das notícias se confirmou ou não nos preços, balanços divulgados e o que observar amanhã.
+
+## Cobertura: todas as empresas da B3 (`empresas.json`)
+
+`empresas.json` é o catálogo de **todas as ações listadas na B3** (368 empresas, 521 tickers), agrupado por setor e segmento (Bancos, Água e Saneamento, Energia Elétrica, Telecomunicações etc.). Fonte: lista do Mais Retorno em 2026-11-06. Não inclui FIIs, BDRs, ETFs nem debêntures.
+
+- O universo do radar é a B3 inteira, mas **não é viável pesquisar as 368 empresas a cada hora**. A cobertura é guiada por notícias: toda empresa que aparecer em notícia, fato relevante ou balanço do período entra na rodada, seja ela grande ou pequena. Não limite o radar ao Ibovespa.
+- Use o catálogo para confirmar o ticker correto e o nome da empresa. A página cruza cada ticker de `dados.json` com `empresas.json` para mostrar setor e segmento, então **não** grave `setor`/`segmento` nos papéis. Se um ticker citado não estiver no catálogo, registre em `limitacoes`.
+- Quando uma notícia afetar um setor inteiro (ex.: juros e bancos, tarifa e saneamento, regulação e energia), cite o setor no evento e liste os papéis do setor mais expostos.
+- Day trade continua priorizando papéis líquidos; papéis ilíquidos podem aparecer nas notícias, mas avise a baixa liquidez em `riscos`.
+- Se `acompanhar.json` listar tickers, eles são pesquisados em toda rodada, mesmo sem notícia nova.
+- Não edite `empresas.json` nas rodadas. Ele só muda em manutenção do catálogo.
 
 ## Regras de qualidade
 

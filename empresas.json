@@ -1,0 +1,3213 @@
+{
+ "versao": 1,
+ "fonte": "Mais Retorno - Lista completa das ações da B3 (maisretorno.com/lista-acoes), classificação setorial B3",
+ "coletado_em": "2026-11-06",
+ "escopo": "Somente ações (ON/PN/units). Não inclui FIIs, BDRs, ETFs nem debêntures. Ativos de teste e títulos de prefeituras foram removidos. INTB3, TRPL3/4 e RRRP3 vieram sem classificação na fonte e foram classificados pelo Claude.",
+ "total_empresas": 368,
+ "total_tickers": 521,
+ "setores": {
+  "Bens Industriais": [
+   "Armas e Munições",
+   "Construção Pesada",
+   "Engenharia Consultiva",
+   "Exploração de Rodovias",
+   "Material Aeronáutico e de Defesa",
+   "Material Rodoviário",
+   "Material de Transporte",
+   "Motores, Compressores e Outros",
+   "Máq. e Equip. Construção e Agrícolas",
+   "Máq. e Equip. Industriais",
+   "Produtos para Construção",
+   "Serviços Diversos",
+   "Serviços de Apoio e Armazenagem",
+   "Transporte Aéreo",
+   "Transporte Ferroviário",
+   "Transporte Hidroviário",
+   "Transporte Rodoviário"
+  ],
+  "Comunicações": [
+   "Publicidade e Propaganda",
+   "Telecomunicações"
+  ],
+  "Consumo Cíclico": [
+   "Acessórios",
+   "Aluguel de carros",
+   "Atividades Esportivas",
+   "Automóveis e Motocicletas",
+   "Bicicletas",
+   "Brinquedos e Jogos",
+   "Calçados",
+   "Eletrodomésticos",
+   "Fios e Tecidos",
+   "Hotelaria",
+   "Incorporações",
+   "Móveis",
+   "Produtos Diversos",
+   "Produção de Eventos e Shows",
+   "Programas de Fidelização",
+   "Restaurante e Similares",
+   "Serviços Educacionais",
+   "Tecidos, Vestuário e Calçados",
+   "Utensílios Domésticos",
+   "Vestuário",
+   "Viagens e Turismo"
+  ],
+  "Consumo não Cíclico": [
+   "Agricultura",
+   "Alimentos",
+   "Alimentos Diversos",
+   "Açucar e Alcool",
+   "Carnes e Derivados",
+   "Cervejas e Refrigerantes",
+   "Produtos de Limpeza",
+   "Produtos de Uso Pessoal"
+  ],
+  "Financeiro": [
+   "Bancos",
+   "Corretoras de Seguros e Resseguros",
+   "Exploração de Imóveis",
+   "Holdings Diversificadas",
+   "Intermediação Imobiliária",
+   "Outros Intermediarios Financeiros",
+   "Resseguradoras",
+   "Seguradoras",
+   "Serviços Diversos",
+   "Serviços Financeiros Diversos",
+   "Soc. Crédito e Financiamento"
+  ],
+  "Materiais Básicos": [
+   "Artefatos de Cobre",
+   "Artefatos de Ferro e Aço",
+   "Embalagens",
+   "Fertilizantes e Defensivos",
+   "Madeira",
+   "Materiais Diversos",
+   "Minerais Metálicos",
+   "Papel e Celulose",
+   "Petroquímicos",
+   "Químicos Diversos",
+   "Siderurgia"
+  ],
+  "Outros": [
+   "Outros"
+  ],
+  "Petróleo, Gás e Biocombustíveis": [
+   "Distribuição de Combustíveis",
+   "Equipamentos e Serviços",
+   "Exploração, Refino e Distribuição"
+  ],
+  "Saúde": [
+   "Equipamentos",
+   "Medicamentos e Outros Produtos",
+   "Serviços Médico-Hospitalares, Análises e Diagnósticos"
+  ],
+  "Tecnologia da Informação": [
+   "Computadores e Equipamentos",
+   "Programas e Serviços"
+  ],
+  "Utilidade Pública": [
+   "Energia Elétrica",
+   "Gás",
+   "Água e Saneamento"
+  ]
+ },
+ "empresas": [
+  {
+   "empresa": "TAURUS ARMAS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Armas e Munições",
+   "tickers": [
+    "TASA3",
+    "TASA4"
+   ]
+  },
+  {
+   "empresa": "AZEVEDO E TRAVASSOS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Construção Pesada",
+   "tickers": [
+    "AZEV3",
+    "AZEV4"
+   ]
+  },
+  {
+   "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Engenharia Consultiva",
+   "tickers": [
+    "SOND3",
+    "SOND5",
+    "SOND6"
+   ]
+  },
+  {
+   "empresa": "ECORODOVIAS INFRAESTRUTURA E LOGÍSTICA S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Exploração de Rodovias",
+   "tickers": [
+    "ECOR3"
+   ]
+  },
+  {
+   "empresa": "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Exploração de Rodovias",
+   "tickers": [
+    "CCRO3",
+    "MOTV3"
+   ]
+  },
+  {
+   "empresa": "TPI - TRIUNFO PARTICIP. E INVEST. S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Exploração de Rodovias",
+   "tickers": [
+    "TPIS3"
+   ]
+  },
+  {
+   "empresa": "EMBRAER S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Aeronáutico e de Defesa",
+   "tickers": [
+    "EMBJ3",
+    "EMBR3"
+   ]
+  },
+  {
+   "empresa": "FRASLE MOBILITY S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "FRAS3"
+   ]
+  },
+  {
+   "empresa": "MARCOPOLO S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "POMO3",
+    "POMO4"
+   ]
+  },
+  {
+   "empresa": "METALURGICA RIOSULENSE S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "RSUL4"
+   ]
+  },
+  {
+   "empresa": "RANDONCORP S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "RAPT3",
+    "RAPT4"
+   ]
+  },
+  {
+   "empresa": "RECRUSUL S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "RCSL3",
+    "RCSL4"
+   ]
+  },
+  {
+   "empresa": "TUPY S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "TUPY3"
+   ]
+  },
+  {
+   "empresa": "WETZEL S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material Rodoviário",
+   "tickers": [
+    "MWET3",
+    "MWET4"
+   ]
+  },
+  {
+   "empresa": "MINASMAQUINAS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material de Transporte",
+   "tickers": [
+    "MMAQ3",
+    "MMAQ4"
+   ]
+  },
+  {
+   "empresa": "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Material de Transporte",
+   "tickers": [
+    "WLMM3",
+    "WLMM4"
+   ]
+  },
+  {
+   "empresa": "SCHULZ S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Motores, Compressores e Outros",
+   "tickers": [
+    "SHUL3",
+    "SHUL4"
+   ]
+  },
+  {
+   "empresa": "WEG S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Motores, Compressores e Outros",
+   "tickers": [
+    "WEGE3"
+   ]
+  },
+  {
+   "empresa": "METISA METALURGICA TIMBOENSE S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Construção e Agrícolas",
+   "tickers": [
+    "MTSA3",
+    "MTSA4"
+   ]
+  },
+  {
+   "empresa": "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "AERI3"
+   ]
+  },
+  {
+   "empresa": "BARDELLA S.A. INDUSTRIAS MECANICAS",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "BDLL3",
+    "BDLL4"
+   ]
+  },
+  {
+   "empresa": "ELECTRO ACO ALTONA S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "EALT3",
+    "EALT4"
+   ]
+  },
+  {
+   "empresa": "INEPAR S.A. INDUSTRIA E CONSTRUCOES",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "INEP3",
+    "INEP4"
+   ]
+  },
+  {
+   "empresa": "KEPLER WEBER S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "KEPL3"
+   ]
+  },
+  {
+   "empresa": "METALFRIO SOLUTIONS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "FRIO3"
+   ]
+  },
+  {
+   "empresa": "ROMI S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Máq. e Equip. Industriais",
+   "tickers": [
+    "ROMI3"
+   ]
+  },
+  {
+   "empresa": "ETERNIT S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Produtos para Construção",
+   "tickers": [
+    "ETER3"
+   ]
+  },
+  {
+   "empresa": "PBG S/A",
+   "setor": "Bens Industriais",
+   "segmento": "Produtos para Construção",
+   "tickers": [
+    "PTBL3"
+   ]
+  },
+  {
+   "empresa": "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVIÇOS S.A",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "ALPK3"
+   ]
+  },
+  {
+   "empresa": "ARMAC LOCAÇÃO. LOGÍSTICA E SERVIÇOS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "ARML3"
+   ]
+  },
+  {
+   "empresa": "CONTAX PARTICIPAÇÕES S.A",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "ATMP3",
+    "CTAX3"
+   ]
+  },
+  {
+   "empresa": "DTCOM - DIRECT TO COMPANY S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "DTCY3"
+   ]
+  },
+  {
+   "empresa": "GPS PARTICIPACOES E EMPREENDIMENTOS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "GGPS3"
+   ]
+  },
+  {
+   "empresa": "MILLS LOCAÇÃO. SERVIÇOS E LOGÍSTICA S.A",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "MILS3"
+   ]
+  },
+  {
+   "empresa": "PRINER SERVIÇOS INDUSTRIAIS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "PRNR3"
+   ]
+  },
+  {
+   "empresa": "VALID SOLUÇÕES S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "VLID3"
+   ]
+  },
+  {
+   "empresa": "PORTO SUDESTE V.M. S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços de Apoio e Armazenagem",
+   "tickers": [
+    "PSVM11"
+   ]
+  },
+  {
+   "empresa": "SANTOS BRASIL PARTICIPACOES S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços de Apoio e Armazenagem",
+   "tickers": [
+    "STBP3"
+   ]
+  },
+  {
+   "empresa": "WILSON SONS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Serviços de Apoio e Armazenagem",
+   "tickers": [
+    "PORT3"
+   ]
+  },
+  {
+   "empresa": "AZUL S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Aéreo",
+   "tickers": [
+    "AZUL3",
+    "AZUL4",
+    "AZUL53",
+    "AZUL54",
+    "AZUL97",
+    "AZUL98",
+    "AZUL99"
+   ]
+  },
+  {
+   "empresa": "GOL LINHAS AEREAS INTELIGENTES S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Aéreo",
+   "tickers": [
+    "GOLL4",
+    "GOLL54"
+   ]
+  },
+  {
+   "empresa": "FERROVIA CENTRO-ATLANTICA S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Ferroviário",
+   "tickers": [
+    "VSPT3"
+   ]
+  },
+  {
+   "empresa": "MRS LOGISTICA S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Ferroviário",
+   "tickers": [
+    "MRSA3B",
+    "MRSA5B",
+    "MRSA6B"
+   ]
+  },
+  {
+   "empresa": "RUMO S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Ferroviário",
+   "tickers": [
+    "RAIL3"
+   ]
+  },
+  {
+   "empresa": "HIDROVIAS DO BRASIL S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Hidroviário",
+   "tickers": [
+    "HBSA3"
+   ]
+  },
+  {
+   "empresa": "LOG-IN LOGISTICA INTERMODAL S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Hidroviário",
+   "tickers": [
+    "LOGN3"
+   ]
+  },
+  {
+   "empresa": "TREVISA INVESTIMENTOS S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Hidroviário",
+   "tickers": [
+    "LUXM3",
+    "LUXM4"
+   ]
+  },
+  {
+   "empresa": "JSL S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Rodoviário",
+   "tickers": [
+    "JSLG3"
+   ]
+  },
+  {
+   "empresa": "SEQUOIA LOGISTICA E TRANSPORTES S.A",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Rodoviário",
+   "tickers": [
+    "SEQL3"
+   ]
+  },
+  {
+   "empresa": "TEGMA GESTAO LOGISTICA S.A.",
+   "setor": "Bens Industriais",
+   "segmento": "Transporte Rodoviário",
+   "tickers": [
+    "TGMA3"
+   ]
+  },
+  {
+   "empresa": "ELETROMIDIA S.A.",
+   "setor": "Comunicações",
+   "segmento": "Publicidade e Propaganda",
+   "tickers": [
+    "ELMD3"
+   ]
+  },
+  {
+   "empresa": "BRISANET PARTICIPAÇÕES S.A.",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "BRIT3"
+   ]
+  },
+  {
+   "empresa": "BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A.",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "BRST3"
+   ]
+  },
+  {
+   "empresa": "DESKTOP S.A.",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "DESK3"
+   ]
+  },
+  {
+   "empresa": "OI S.A.",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "OIBR3",
+    "OIBR4"
+   ]
+  },
+  {
+   "empresa": "TELEC BRASILEIRAS S.A. TELEBRAS",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "TELB3",
+    "TELB4"
+   ]
+  },
+  {
+   "empresa": "TELEFÔNICA BRASIL S.A",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "VIVT3"
+   ]
+  },
+  {
+   "empresa": "TIM S.A.",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "TIMS3"
+   ]
+  },
+  {
+   "empresa": "UNIFIQUE TELECOMUNICAÇÕES S.A.",
+   "setor": "Comunicações",
+   "segmento": "Telecomunicações",
+   "tickers": [
+    "FIQE3"
+   ]
+  },
+  {
+   "empresa": "MUNDIAL S.A. - PRODUTOS DE CONSUMO",
+   "setor": "Consumo Cíclico",
+   "segmento": "Acessórios",
+   "tickers": [
+    "MNDL3"
+   ]
+  },
+  {
+   "empresa": "TECHNOS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Acessórios",
+   "tickers": [
+    "TECN3"
+   ]
+  },
+  {
+   "empresa": "VIVARA PARTICIPAÇOES S.A",
+   "setor": "Consumo Cíclico",
+   "segmento": "Acessórios",
+   "tickers": [
+    "VIVA3"
+   ]
+  },
+  {
+   "empresa": "LOCALIZA RENT A CAR S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Aluguel de carros",
+   "tickers": [
+    "RENT3",
+    "RENT4"
+   ]
+  },
+  {
+   "empresa": "MOVIDA PARTICIPACOES SA",
+   "setor": "Consumo Cíclico",
+   "segmento": "Aluguel de carros",
+   "tickers": [
+    "MOVI3"
+   ]
+  },
+  {
+   "empresa": "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Aluguel de carros",
+   "tickers": [
+    "VAMO3"
+   ]
+  },
+  {
+   "empresa": "SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Atividades Esportivas",
+   "tickers": [
+    "SMFT3"
+   ]
+  },
+  {
+   "empresa": "AUTOMOB PARTICIPAÇÕES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Automóveis e Motocicletas",
+   "tickers": [
+    "AMOB3"
+   ]
+  },
+  {
+   "empresa": "IOCHPE MAXION S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Automóveis e Motocicletas",
+   "tickers": [
+    "MYPK3"
+   ]
+  },
+  {
+   "empresa": "MAHLE-METAL LEVE S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Automóveis e Motocicletas",
+   "tickers": [
+    "LEVE3"
+   ]
+  },
+  {
+   "empresa": "PLASCAR PARTICIPACOES INDUSTRIAIS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Automóveis e Motocicletas",
+   "tickers": [
+    "PLAS3"
+   ]
+  },
+  {
+   "empresa": "BICICLETAS MONARK S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Bicicletas",
+   "tickers": [
+    "BMKS3"
+   ]
+  },
+  {
+   "empresa": "MANUFATURA DE BRINQUEDOS ESTRELA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Brinquedos e Jogos",
+   "tickers": [
+    "ESTR3",
+    "ESTR4"
+   ]
+  },
+  {
+   "empresa": "ALPARGATAS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Calçados",
+   "tickers": [
+    "ALPA3",
+    "ALPA4"
+   ]
+  },
+  {
+   "empresa": "CAMBUCI S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Calçados",
+   "tickers": [
+    "CAMB3"
+   ]
+  },
+  {
+   "empresa": "GRENDENE S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Calçados",
+   "tickers": [
+    "GRND3"
+   ]
+  },
+  {
+   "empresa": "VULCABRAS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Calçados",
+   "tickers": [
+    "VULC3"
+   ]
+  },
+  {
+   "empresa": "ALLIED TECNOLOGIA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Eletrodomésticos",
+   "tickers": [
+    "ALLD3"
+   ]
+  },
+  {
+   "empresa": "GRUPO CASAS BAHIA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Eletrodomésticos",
+   "tickers": [
+    "BHIA3"
+   ]
+  },
+  {
+   "empresa": "MAGAZINE LUIZA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Eletrodomésticos",
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
+   "empresa": "WHIRLPOOL S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Eletrodomésticos",
+   "tickers": [
+    "WHRL3",
+    "WHRL4"
+   ]
+  },
+  {
+   "empresa": "CIA FIACAO TECIDOS CEDRO CACHOEIRA",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "CEDO3",
+    "CEDO4"
+   ]
+  },
+  {
+   "empresa": "CIA TECIDOS NORTE DE MINAS COTEMINAS",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "CTNM3",
+    "CTNM4"
+   ]
+  },
+  {
+   "empresa": "CIA TECIDOS SANTANENSE",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "CTSA3",
+    "CTSA4"
+   ]
+  },
+  {
+   "empresa": "DOHLER S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "DOHL3",
+    "DOHL4"
+   ]
+  },
+  {
+   "empresa": "KARSTEN S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "CTKA3",
+    "CTKA4"
+   ]
+  },
+  {
+   "empresa": "PETTENATI S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "PTNT4"
+   ]
+  },
+  {
+   "empresa": "PETTENATI S.A. INDUSTRIA TEXTIL",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "PTNT3"
+   ]
+  },
+  {
+   "empresa": "SPRINGS GLOBAL PARTICIPACOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "SGPS3"
+   ]
+  },
+  {
+   "empresa": "TEKA-TECELAGEM KUEHNRICH S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "TEKA3",
+    "TEKA4"
+   ]
+  },
+  {
+   "empresa": "TEXTIL RENAUXVIEW S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Fios e Tecidos",
+   "tickers": [
+    "TXRX3",
+    "TXRX4"
+   ]
+  },
+  {
+   "empresa": "HOTEIS OTHON S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Hotelaria",
+   "tickers": [
+    "HOOT4"
+   ]
+  },
+  {
+   "empresa": "ALPHAVILLE S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "AVLL3"
+   ]
+  },
+  {
+   "empresa": "BELORA RDVC CITY DESENVOLVIMENTO IMOBILIÁRIO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "CCTY3"
+   ]
+  },
+  {
+   "empresa": "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "CALI3"
+   ]
+  },
+  {
+   "empresa": "CONSTRUTORA TENDA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "TEND3"
+   ]
+  },
+  {
+   "empresa": "CURY CONSTRUTORA E INCORPORADORA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "CURY3"
+   ]
+  },
+  {
+   "empresa": "CYRELA BRAZIL REALTY S.A.EMPREEND E PART",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "CYRE3",
+    "CYRE4"
+   ]
+  },
+  {
+   "empresa": "DIRECIONAL ENGENHARIA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "DIRR3"
+   ]
+  },
+  {
+   "empresa": "EVEN CONSTRUTORA E INCORPORADORA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "EVEN3"
+   ]
+  },
+  {
+   "empresa": "EZ TEC EMPREEND. E PARTICIPACOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "EZTC3"
+   ]
+  },
+  {
+   "empresa": "FICA EMPREENDIMENTOS IMOBILIÁRIOS S.A",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "FIEI3"
+   ]
+  },
+  {
+   "empresa": "GAFISA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "GFSA11",
+    "GFSA3"
+   ]
+  },
+  {
+   "empresa": "HELBOR EMPREENDIMENTOS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "HBOR3"
+   ]
+  },
+  {
+   "empresa": "JHSF PARTICIPACOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "JHSF3"
+   ]
+  },
+  {
+   "empresa": "JOAO FORTES ENGENHARIA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "JFEN3"
+   ]
+  },
+  {
+   "empresa": "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "LAVV3"
+   ]
+  },
+  {
+   "empresa": "MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "MELK3"
+   ]
+  },
+  {
+   "empresa": "MITRE REALTY EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "MTRE3"
+   ]
+  },
+  {
+   "empresa": "MOURA DUBEUX ENGENHARIA S/A",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "MDNE3"
+   ]
+  },
+  {
+   "empresa": "MRV ENGENHARIA E PARTICIPACOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "MRVE3"
+   ]
+  },
+  {
+   "empresa": "PDG REALTY S.A. EMPREEND E PARTICIPACOES",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "PDGR3"
+   ]
+  },
+  {
+   "empresa": "PLANO & PLANO DESENVOLVIMENTO IMOBILIÁRIO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "PLPL3"
+   ]
+  },
+  {
+   "empresa": "RNI NEGÓCIOS IMOBILIÁRIOS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "RDNI3"
+   ]
+  },
+  {
+   "empresa": "ROSSI RESIDENCIAL S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "RSID3"
+   ]
+  },
+  {
+   "empresa": "TECNISA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "TCSA3"
+   ]
+  },
+  {
+   "empresa": "TRISUL S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "TRIS3"
+   ]
+  },
+  {
+   "empresa": "VIVER INCORPORADORA E CONSTRUTORA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Incorporações",
+   "tickers": [
+    "VIVR3"
+   ]
+  },
+  {
+   "empresa": "GRUPO TOKY S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Móveis",
+   "tickers": [
+    "MBLY3",
+    "TOKY3"
+   ]
+  },
+  {
+   "empresa": "UNICASA INDÚSTRIA DE MÓVEIS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Móveis",
+   "tickers": [
+    "UCAS3"
+   ]
+  },
+  {
+   "empresa": "WESTWING COMERCIO VAREJISTA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Móveis",
+   "tickers": [
+    "WEST3"
+   ]
+  },
+  {
+   "empresa": "AMERICANAS S.A",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produtos Diversos",
+   "tickers": [
+    "AMER3"
+   ]
+  },
+  {
+   "empresa": "GRUPO SBF SA",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produtos Diversos",
+   "tickers": [
+    "SBFG3"
+   ]
+  },
+  {
+   "empresa": "LOJAS QUERO-QUERO S/A",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produtos Diversos",
+   "tickers": [
+    "LJQQ3"
+   ]
+  },
+  {
+   "empresa": "PET CENTER COMERCIO E PARTICIPACOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produtos Diversos",
+   "tickers": [
+    "PETZ3"
+   ]
+  },
+  {
+   "empresa": "UNIÃO PET PARTICIPAÇÕES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produtos Diversos",
+   "tickers": [
+    "AUAU3"
+   ]
+  },
+  {
+   "empresa": "REVEE S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produção de Eventos e Shows",
+   "tickers": [
+    "RVEE3"
+   ]
+  },
+  {
+   "empresa": "SAO PAULO TURISMO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produção de Eventos e Shows",
+   "tickers": [
+    "AHEB3",
+    "AHEB5",
+    "AHEB6"
+   ]
+  },
+  {
+   "empresa": "T4F ENTRETENIMENTO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Produção de Eventos e Shows",
+   "tickers": [
+    "SHOW3"
+   ]
+  },
+  {
+   "empresa": "DOTZ S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Programas de Fidelização",
+   "tickers": [
+    "DOTZ3"
+   ]
+  },
+  {
+   "empresa": "INTERNATIONAL MEAL COMPANY ALIMENTACAO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Restaurante e Similares",
+   "tickers": [
+    "MEAL3"
+   ]
+  },
+  {
+   "empresa": "ZAMP S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Restaurante e Similares",
+   "tickers": [
+    "ZAMP3"
+   ]
+  },
+  {
+   "empresa": "ANIMA HOLDING S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "ANIM3"
+   ]
+  },
+  {
+   "empresa": "ATOM EDUCAÇÃO E EDITORA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "ATED3"
+   ]
+  },
+  {
+   "empresa": "BAHEMA EDUCAÇÃO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "BAHI3"
+   ]
+  },
+  {
+   "empresa": "BIOMA EDUCAÇÃO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "BIED3"
+   ]
+  },
+  {
+   "empresa": "COGNA EDUCAÇÃO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "COGN3"
+   ]
+  },
+  {
+   "empresa": "CRUZEIRO DO SUL EDUCACIONAL S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "CSED3"
+   ]
+  },
+  {
+   "empresa": "ORANJEBTC S.A. - EDUCAÇÃO E INVESTIMENTO",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "OBTC3"
+   ]
+  },
+  {
+   "empresa": "SER EDUCACIONAL S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "SEER3"
+   ]
+  },
+  {
+   "empresa": "VITRU EDUCAÇÃO S.A",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "VTRU3"
+   ]
+  },
+  {
+   "empresa": "YDUQS PARTICIPACOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Serviços Educacionais",
+   "tickers": [
+    "YDUQ3"
+   ]
+  },
+  {
+   "empresa": "AREZZO INDÚSTRIA E COMÉRCIO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "ARZZ3"
+   ]
+  },
+  {
+   "empresa": "AZZAS 2154 S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "AZZA3"
+   ]
+  },
+  {
+   "empresa": "CEA MODAS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "CEAB3"
+   ]
+  },
+  {
+   "empresa": "GRAZZIOTIN S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "CGRA3",
+    "CGRA4"
+   ]
+  },
+  {
+   "empresa": "GRUPO DE MODA SOMA S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "SOMA3"
+   ]
+  },
+  {
+   "empresa": "GUARARAPES CONFECCOES S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "GUAR3",
+    "RIAA3"
+   ]
+  },
+  {
+   "empresa": "LOJAS RENNER S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "LREN3"
+   ]
+  },
+  {
+   "empresa": "MARISA LOJAS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "AMAR3"
+   ]
+  },
+  {
+   "empresa": "VESTE S.A. ESTILO",
+   "setor": "Consumo Cíclico",
+   "segmento": "Tecidos, Vestuário e Calçados",
+   "tickers": [
+    "VSTE3"
+   ]
+  },
+  {
+   "empresa": "HERCULES S.A. FABRICA DE TALHERES",
+   "setor": "Consumo Cíclico",
+   "segmento": "Utensílios Domésticos",
+   "tickers": [
+    "HETA3",
+    "HETA4"
+   ]
+  },
+  {
+   "empresa": "TRACK & FIELD CO S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Vestuário",
+   "tickers": [
+    "TFCO4"
+   ]
+  },
+  {
+   "empresa": "CVC BRASIL OPERADORA E AGÊNCIA DE VIAGENS S.A.",
+   "setor": "Consumo Cíclico",
+   "segmento": "Viagens e Turismo",
+   "tickers": [
+    "CVCB3"
+   ]
+  },
+  {
+   "empresa": "AGROGALAXY PARTICIPAÇÕES S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "AGXY3"
+   ]
+  },
+  {
+   "empresa": "ALIPERTI S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "APTI4"
+   ]
+  },
+  {
+   "empresa": "BOA SAFRA SEMENTES S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "SOJA3"
+   ]
+  },
+  {
+   "empresa": "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "AGRO3"
+   ]
+  },
+  {
+   "empresa": "GRANJA FARIA S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "EGGY3"
+   ]
+  },
+  {
+   "empresa": "POMIFRUTAS S/A",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "FRTA3"
+   ]
+  },
+  {
+   "empresa": "SLC AGRICOLA S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "SLCE3"
+   ]
+  },
+  {
+   "empresa": "TERRA SANTA PROPRIEDADES AGRICOLAS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "LAND3"
+   ]
+  },
+  {
+   "empresa": "TRÊS TENTOS AGROINDUSTRIAL S/A",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Agricultura",
+   "tickers": [
+    "TTEN3"
+   ]
+  },
+  {
+   "empresa": "ATACADÃO S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos",
+   "tickers": [
+    "CRFB3"
+   ]
+  },
+  {
+   "empresa": "CIA BRASILEIRA DE DISTRIBUICAO",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos",
+   "tickers": [
+    "PCAR3"
+   ]
+  },
+  {
+   "empresa": "GRUPO MATEUS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos",
+   "tickers": [
+    "GMAT3"
+   ]
+  },
+  {
+   "empresa": "SENDAS DISTRIBUIDORA S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos",
+   "tickers": [
+    "ASAI3"
+   ]
+  },
+  {
+   "empresa": "CAMIL ALIMENTOS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos Diversos",
+   "tickers": [
+    "CAML3"
+   ]
+  },
+  {
+   "empresa": "CONSERVAS ODERICH S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos Diversos",
+   "tickers": [
+    "ODER4"
+   ]
+  },
+  {
+   "empresa": "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos Diversos",
+   "tickers": [
+    "JOPA3",
+    "JOPA4"
+   ]
+  },
+  {
+   "empresa": "M.DIAS BRANCO S.A. IND COM DE ALIMENTOS",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Alimentos Diversos",
+   "tickers": [
+    "MDIA3"
+   ]
+  },
+  {
+   "empresa": "JALLES MACHADO S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Açucar e Alcool",
+   "tickers": [
+    "JALL3"
+   ]
+  },
+  {
+   "empresa": "SAO MARTINHO S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Açucar e Alcool",
+   "tickers": [
+    "SMTO3"
+   ]
+  },
+  {
+   "empresa": "BRF S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Carnes e Derivados",
+   "tickers": [
+    "BRFS3"
+   ]
+  },
+  {
+   "empresa": "EXCELSIOR ALIMENTOS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Carnes e Derivados",
+   "tickers": [
+    "BAUH4"
+   ]
+  },
+  {
+   "empresa": "FASA S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Carnes e Derivados",
+   "tickers": [
+    "FASA3",
+    "FICT3"
+   ]
+  },
+  {
+   "empresa": "MARFRIG GLOBAL FOODS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Carnes e Derivados",
+   "tickers": [
+    "MBRF3",
+    "MRFG3"
+   ]
+  },
+  {
+   "empresa": "MINERVA S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Carnes e Derivados",
+   "tickers": [
+    "BEEF3"
+   ]
+  },
+  {
+   "empresa": "MINUPAR PARTICIPACOES S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Carnes e Derivados",
+   "tickers": [
+    "MNPR3"
+   ]
+  },
+  {
+   "empresa": "AMBEV S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Cervejas e Refrigerantes",
+   "tickers": [
+    "ABEV3"
+   ]
+  },
+  {
+   "empresa": "BOMBRIL S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Produtos de Limpeza",
+   "tickers": [
+    "BOBR3",
+    "BOBR4"
+   ]
+  },
+  {
+   "empresa": "MPM CORPÓREOS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Produtos de Uso Pessoal",
+   "tickers": [
+    "ESPA3"
+   ]
+  },
+  {
+   "empresa": "NATURA &CO HOLDING S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Produtos de Uso Pessoal",
+   "tickers": [
+    "NTCO3"
+   ]
+  },
+  {
+   "empresa": "NATURA COSMETICOS S.A.",
+   "setor": "Consumo não Cíclico",
+   "segmento": "Produtos de Uso Pessoal",
+   "tickers": [
+    "NATU3"
+   ]
+  },
+  {
+   "empresa": "ALFA HOLDINGS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "RPAD3",
+    "RPAD5",
+    "RPAD6"
+   ]
+  },
+  {
+   "empresa": "BANCO BMG S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BMGB4"
+   ]
+  },
+  {
+   "empresa": "BANESTES S.A. - BCO EST ESPIRITO SANTO",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BEES3",
+    "BEES4"
+   ]
+  },
+  {
+   "empresa": "BCO ABC BRASIL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "ABCB4"
+   ]
+  },
+  {
+   "empresa": "BCO ALFA DE INVESTIMENTO S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BRIV3",
+    "BRIV4"
+   ]
+  },
+  {
+   "empresa": "BCO AMAZONIA S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BAZA3"
+   ]
+  },
+  {
+   "empresa": "BCO BRADESCO S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BBDC3",
+    "BBDC4"
+   ]
+  },
+  {
+   "empresa": "BCO BRASIL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BBAS11",
+    "BBAS3"
+   ]
+  },
+  {
+   "empresa": "BCO BTG PACTUAL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BPAC11",
+    "BPAC3",
+    "BPAC5"
+   ]
+  },
+  {
+   "empresa": "BCO ESTADO DE SERGIPE S.A. - BANESE",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BGIP3",
+    "BGIP4"
+   ]
+  },
+  {
+   "empresa": "BCO ESTADO DO PARA S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BPAR3"
+   ]
+  },
+  {
+   "empresa": "BCO ESTADO DO RIO GRANDE DO SUL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BRSR3",
+    "BRSR5",
+    "BRSR6"
+   ]
+  },
+  {
+   "empresa": "BCO MERCANTIL DE INVESTIMENTOS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BMIN3",
+    "BMIN4"
+   ]
+  },
+  {
+   "empresa": "BCO MERCANTIL DO BRASIL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BMEB3",
+    "BMEB4"
+   ]
+  },
+  {
+   "empresa": "BCO NORDESTE DO BRASIL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BNBR3"
+   ]
+  },
+  {
+   "empresa": "BCO PAN S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BPAN4"
+   ]
+  },
+  {
+   "empresa": "BCO PINE S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "PINE3",
+    "PINE4"
+   ]
+  },
+  {
+   "empresa": "BCO SANTANDER (BRASIL) S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "SANB11",
+    "SANB3",
+    "SANB4"
+   ]
+  },
+  {
+   "empresa": "BRB BCO DE BRASILIA S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BSLI3",
+    "BSLI4"
+   ]
+  },
+  {
+   "empresa": "BRBI BR PARTNERS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "BRBI11"
+   ]
+  },
+  {
+   "empresa": "ITAU UNIBANCO HOLDING S.A.",
+   "setor": "Financeiro",
+   "segmento": "Bancos",
+   "tickers": [
+    "ITUB3",
+    "ITUB4"
+   ]
+  },
+  {
+   "empresa": "ALPER CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Corretoras de Seguros e Resseguros",
+   "tickers": [
+    "APER3"
+   ]
+  },
+  {
+   "empresa": "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Corretoras de Seguros e Resseguros",
+   "tickers": [
+    "WIZC3"
+   ]
+  },
+  {
+   "empresa": "ALLOS S.A",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "ALOS3"
+   ]
+  },
+  {
+   "empresa": "CIA HABITASUL DE PARTICIPACOES",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "HBTS5"
+   ]
+  },
+  {
+   "empresa": "CIA PARTICIPACOES ALIANCA DA BAHIA",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "PEAB3",
+    "PEAB4"
+   ]
+  },
+  {
+   "empresa": "CORREA RIBEIRO S.A. COMERCIO E INDUSTRIA",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "CORR3",
+    "CORR4"
+   ]
+  },
+  {
+   "empresa": "GENERAL SHOPPING E OUTLETS DO BRASIL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "GSHP3"
+   ]
+  },
+  {
+   "empresa": "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS S/A",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "HBRE3"
+   ]
+  },
+  {
+   "empresa": "IGUATEMI S.A.",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "IGTI11",
+    "IGTI3",
+    "IGTI4"
+   ]
+  },
+  {
+   "empresa": "LOG COMMERCIAL PROPERTIES",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "LOGG3"
+   ]
+  },
+  {
+   "empresa": "MULTIPLAN - EMPREEND IMOBILIARIOS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "MULT3"
+   ]
+  },
+  {
+   "empresa": "NORDON INDUSTRIAS METALURGICAS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "NORD3"
+   ]
+  },
+  {
+   "empresa": "SAO CARLOS EMPREEND E PARTICIPACOES S.A.",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "SCAR3"
+   ]
+  },
+  {
+   "empresa": "SYN PROP E TECH S.A.",
+   "setor": "Financeiro",
+   "segmento": "Exploração de Imóveis",
+   "tickers": [
+    "SYNE3"
+   ]
+  },
+  {
+   "empresa": "ARANDU INVESTIMENTOS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Holdings Diversificadas",
+   "tickers": [
+    "ARND3"
+   ]
+  },
+  {
+   "empresa": "EMBPAR PARTICIPACOES S.A.",
+   "setor": "Financeiro",
+   "segmento": "Holdings Diversificadas",
+   "tickers": [
+    "EPAR3"
+   ]
+  },
+  {
+   "empresa": "ITAUSA S.A.",
+   "setor": "Financeiro",
+   "segmento": "Holdings Diversificadas",
+   "tickers": [
+    "ITSA3",
+    "ITSA4"
+   ]
+  },
+  {
+   "empresa": "MONTEIRO ARANHA S.A.",
+   "setor": "Financeiro",
+   "segmento": "Holdings Diversificadas",
+   "tickers": [
+    "MOAR3"
+   ]
+  },
+  {
+   "empresa": "SIMPAR S.A.",
+   "setor": "Financeiro",
+   "segmento": "Holdings Diversificadas",
+   "tickers": [
+    "SIMH3"
+   ]
+  },
+  {
+   "empresa": "LPS BRASIL - CONSULTORIA DE IMOVEIS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Intermediação Imobiliária",
+   "tickers": [
+    "LPSB3"
+   ]
+  },
+  {
+   "empresa": "NEXPE PARTICIPAÇÕES S.A",
+   "setor": "Financeiro",
+   "segmento": "Intermediação Imobiliária",
+   "tickers": [
+    "NEXP3"
+   ]
+  },
+  {
+   "empresa": "INVESTIMENTOS BEMGE S.A.",
+   "setor": "Financeiro",
+   "segmento": "Outros Intermediarios Financeiros",
+   "tickers": [
+    "FIGE3",
+    "FIGE4"
+   ]
+  },
+  {
+   "empresa": "IRB - BRASIL RESSEGUROS S.A.",
+   "setor": "Financeiro",
+   "segmento": "Resseguradoras",
+   "tickers": [
+    "IRBR3"
+   ]
+  },
+  {
+   "empresa": "BB SEGURIDADE PARTICIPAÇÕES S.A.",
+   "setor": "Financeiro",
+   "segmento": "Seguradoras",
+   "tickers": [
+    "BBSE3"
+   ]
+  },
+  {
+   "empresa": "CAIXA SEGURIDADE PARTICIPAÇÕES S.A.",
+   "setor": "Financeiro",
+   "segmento": "Seguradoras",
+   "tickers": [
+    "CXSE3"
+   ]
+  },
+  {
+   "empresa": "CONSORCIO ALFA DE ADMINISTRACAO S.A.",
+   "setor": "Financeiro",
+   "segmento": "Seguradoras",
+   "tickers": [
+    "BRGE11",
+    "BRGE12",
+    "BRGE3",
+    "BRGE5",
+    "BRGE6",
+    "BRGE7",
+    "BRGE8"
+   ]
+  },
+  {
+   "empresa": "PORTO SEGURO S.A.",
+   "setor": "Financeiro",
+   "segmento": "Seguradoras",
+   "tickers": [
+    "PSSA3"
+   ]
+  },
+  {
+   "empresa": "B100 S.A.",
+   "setor": "Financeiro",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "B1003"
+   ]
+  },
+  {
+   "empresa": "CIABRASF CIA BRASILEIRA DE SERVIÇOS FINANCEIROS SA",
+   "setor": "Financeiro",
+   "segmento": "Serviços Diversos",
+   "tickers": [
+    "ADMF3"
+   ]
+  },
+  {
+   "empresa": "B3 S.A. - BRASIL. BOLSA. BALCÃO",
+   "setor": "Financeiro",
+   "segmento": "Serviços Financeiros Diversos",
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "empresa": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+   "setor": "Financeiro",
+   "segmento": "Serviços Financeiros Diversos",
+   "tickers": [
+    "CIEL3"
+   ]
+  },
+  {
+   "empresa": "CLEAR SALE S.A.",
+   "setor": "Financeiro",
+   "segmento": "Serviços Financeiros Diversos",
+   "tickers": [
+    "CLSA3"
+   ]
+  },
+  {
+   "empresa": "CSU DIGITAL S.A.",
+   "setor": "Financeiro",
+   "segmento": "Serviços Financeiros Diversos",
+   "tickers": [
+    "CSUD3"
+   ]
+  },
+  {
+   "empresa": "DM FINANCEIRA S.A. - CRÉDITO. FINANC E INVEST",
+   "setor": "Financeiro",
+   "segmento": "Soc. Crédito e Financiamento",
+   "tickers": [
+    "DMFN3"
+   ]
+  },
+  {
+   "empresa": "FINANCEIRA ALFA S.A.- CRED FINANC E INVS",
+   "setor": "Financeiro",
+   "segmento": "Soc. Crédito e Financiamento",
+   "tickers": [
+    "CRIV3",
+    "CRIV4"
+   ]
+  },
+  {
+   "empresa": "MERCANTIL FINANCEIRA S.A. CRED. FINANC. E INVEST",
+   "setor": "Financeiro",
+   "segmento": "Soc. Crédito e Financiamento",
+   "tickers": [
+    "MERC3",
+    "MERC4"
+   ]
+  },
+  {
+   "empresa": "PARANAPANEMA S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Artefatos de Cobre",
+   "tickers": [
+    "PMAM3"
+   ]
+  },
+  {
+   "empresa": "HAGA S.A. INDUSTRIA E COMERCIO",
+   "setor": "Materiais Básicos",
+   "segmento": "Artefatos de Ferro e Aço",
+   "tickers": [
+    "HAGA3",
+    "HAGA4"
+   ]
+  },
+  {
+   "empresa": "MANGELS INDUSTRIAL S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Artefatos de Ferro e Aço",
+   "tickers": [
+    "MGEL3",
+    "MGEL4"
+   ]
+  },
+  {
+   "empresa": "PANATLANTICA S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Artefatos de Ferro e Aço",
+   "tickers": [
+    "PATI3",
+    "PATI4"
+   ]
+  },
+  {
+   "empresa": "TEKNO S.A. - INDUSTRIA E COMERCIO",
+   "setor": "Materiais Básicos",
+   "segmento": "Artefatos de Ferro e Aço",
+   "tickers": [
+    "TKNO3",
+    "TKNO4"
+   ]
+  },
+  {
+   "empresa": "IRANI PAPEL E EMBALAGEM S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Embalagens",
+   "tickers": [
+    "RANI3"
+   ]
+  },
+  {
+   "empresa": "FERTILIZANTES HERINGER S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Fertilizantes e Defensivos",
+   "tickers": [
+    "FHER3"
+   ]
+  },
+  {
+   "empresa": "NUTRIPLANT INDUSTRIA E COMERCIO S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Fertilizantes e Defensivos",
+   "tickers": [
+    "NUTR3"
+   ]
+  },
+  {
+   "empresa": "VITTIA S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Fertilizantes e Defensivos",
+   "tickers": [
+    "VITT3"
+   ]
+  },
+  {
+   "empresa": "DEXCO S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Madeira",
+   "tickers": [
+    "DXCO3"
+   ]
+  },
+  {
+   "empresa": "EUCATEX S.A. INDUSTRIA E COMERCIO",
+   "setor": "Materiais Básicos",
+   "segmento": "Madeira",
+   "tickers": [
+    "EUCA3",
+    "EUCA4"
+   ]
+  },
+  {
+   "empresa": "SANSUY S.A. INDUSTRIA DE PLASTICOS",
+   "setor": "Materiais Básicos",
+   "segmento": "Materiais Diversos",
+   "tickers": [
+    "SNSY3",
+    "SNSY5",
+    "SNSY6"
+   ]
+  },
+  {
+   "empresa": "BRADESPAR S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Minerais Metálicos",
+   "tickers": [
+    "BRAP3",
+    "BRAP4"
+   ]
+  },
+  {
+   "empresa": "COMPANHIA BRASILEIRA DE ALUMÍNIO",
+   "setor": "Materiais Básicos",
+   "segmento": "Minerais Metálicos",
+   "tickers": [
+    "CBAV3"
+   ]
+  },
+  {
+   "empresa": "CSN MINERAÇÃO S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Minerais Metálicos",
+   "tickers": [
+    "CMIN3"
+   ]
+  },
+  {
+   "empresa": "VALE S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Minerais Metálicos",
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
+   "empresa": "CIA MELHORAMENTOS DE SAO PAULO",
+   "setor": "Materiais Básicos",
+   "segmento": "Papel e Celulose",
+   "tickers": [
+    "MSPA3",
+    "MSPA4"
+   ]
+  },
+  {
+   "empresa": "KLABIN S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Papel e Celulose",
+   "tickers": [
+    "KLBN11",
+    "KLBN3",
+    "KLBN4"
+   ]
+  },
+  {
+   "empresa": "SUZANO S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Papel e Celulose",
+   "tickers": [
+    "SUZB3"
+   ]
+  },
+  {
+   "empresa": "BRASKEM S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Petroquímicos",
+   "tickers": [
+    "BRKM3",
+    "BRKM5",
+    "BRKM6"
+   ]
+  },
+  {
+   "empresa": "DEXXOS PARTICIPACOES S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Petroquímicos",
+   "tickers": [
+    "DEXP3",
+    "DEXP4"
+   ]
+  },
+  {
+   "empresa": "TRONOX PIGMENTOS DO BRASIL S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Químicos Diversos",
+   "tickers": [
+    "CRPG3",
+    "CRPG5",
+    "CRPG6"
+   ]
+  },
+  {
+   "empresa": "UNIPAR CARBOCLORO S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Químicos Diversos",
+   "tickers": [
+    "UNIP3",
+    "UNIP5",
+    "UNIP6"
+   ]
+  },
+  {
+   "empresa": "CIA FERRO LIGAS DA BAHIA - FERBASA",
+   "setor": "Materiais Básicos",
+   "segmento": "Siderurgia",
+   "tickers": [
+    "FESA3",
+    "FESA4"
+   ]
+  },
+  {
+   "empresa": "CIA SIDERURGICA NACIONAL",
+   "setor": "Materiais Básicos",
+   "segmento": "Siderurgia",
+   "tickers": [
+    "CSNA3"
+   ]
+  },
+  {
+   "empresa": "GERDAU S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Siderurgia",
+   "tickers": [
+    "GGBR3",
+    "GGBR4"
+   ]
+  },
+  {
+   "empresa": "METALURGICA GERDAU S.A.",
+   "setor": "Materiais Básicos",
+   "segmento": "Siderurgia",
+   "tickers": [
+    "GOAU3",
+    "GOAU4"
+   ]
+  },
+  {
+   "empresa": "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+   "setor": "Materiais Básicos",
+   "segmento": "Siderurgia",
+   "tickers": [
+    "USIM3",
+    "USIM5",
+    "USIM6"
+   ]
+  },
+  {
+   "empresa": "CEMEPE INVESTIMENTOS S.A.",
+   "setor": "Outros",
+   "segmento": "Outros",
+   "tickers": [
+    "MAPT3",
+    "MAPT4"
+   ]
+  },
+  {
+   "empresa": "FICTOR ALIMENTOS S.A",
+   "setor": "Outros",
+   "segmento": "Outros",
+   "tickers": [
+    "ATOM3"
+   ]
+  },
+  {
+   "empresa": "YBYRÁ CAPITAL S.A.",
+   "setor": "Outros",
+   "segmento": "Outros",
+   "tickers": [
+    "YBRA4"
+   ]
+  },
+  {
+   "empresa": "VIBRA ENERGIA S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Distribuição de Combustíveis",
+   "tickers": [
+    "VBBR3"
+   ]
+  },
+  {
+   "empresa": "LUPATECH S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Equipamentos e Serviços",
+   "tickers": [
+    "LUPA3"
+   ]
+  },
+  {
+   "empresa": "OCEANPACT SERVIÇOS MARITIMOS S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Equipamentos e Serviços",
+   "tickers": [
+    "OPCT3"
+   ]
+  },
+  {
+   "empresa": "OSX BRASIL S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Equipamentos e Serviços",
+   "tickers": [
+    "OSXB3"
+   ]
+  },
+  {
+   "empresa": "3R PETROLEUM ÓLEO E GÁS S.A",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "RRRP3"
+   ]
+  },
+  {
+   "empresa": "AZEVEDO & TRAVASSOS ENERGIA S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "AZTE3"
+   ]
+  },
+  {
+   "empresa": "BRAVA ENERGIA S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "BRAV3"
+   ]
+  },
+  {
+   "empresa": "COSAN S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "CSAN3"
+   ]
+  },
+  {
+   "empresa": "ENAUTA PARTICIPAÇÕES S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "ENAT3"
+   ]
+  },
+  {
+   "empresa": "PETROLEO BRASILEIRO S.A. PETROBRAS",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "PETR3",
+    "PETR4"
+   ]
+  },
+  {
+   "empresa": "PETRORECÔNCAVO S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "RECV3"
+   ]
+  },
+  {
+   "empresa": "PRIO S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "PRIO3"
+   ]
+  },
+  {
+   "empresa": "RAIZEN S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "RAIZ4",
+    "RAIZ55"
+   ]
+  },
+  {
+   "empresa": "REFINARIA DE PETROLEOS MANGUINHOS S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "RPMG3"
+   ]
+  },
+  {
+   "empresa": "ULTRAPAR PARTICIPACOES S.A.",
+   "setor": "Petróleo, Gás e Biocombustíveis",
+   "segmento": "Exploração, Refino e Distribuição",
+   "tickers": [
+    "UGPA3"
+   ]
+  },
+  {
+   "empresa": "BAUMER S.A.",
+   "setor": "Saúde",
+   "segmento": "Equipamentos",
+   "tickers": [
+    "BALM3",
+    "BALM4"
+   ]
+  },
+  {
+   "empresa": "BIOMM S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "BIOM3"
+   ]
+  },
+  {
+   "empresa": "BLAU FARMACÊUTICA S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "BLAU3"
+   ]
+  },
+  {
+   "empresa": "CM HOSPITALAR S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "VVEO3"
+   ]
+  },
+  {
+   "empresa": "D1000 VAREJO FARMA PARTICIPAÇÕES S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "DMVF3"
+   ]
+  },
+  {
+   "empresa": "DIMED S.A. DISTRIBUIDORA DE MEDICAMENTOS",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "PNVL3"
+   ]
+  },
+  {
+   "empresa": "EMPREENDIMENTOS PAGUE MENOS S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "PGMN3"
+   ]
+  },
+  {
+   "empresa": "HYPERA S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "HYPE3"
+   ]
+  },
+  {
+   "empresa": "OUROFINO S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "OFSA3"
+   ]
+  },
+  {
+   "empresa": "PROFARMA DISTRIB PROD FARMACEUTICOS S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "PFRM3"
+   ]
+  },
+  {
+   "empresa": "RAIA DROGASIL S.A.",
+   "setor": "Saúde",
+   "segmento": "Medicamentos e Outros Produtos",
+   "tickers": [
+    "RADL3"
+   ]
+  },
+  {
+   "empresa": "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "AALR3"
+   ]
+  },
+  {
+   "empresa": "BRADSAUDE S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "SAUD3"
+   ]
+  },
+  {
+   "empresa": "DIAGNOSTICOS DA AMERICA S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "DASA3"
+   ]
+  },
+  {
+   "empresa": "FLEURY S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "FLRY3"
+   ]
+  },
+  {
+   "empresa": "HAPVIDA PARTICIPACOES E INVESTIMENTOS SA",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
+   "empresa": "HOSPITAL MATER DEI S/A",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "MATD3"
+   ]
+  },
+  {
+   "empresa": "KORA SAÚDE PARTICIPAÇÕES S.A",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "KRSA3"
+   ]
+  },
+  {
+   "empresa": "ODONTOPREV S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "ODPV3"
+   ]
+  },
+  {
+   "empresa": "ONCOCLINICAS DO BRASIL SERVIÇOS MEDICOS S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "ONCO3"
+   ]
+  },
+  {
+   "empresa": "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "QUAL3"
+   ]
+  },
+  {
+   "empresa": "REDE DOR SÃO LUIZ S.A.",
+   "setor": "Saúde",
+   "segmento": "Serviços Médico-Hospitalares, Análises e Diagnósticos",
+   "tickers": [
+    "RDOR3"
+   ]
+  },
+  {
+   "empresa": "GRUPO MULTI S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Computadores e Equipamentos",
+   "tickers": [
+    "MLAS3"
+   ]
+  },
+  {
+   "empresa": "INTELBRAS S.A. IND DE TELEC ELETRONICA BRASILEIRA",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Computadores e Equipamentos",
+   "tickers": [
+    "INTB3"
+   ]
+  },
+  {
+   "empresa": "POSITIVO TECNOLOGIA S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Computadores e Equipamentos",
+   "tickers": [
+    "POSI3"
+   ]
+  },
+  {
+   "empresa": "ARANDU INVESTIMENTOS S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "REAG3"
+   ]
+  },
+  {
+   "empresa": "BEMOBI MOBILE TECH S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "BMOB3"
+   ]
+  },
+  {
+   "empresa": "ECONOMATICA S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "ECOM3",
+    "TRAD3"
+   ]
+  },
+  {
+   "empresa": "ENJOEI S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "ENJU3"
+   ]
+  },
+  {
+   "empresa": "INFRACOMMERCE CXAAS S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "IFCM3"
+   ]
+  },
+  {
+   "empresa": "LIVETECH DA BAHIA INDUSTRIA E COMERCIO S/A",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "LVTC3",
+    "WDCN3"
+   ]
+  },
+  {
+   "empresa": "LWSA S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "LWSA3"
+   ]
+  },
+  {
+   "empresa": "MÉLIUZ S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "CASH3"
+   ]
+  },
+  {
+   "empresa": "NEOGRID PARTICIPACOES S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "NGRD3"
+   ]
+  },
+  {
+   "empresa": "PADTEC HOLDING S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "PDTC3"
+   ]
+  },
+  {
+   "empresa": "REAG INVESTIMENTOS S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "NINJ3"
+   ]
+  },
+  {
+   "empresa": "TOTVS S.A.",
+   "setor": "Tecnologia da Informação",
+   "segmento": "Programas e Serviços",
+   "tickers": [
+    "TOTS3"
+   ]
+  },
+  {
+   "empresa": "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "AFLT3"
+   ]
+  },
+  {
+   "empresa": "ALUPAR INVESTIMENTO S/A",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "ALUP11",
+    "ALUP3",
+    "ALUP4"
+   ]
+  },
+  {
+   "empresa": "AMPLA ENERGIA E SERVIÇOS S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CBEE3"
+   ]
+  },
+  {
+   "empresa": "AUREN ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "AURE3"
+   ]
+  },
+  {
+   "empresa": "AUREN PARTICIPAÇÕES S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "AESB3"
+   ]
+  },
+  {
+   "empresa": "AXIA ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "AXIA3",
+    "AXIA5",
+    "AXIA6",
+    "AXIA7"
+   ]
+  },
+  {
+   "empresa": "CENTRAIS ELET BRAS S.A. - ELETROBRAS",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "ELET3",
+    "ELET5",
+    "ELET6"
+   ]
+  },
+  {
+   "empresa": "CENTRAIS ELET DE SANTA CATARINA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CLSC3",
+    "CLSC4"
+   ]
+  },
+  {
+   "empresa": "CIA CELG DE PARTICIPACOES - CELGPAR",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "GPAR3"
+   ]
+  },
+  {
+   "empresa": "CIA ELETRICIDADE EST. DA BAHIA - COELBA",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CEEB3",
+    "CEEB5"
+   ]
+  },
+  {
+   "empresa": "CIA ENERGETICA DE BRASILIA",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CEBR3",
+    "CEBR5",
+    "CEBR6"
+   ]
+  },
+  {
+   "empresa": "CIA ENERGETICA DE MINAS GERAIS - CEMIG",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CMIG3",
+    "CMIG4"
+   ]
+  },
+  {
+   "empresa": "CIA ENERGETICA DO CEARA - COELCE",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "COCE3",
+    "COCE5",
+    "COCE6"
+   ]
+  },
+  {
+   "empresa": "CIA ENERGETICA DO RIO GDE NORTE - COSERN",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CSRN3",
+    "CSRN5",
+    "CSRN6"
+   ]
+  },
+  {
+   "empresa": "CIA ESTADUAL DE DISTRIB ENER ELET-CEEE-D",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CEED3",
+    "CEED4"
+   ]
+  },
+  {
+   "empresa": "CIA PARANAENSE DE ENERGIA - COPEL",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CPLE3",
+    "CPLE5",
+    "CPLE6"
+   ]
+  },
+  {
+   "empresa": "CPFL ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "CPFE3"
+   ]
+  },
+  {
+   "empresa": "ELEKTRO REDES S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "EKTR3",
+    "EKTR4"
+   ]
+  },
+  {
+   "empresa": "ELETROBRÁS PARTICIPAÇÕES S.A. - ELETROPAR",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "LIPR3"
+   ]
+  },
+  {
+   "empresa": "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "EMAE3",
+    "EMAE4"
+   ]
+  },
+  {
+   "empresa": "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "ENMT3",
+    "ENMT4"
+   ]
+  },
+  {
+   "empresa": "ENERGISA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "ENGI11",
+    "ENGI3",
+    "ENGI4"
+   ]
+  },
+  {
+   "empresa": "ENEVA S.A",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "ENEV3"
+   ]
+  },
+  {
+   "empresa": "ENGIE BRASIL ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "EGIE3"
+   ]
+  },
+  {
+   "empresa": "EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "EQMA3B"
+   ]
+  },
+  {
+   "empresa": "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "EQPA3",
+    "EQPA5",
+    "EQPA6",
+    "EQPA7"
+   ]
+  },
+  {
+   "empresa": "EQUATORIAL S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "EQTL3"
+   ]
+  },
+  {
+   "empresa": "ISA ENERGIA BRASIL S.A",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "ISAE3",
+    "ISAE4",
+    "TRPL3",
+    "TRPL4"
+   ]
+  },
+  {
+   "empresa": "LIGHT S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "LIGT3"
+   ]
+  },
+  {
+   "empresa": "NEOENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "NEOE3"
+   ]
+  },
+  {
+   "empresa": "REDE ENERGIA PARTICIPAÇÕES S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "REDE3"
+   ]
+  },
+  {
+   "empresa": "RENOVA ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "RNEW11",
+    "RNEW3",
+    "RNEW4"
+   ]
+  },
+  {
+   "empresa": "RIO ALTO ENERGIAS RENOVÁVEIS S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "RIOS3"
+   ]
+  },
+  {
+   "empresa": "RIO PARANAPANEMA ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "GEPA3",
+    "GEPA4"
+   ]
+  },
+  {
+   "empresa": "SERENA ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "SRNA3"
+   ]
+  },
+  {
+   "empresa": "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Energia Elétrica",
+   "tickers": [
+    "TAEE11",
+    "TAEE3",
+    "TAEE4"
+   ]
+  },
+  {
+   "empresa": "CIA DISTRIB DE GAS DO RIO DE JANEIRO-CEG",
+   "setor": "Utilidade Pública",
+   "segmento": "Gás",
+   "tickers": [
+    "CEGR3"
+   ]
+  },
+  {
+   "empresa": "CIA GAS DE SAO PAULO - COMGAS",
+   "setor": "Utilidade Pública",
+   "segmento": "Gás",
+   "tickers": [
+    "CGAS3",
+    "CGAS5"
+   ]
+  },
+  {
+   "empresa": "COMPASS GAS E ENERGIA S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Gás",
+   "tickers": [
+    "PASS3"
+   ]
+  },
+  {
+   "empresa": "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A",
+   "setor": "Utilidade Pública",
+   "segmento": "Água e Saneamento",
+   "tickers": [
+    "AMBP3"
+   ]
+  },
+  {
+   "empresa": "CIA CATARINENSE DE AGUAS E SANEAM.-CASAN",
+   "setor": "Utilidade Pública",
+   "segmento": "Água e Saneamento",
+   "tickers": [
+    "CASN3",
+    "CASN4"
+   ]
+  },
+  {
+   "empresa": "CIA SANEAMENTO BASICO EST SAO PAULO",
+   "setor": "Utilidade Pública",
+   "segmento": "Água e Saneamento",
+   "tickers": [
+    "SBSP3"
+   ]
+  },
+  {
+   "empresa": "CIA SANEAMENTO DE MINAS GERAIS-COPASA MG",
+   "setor": "Utilidade Pública",
+   "segmento": "Água e Saneamento",
+   "tickers": [
+    "CSMG3"
+   ]
+  },
+  {
+   "empresa": "CIA SANEAMENTO DO PARANA - SANEPAR",
+   "setor": "Utilidade Pública",
+   "segmento": "Água e Saneamento",
+   "tickers": [
+    "SAPR11",
+    "SAPR3",
+    "SAPR4"
+   ]
+  },
+  {
+   "empresa": "ORIZON VALORIZACAO DE RESIDUOS S.A.",
+   "setor": "Utilidade Pública",
+   "segmento": "Água e Saneamento",
+   "tickers": [
+    "ORVR3"
+   ]
+  }
+ ]
+}
