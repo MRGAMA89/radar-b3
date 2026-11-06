@@ -357,6 +357,137 @@
       "variacao_nota": null
     }
   ],
+  "analise": {
+    "resumo_geral": "O dia foi dominado por cautela. Lá fora, o tombo das techs em Nova York, o payroll e a aposta de juros mais altos nos EUA reduzem o apetite por risco. Aqui, a Selic parada em 13,75%, a produção industrial fraca e o fiscal incerto reforçam a leitura de juros altos por mais tempo. Nesse pano de fundo, os balanços do 3T26 mostram dispersão: empresas com foco em rentabilidade e recompra (Assaí) foram melhor recebidas que as com vendas fracas (Renner), e as commodities estão divididas, com minério fraco (Vale) e petróleo volátil.",
+    "temas": [
+      {
+        "id": "t1",
+        "titulo": "Aversão a risco global e juros altos no Brasil",
+        "leitura": "Techs em queda, payroll e aposta de alta de juros nos EUA se somam à Selic em 13,75%, indústria fraca e fiscal incerto. Esse ambiente tende a favorecer cautela e a pesar sobre setores sensíveis a juros e consumo, enquanto exportadoras se beneficiam de um dólar mais alto.",
+        "evento_ids": ["e5", "e6"],
+        "tickers": ["ITUB4", "SUZB3", "LREN3"]
+      },
+      {
+        "id": "t2",
+        "titulo": "Consumo e varejo: resultados dispersos",
+        "leitura": "Assaí cresceu lucro e anunciou recompra; Renner teve queda de lucro, vendas mais fracas e projeção cancelada, mas a ação subiu, sinal de que o mercado esperava algo pior. Grendene e Eztec também recuaram, enquanto Localiza e Allos cresceram.",
+        "evento_ids": ["e2", "e4"],
+        "tickers": ["ASAI3", "LREN3", "GRND3", "EZTC3", "RENT3", "ALOS3"]
+      },
+      {
+        "id": "t3",
+        "titulo": "Commodities: minério fraco, petróleo volátil",
+        "leitura": "A Vale reportou lucro menor com minério mais barato e custos maiores. O petróleo oscila com as negociações EUA-Irã, com alta na quinta e queda forte na semana, o que torna incerta a leitura para petroleiras.",
+        "evento_ids": ["e9", "e7"],
+        "tickers": ["VALE3", "PETR4", "RECV3"]
+      },
+      {
+        "id": "t4",
+        "titulo": "Bancos: resultado sólido, crédito de varejo no radar",
+        "leitura": "O Itaú entregou lucro em linha e rentabilidade alta, mas com inadimplência de 90 dias e custo do crédito subindo no varejo. Juros altos sustentam receitas, e a atividade fraca é o ponto de atenção.",
+        "evento_ids": ["e8", "e6"],
+        "tickers": ["ITUB4"]
+      }
+    ],
+    "papeis": [
+      {
+        "ticker": "ASAI3", "nome": "Assaí",
+        "tese": "Fundamento forte, mas o preço já reagiu.",
+        "noticias": { "convergem": true, "n_fontes": 2, "nota": "NC News e Investing.com concordam: lucro recorrente de cerca de R$ 248 milhões, alta de 55%." },
+        "ri": {
+          "pontos": ["Lucro recorrente de R$ 248 mi (+55%)", "Recompra de até 11 milhões de ações em 12 meses", "Foco em rentabilidade"],
+          "base": "noticia", "leitura": "consistente",
+          "nota": "Números vêm de matérias sobre o balanço, não do release da empresa."
+        },
+        "macro": "Aversão a risco e Selic alta pesam sobre o consumo, mas lucro em alta e recompra sustentam o papel.",
+        "preco": { "ja_reagiu": true, "nota": "Alta de 5,09% citada pelo Investing.com na manhã de 6/11 (base não esclarecida)." },
+        "conclusao": "O cruzamento aponta viés positivo com confiança média no fundamento. Para operações de curto prazo o risco é alto, porque boa parte da notícia parece já estar no preço.",
+        "vies": "alta", "confianca": "media",
+        "o_que_mudaria": "Detalhes do release que contrariem as matérias (margem, endividamento) ou devolução do ganho sem fato novo.",
+        "evento_ids": ["e2"]
+      },
+      {
+        "ticker": "LREN3", "nome": "Lojas Renner",
+        "tese": "Fundamento fraco, mas o mercado esperava pior.",
+        "noticias": { "convergem": true, "n_fontes": 2, "nota": "As fontes concordam nos números (lucro -11,8%, vendas nas mesmas lojas -2,5%, projeção cancelada). O Investing.com destaca que o lucro ficou acima da mediana, o que ajuda a explicar a alta." },
+        "ri": {
+          "pontos": ["Lucro de R$ 246,4 mi (-11,8%); sem extraordinários, R$ 187,1 mi (-24,5%)", "Receita de cerca de R$ 3 bi (-1,6%)", "Vendas nas mesmas lojas -2,5%", "Projeção de receita cancelada"],
+          "base": "noticia", "leitura": "consistente",
+          "nota": "Motivos citados: consumo de moda mais fraco e dificuldades nos serviços financeiros."
+        },
+        "macro": "Consumo de moda fraco e juros altos pesam sobre o setor. O cenário não explica a alta recente do papel.",
+        "preco": { "ja_reagiu": true, "nota": "Alta de 4,62% citada pelo Investing.com na manhã de 6/11 (base não esclarecida), apesar do balanço fraco." },
+        "conclusao": "Os fundamentos apontam para baixa, mas a reação positiva sugere que o pior já estava no preço. Leitura de baixa com confiança baixa.",
+        "vies": "baixa", "confianca": "baixa",
+        "o_que_mudaria": "Sustentação da alta nos próximos pregões ou retomada da projeção de receita.",
+        "evento_ids": ["e2"]
+      },
+      {
+        "ticker": "VALE3", "nome": "Vale",
+        "tese": "Lucro caiu, mas Ebitda e recompra atenuam.",
+        "noticias": { "convergem": true, "n_fontes": 2, "nota": "Investidor10 e Times Brasil concordam na queda do lucro; divergem só no arredondamento (53% x 54%)." },
+        "ri": {
+          "pontos": ["Lucro de US$ 1,25 bi (-54%), abaixo dos cerca de US$ 1,5 bi esperados", "Ebitda proforma de US$ 3,508 bi, acima da mediana (US$ 3,324 bi)", "Minério realizado de cerca de US$ 85,10/t (-10%)", "Custo de produção até o porto de US$ 23,1/t (+12%)", "Dívida líquida de US$ 16,41 bi"],
+          "base": "noticia", "leitura": "consistente",
+          "nota": "Real mais forte, diesel e frete mais caros foram citados como pressão de custo."
+        },
+        "macro": "Minério mais barato e real mais forte pesam sobre a margem. A demanda da China não foi analisada nesta rodada.",
+        "preco": { "ja_reagiu": null, "nota": "Reação da ação ao balanço (divulgado em 29/10) não confirmada nesta rodada." },
+        "conclusao": "O quadro é negativo para lucro e caixa. O Ebitda acima da mediana e a recompra limitam o pessimismo. Para proventos, é um ponto de atenção.",
+        "vies": "baixa", "confianca": "media",
+        "o_que_mudaria": "Alta do minério ou anúncio de proventos acima do esperado.",
+        "evento_ids": ["e9"]
+      },
+      {
+        "ticker": "ITUB4", "nome": "Itaú Unibanco",
+        "tese": "Resultado sólido e previsível; crédito de varejo é o ponto de atenção.",
+        "noticias": { "convergem": null, "n_fontes": 1, "nota": "Só o Seu Dinheiro traz o balanço em detalhe; o Times Brasil apenas antecipou o que observar (crédito, inadimplência, provisões)." },
+        "ri": {
+          "pontos": ["Lucro recorrente de R$ 12,6 bi (+6,7%), em linha com o consenso", "ROAE de 23,6%", "Inadimplência acima de 90 dias de 2,0% (+0,1 p.p.)", "Custo do crédito de R$ 10,4 bi (+10,2%)", "Guidance mantido, exceto a alíquota de impostos"],
+          "base": "noticia", "leitura": "parcial",
+          "nota": "Números de uma única matéria."
+        },
+        "macro": "Selic em 13,75% sustenta receitas de crédito, mas atividade fraca e juros altos pressionam a inadimplência do varejo.",
+        "preco": { "ja_reagiu": null, "nota": "Reação ao balanço (divulgado em 3/11) não confirmada nesta rodada." },
+        "conclusao": "Leitura neutra com confiança média: resultado em linha, rentabilidade alta e guidance mantido, com sinal de atenção na qualidade do crédito.",
+        "vies": "neutro", "confianca": "media",
+        "o_que_mudaria": "Piora da inadimplência acima de 90 dias ou mudança no guidance.",
+        "evento_ids": ["e8", "e6"]
+      },
+      {
+        "ticker": "SUZB3", "nome": "Suzano",
+        "tese": "Crescimento em linha, alavancagem em alta.",
+        "noticias": { "convergem": true, "n_fontes": 2, "nota": "NC News e Investing.com trazem os mesmos números (lucro de cerca de R$ 2,1 bi, +6%; Ebitda de R$ 5,7 bi, +9%). Divergem no tom: um diz levemente abaixo da expectativa, o outro, em linha." },
+        "ri": {
+          "pontos": ["Lucro de cerca de R$ 2,1 bi (+6%)", "Receita líquida de R$ 16,5 bi", "Ebitda ajustado de R$ 5,7 bi (+9%)", "Dívida líquida/Ebitda em dólar de 3,7x (3,3x um ano antes)"],
+          "base": "noticia", "leitura": "parcial",
+          "nota": "A alavancagem subiu e é o principal ponto de atenção."
+        },
+        "macro": "Dólar mais alto (R$ 5,49 na véspera) favorece a receita em reais de uma exportadora, mas a alavancagem em dólar subiu.",
+        "preco": { "ja_reagiu": null, "nota": "Reação da ação ao balanço não confirmada nesta rodada." },
+        "conclusao": "Leitura neutra com confiança baixa: lucro e Ebitda crescem em linha, compensados pela alavancagem maior.",
+        "vies": "neutro", "confianca": "baixa",
+        "o_que_mudaria": "Preço da celulose, câmbio e trajetória da alavancagem.",
+        "evento_ids": ["e1"]
+      },
+      {
+        "ticker": "RECV3", "nome": "PetroReconcavo",
+        "tese": "Lucro forte, mas petróleo em queda e fonte única.",
+        "noticias": { "convergem": null, "n_fontes": 1, "nota": "Só o NC News traz o resultado." },
+        "ri": {
+          "pontos": ["Lucro de R$ 236 mi (+94%)"],
+          "base": "noticia", "leitura": "indisponivel",
+          "nota": "Sem detalhes de Ebitda, produção ou proventos nas fontes lidas."
+        },
+        "macro": "Brent com perda superior a 13% na semana pesa sobre petroleiras, e as negociações EUA-Irã mudam o cenário rapidamente.",
+        "preco": { "ja_reagiu": null, "nota": "Reação da ação ao balanço não confirmada nesta rodada." },
+        "conclusao": "O resultado é forte, mas o cruzamento é frágil: uma fonte, sem dados de RI e com petróleo instável. Viés de alta com confiança baixa.",
+        "vies": "alta", "confianca": "baixa",
+        "o_que_mudaria": "Confirmação do resultado em outra fonte ou no release, e direção do Brent.",
+        "evento_ids": ["e4", "e7"]
+      }
+    ]
+  },
   "frentes": {
     "daytrade": {
       "resumo": "Leitura feita após o fechamento de sexta, para a próxima sessão. O cenário externo (techs em queda, payroll) e o petróleo instável aumentam o risco de qualquer operação de curtíssimo prazo, e boa parte dos gatilhos de balanço já apareceu nos preços.",

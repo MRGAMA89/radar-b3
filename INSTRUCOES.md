@@ -45,6 +45,21 @@ O tipo da rodada vem no prompt da tarefa: `pre_abertura`, `horaria` ou `pos_fech
 
 **Dividendos (`frentes.dividendos`)** — horizonte de anos, foco em renda. Para cada papel: `leitura` (favoravel/neutra/atencao), `proventos` (último provento anunciado: descrição, valor por ação, data com, data de pagamento, quando achados), `dy_estimado_pct` e `payout_pct` (só se uma fonte trouxer o número; senão `null`, nunca calcule por conta própria sem preço), `sustentabilidade` (alta/media/baixa/desconhecida, com base em lucro, geração de caixa, dívida e política de proventos do RI) e `riscos`. Dividendos mudam devagar: nas rodadas horárias mantenha a lista anterior e altere só o que teve notícia nova (balanço, proventos, mudança de política); a rodada `pos_fechamento` revisa tudo. Pesquise "proventos", "JCP", "data com", "dividend yield" e "payout" nas fontes e no RI.
 
+## Análise do cruzamento (`analise`)
+
+É a parte que **liga os pontos**. Além de listar notícias e vieses, cada rodada traz um texto analítico que cruza, para os papéis em destaque, quatro camadas: (1) o que as várias fontes dizem sobre o mesmo fato, (2) os números do relatório de RI, (3) o cenário macro e do setor e (4) a reação do preço. Sem esse cruzamento, a rodada está incompleta.
+
+- **`analise.resumo_geral`**: 3–5 frases dizendo como macro, setor e balanços se conectam hoje (o fio condutor do dia).
+- **`analise.temas`**: 3–5 temas que ligam eventos diferentes (ex.: "juros altos e consumo", "minério fraco"). Cada tema tem `titulo`, `leitura`, `evento_ids` e `tickers`.
+- **`analise.papeis`**: um item para cada papel em destaque (os de viés alta ou baixa em `papeis` e os das duas frentes; mínimo de 5 quando houver material). Cada item tem:
+  - `tese`: uma frase.
+  - `noticias`: `convergem` (true/false/null), `n_fontes` e `nota` (onde as fontes concordam e onde divergem, inclusive em número ou tom).
+  - `ri`: `pontos` (números do relatório), `base` (`release`, `cvm` ou `noticia`, conforme de onde vieram), `leitura` (`consistente`, `divergente`, `parcial` ou `indisponivel`, ou seja, se os números batem com a narrativa das notícias) e `nota`.
+  - `macro`: como o cenário e o setor afetam o papel, sem inventar relações que as fontes não sustentam.
+  - `preco`: `ja_reagiu` (true/false/null) e `nota`.
+  - `conclusao`, `vies` (alta/baixa/neutro/misto), `confianca`, `o_que_mudaria` (o que faria a leitura mudar) e `evento_ids`.
+- Seja explícito sobre incerteza: se só há uma fonte, diga; se o RI veio de matéria e não do release, registre `base: "noticia"`. Não preencha camada que não foi pesquisada.
+
 ## Formato de `dados.json`
 
 ```json
@@ -79,6 +94,24 @@ O tipo da rodada vem no prompt da tarefa: `pre_abertura`, `horaria` ou `pos_fech
       "variacao_pct": null, "variacao_nota": "..."
     }
   ],
+  "analise": {
+    "resumo_geral": "3–5 frases: o fio condutor do dia, ligando macro, setor e balanços",
+    "temas": [
+      { "id": "t1", "titulo": "...", "leitura": "...", "evento_ids": ["e5", "e6"], "tickers": ["ITUB4"] }
+    ],
+    "papeis": [
+      {
+        "ticker": "ASAI3", "nome": "Assaí",
+        "tese": "uma frase",
+        "noticias": { "convergem": true, "n_fontes": 2, "nota": "onde concordam e divergem" },
+        "ri": { "pontos": ["Lucro recorrente R$ 248 mi (+55%)"], "base": "release|cvm|noticia", "leitura": "consistente|divergente|parcial|indisponivel", "nota": "..." },
+        "macro": "como o cenário e o setor afetam o papel",
+        "preco": { "ja_reagiu": true, "nota": "..." },
+        "conclusao": "...", "vies": "alta|baixa|neutro|misto", "confianca": "baixa|media|alta",
+        "o_que_mudaria": "...", "evento_ids": ["e2"]
+      }
+    ]
+  },
   "frentes": {
     "daytrade": {
       "resumo": "2–3 frases: há gatilho bom hoje? qual o risco do dia?",
