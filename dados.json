@@ -1,19 +1,57 @@
 {
   "versao": 2,
-  "atualizado_em": "2026-11-06T17:35:00-03:00",
+  "atualizado_em": "2026-11-06T18:25:00-03:00",
   "data_pregao": "2026-11-06",
-  "rodada": { "tipo": "teste", "rotulo": "Rodada de teste" },
-  "resumo": "Sexta (6/11) abriu perto de 166 mil pontos no Ibovespa, pressionada pelo tombo das techs em Nova York na véspera e pelos dados de emprego dos EUA. No Brasil, a Selic ficou em 13,75% e o fiscal segue no radar. Na temporada de balanços do 3T26: Suzano em linha com alavancagem maior, Renner fraca, Assaí forte. O fechamento de hoje ainda não foi confirmado nesta rodada.",
+  "rodada": {
+    "tipo": "pos_fechamento",
+    "rotulo": "Pós-fechamento"
+  },
+  "resumo": "Sexta (6/11): o Ibovespa fechou, de forma preliminar, em alta de 1,33%, aos 168.404 pontos, num pregão de recuperação depois da mínima de 2026 e do tombo das techs em Nova York na véspera. O payroll dos EUA veio forte (165 mil vagas contra 65 mil esperadas) e aumentou a aposta de nova alta de juros pelo Fed em dezembro, mas a bolsa seguiu Nova York, que fechou mista. O dólar fechou a R$ 5,508 (+0,36%). Destaques do dia: varejo e small caps em alta (SMLL chegou a subir mais de 3,5%), Cosan e CSN com cerca de 10% por venda de ativos e redução de dívida, Sabesp +5,9% após o balanço, Dasa e Ânima disparando com resultados, Petrobras e petroleiras em queda. No cenário interno, a reeleição de Lula, a falta de anúncio da equipe econômica e as revisões para baixo do PIB de 2027 (Bradesco, XP) seguem dominando o humor.",
   "mercado": {
     "ibovespa": {
-      "fechamento_anterior": { "data": "2026-11-05", "pontos": 166191.45, "variacao_pct": -0.82 },
-      "intradia": { "data": "2026-11-06", "hora": "10:05", "pontos": 166005.49, "variacao_pct": -0.11 },
-      "fechamento_hoje": null,
-      "nota": "A Forbes/Reuters trouxe dado preliminar de 5/11 (166.595,71; -0,58%). O valor final, segundo o Investing.com, é 166.191,45."
+      "fechamento_anterior": {
+        "data": "2026-11-05",
+        "pontos": 166191.45,
+        "variacao_pct": -0.82
+      },
+      "intradia": {
+        "data": "2026-11-06",
+        "hora": "10:05",
+        "pontos": 166005.49,
+        "variacao_pct": -0.11
+      },
+      "fechamento_hoje": {
+        "data": "2026-11-06",
+        "pontos": 168404.68,
+        "variacao_pct": 1.33,
+        "maxima_dia": 169073.04,
+        "nota": "Fechamento preliminar (InfoMoney, 17h55). Variação calculada sobre 166.191,45."
+      },
+      "nota": "Dado preliminar de 5/11 da Forbes/Reuters (166.595,71) foi descartado; o final é 166.191,45. O fechamento de 6/11 acima é preliminar."
     },
-    "dolar": { "data": "2026-11-05", "valor": 5.4886, "variacao_pct": 0.68 },
+    "dolar": {
+      "data": "2026-11-06",
+      "valor": 5.508,
+      "variacao_pct": 0.36,
+      "nota": "Dólar comercial no fim do pregão (InfoMoney, 17h04); PTAX de fechamento 5,5013. Mínima R$ 5,481, máxima R$ 5,531. DXY +0,77% (102,32)."
+    },
     "selic": 13.75,
-    "brent": { "data": "2026-11-05", "usd": 98.29, "variacao_pct": 3.88, "nota": "Recuava na manhã de 6/11; semana caminhava para perda superior a 13%." }
+    "brent": {
+      "data": "2026-11-06",
+      "usd": 98.32,
+      "variacao_pct": 0.03,
+      "nota": "Brent dez/26; WTI a US$ 90,83 (+0,34%). A semana acumula queda forte."
+    },
+    "eua": {
+      "data": "2026-11-06",
+      "nota": "Dow -0,44%, S&P 500 +0,35%, Nasdaq +1,06% no dia; na semana -0,94%, -2,67% e -3,37%.",
+      "payroll": {
+        "nao_agricola": 165000,
+        "esperado": 65000,
+        "desemprego_pct": 4.1,
+        "salario_hora_12m_pct": 3.1
+      }
+    }
   },
   "eventos": [
     {
@@ -23,73 +61,147 @@
       "resumo": "A Suzano (SUZB3) lucrou cerca de R$ 2,1 bilhões no 3T26 (+6% em um ano), com Ebitda ajustado de R$ 5,7 bilhões (+9%). Os veículos divergem: um diz que o Ebitda ficou em linha com as estimativas, outro, um pouco abaixo. O ponto de atenção é a dívida líquida/Ebitda em dólar, que subiu para 3,7x (era 3,3x um ano antes).",
       "sentimento": "neutro",
       "tickers": [
-        { "ticker": "SUZB3", "nome": "Suzano", "variacao_pct": null, "variacao_nota": "Reação da ação ao balanço não confirmada nesta rodada." }
+        {
+          "ticker": "SUZB3",
+          "nome": "Suzano",
+          "variacao_pct": 1.3,
+          "variacao_nota": "Alta de 1,30% às 15h11 (InfoMoney, intradia)."
+        }
       ],
       "vies": {
         "direcao": "neutro",
         "justificativa": "Crescimento de lucro e Ebitda em linha com o esperado, compensado pela alavancagem maior. Dólar mais alto ajuda exportadoras como a Suzano.",
-        "riscos": ["Alavancagem em alta", "Reversão do câmbio", "Preço da celulose"],
+        "riscos": [
+          "Alavancagem em alta",
+          "Reversão do câmbio",
+          "Preço da celulose"
+        ],
         "confianca": "baixa"
       },
       "ri": {
         "empresa": "Suzano",
         "trimestre": "3T26",
-        "destaques": ["Lucro líquido ~R$ 2,1 bi (+6%)", "Receita líquida R$ 16,5 bi", "Ebitda ajustado R$ 5,7 bi (+9%)", "Dívida líquida/Ebitda 3,7x"],
+        "destaques": [
+          "Lucro líquido ~R$ 2,1 bi (+6%)",
+          "Receita líquida R$ 16,5 bi",
+          "Ebitda ajustado R$ 5,7 bi (+9%)",
+          "Dívida líquida/Ebitda 3,7x"
+        ],
         "fonte_tipo": "noticia",
         "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/"
       },
       "fontes": [
-        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" },
-        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849",
+          "data": "2026-11-06"
+        }
       ]
     },
     {
       "id": "e2",
       "titulo": "Varejo e consumo: Renner decepciona, Assaí surpreende",
       "categoria": "balanco",
-      "resumo": "A Renner (LREN3) teve lucro de R$ 246,4 milhões (-11,8%); sem efeitos extraordinários, a queda foi de 24,5%. As vendas nas mesmas lojas caíram 2,5% e a projeção de receita foi cancelada. O Assaí (ASAI3) teve lucro recorrente de R$ 248 milhões (+55%) e aprovou recompra de até 11 milhões de ações. Apesar do resultado fraco, a Renner aparece entre as altas citadas na manhã de 6/11, sinal de que o mercado esperava algo pior.",
+      "resumo": "A Renner (LREN3) teve lucro de R$ 246,4 milhões (-11,8%); sem efeitos extraordinários, a queda foi de 24,5%. As vendas nas mesmas lojas caíram 2,5% e a projeção de receita foi cancelada. O Assaí (ASAI3) teve lucro recorrente de R$ 248 milhões (+55%) e aprovou recompra de até 11 milhões de ações. Apesar do resultado fraco, a Renner aparece entre as altas citadas na manhã de 6/11, sinal de que o mercado esperava algo pior. Na sexta, as varejistas de vestuário subiram em bloco (CEAB3 +9%, RIAA3, AZZA3 e LREN3 +4,3%), apesar de a XP ter classificado o balanço da Renner como fraco, com a empresa descontinuando a projeção de receita.",
       "sentimento": "misto",
       "tickers": [
-        { "ticker": "LREN3", "nome": "Lojas Renner", "variacao_pct": 4.62, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (quinta/pré-mercado; base não esclarecida)." },
-        { "ticker": "ASAI3", "nome": "Assaí", "variacao_pct": 5.09, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (quinta/pré-mercado; base não esclarecida)." }
+        {
+          "ticker": "LREN3",
+          "nome": "Lojas Renner",
+          "variacao_pct": 4.3,
+          "variacao_nota": "Alta de 4,30% às 17h48 (InfoMoney, preliminar); balanço fraco segundo a XP, mas a ação subiu com o varejo."
+        },
+        {
+          "ticker": "ASAI3",
+          "nome": "Assaí",
+          "variacao_pct": 5.44,
+          "variacao_nota": "Alta de 5,44% às 14h25 (InfoMoney, intradia)."
+        }
       ],
       "vies": {
         "direcao": "misto",
         "justificativa": "Fundamentos opostos: Assaí com lucro forte e recompra; Renner com queda de lucro, vendas mais fracas e sem projeção. A Renner já subiu apesar do balanço, o que reduz o espaço para alta.",
-        "riscos": ["Consumo de moda fraco", "Serviços financeiros da Renner", "Alta já realizada nos papéis"],
+        "riscos": [
+          "Consumo de moda fraco",
+          "Serviços financeiros da Renner",
+          "Alta já realizada nos papéis"
+        ],
         "confianca": "media"
       },
       "ri": null,
       "fontes": [
-        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" },
-        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+        {
+          "nome": "InfoMoney (Ibovespa ao vivo)",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-06112026/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849",
+          "data": "2026-11-06"
+        }
       ]
     },
     {
       "id": "e3",
       "titulo": "Sabesp: R$ 2,6 bi em proventos, mas lucro ajustado cai 13,8%",
       "categoria": "balanco",
-      "resumo": "A Sabesp (SBSP3) aprovou R$ 2,6 bilhões em proventos. O lucro ajustado foi de R$ 1,107 bilhão (-13,8%), mesmo com Ebitda 15,2% maior. A ação aparece entre as maiores altas citadas na manhã de 6/11.",
+      "resumo": "A Sabesp (SBSP3) aprovou R$ 2,6 bilhões em proventos. O lucro ajustado foi de R$ 1,107 bilhão (-13,8%), mesmo com Ebitda 15,2% maior. A ação aparece entre as maiores altas citadas na manhã de 6/11. A ação reagiu positivamente: +5,9% no dia, porque despesas e custos vieram abaixo do esperado e compensaram receita mais fraca (InfoMoney).",
       "sentimento": "misto",
       "tickers": [
-        { "ticker": "SBSP3", "nome": "Sabesp", "variacao_pct": 6.35, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (quinta/pré-mercado; base não esclarecida)." }
+        {
+          "ticker": "SBSP3",
+          "nome": "Sabesp",
+          "variacao_pct": 5.87,
+          "variacao_nota": "Alta de 5,87% às 16h19 (InfoMoney, intradia), após o balanço."
+        }
       ],
       "vies": {
         "direcao": "neutro",
         "justificativa": "Proventos elevados sustentam a ação, mas o lucro menor e a alta já realizada pedem cautela.",
-        "riscos": ["Lucro em queda", "Alta recente já no preço"],
+        "riscos": [
+          "Lucro em queda",
+          "Alta recente já no preço"
+        ],
         "confianca": "baixa"
       },
       "ri": {
         "empresa": "Sabesp",
         "trimestre": "3T26",
-        "destaques": ["Proventos de R$ 2,6 bi aprovados", "Lucro ajustado R$ 1,107 bi (-13,8%)", "Ebitda +15,2%"],
+        "destaques": [
+          "Proventos de R$ 2,6 bi aprovados",
+          "Lucro ajustado R$ 1,107 bi (-13,8%)",
+          "Ebitda +15,2%"
+        ],
         "fonte_tipo": "noticia",
         "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/"
       },
       "fontes": [
-        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" },
-        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/mercados/acoes-da-sabesp-sbsp3-sobem-apos-balanco-o-que-agradou-no-3o-tri/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849",
+          "data": "2026-11-06"
+        }
       ]
     },
     {
@@ -99,40 +211,90 @@
       "resumo": "Localiza (RENT3) lucrou cerca de R$ 1,1 bilhão (+29%), dentro do esperado. Allos (ALOS3) mais que dobrou o lucro, para R$ 291 milhões, acima das projeções. PetroReconcavo (RECV3) teve lucro de R$ 236 milhões (+94%) e Dasa (DASA3), R$ 173 milhões (+79%). Do lado fraco, o lucro ajustado da Grendene (GRND3) caiu 18,2% e o da Eztec (EZTC3) recuou 53%.",
       "sentimento": "misto",
       "tickers": [
-        { "ticker": "RENT3", "nome": "Localiza", "variacao_pct": null, "variacao_nota": null },
-        { "ticker": "ALOS3", "nome": "Allos", "variacao_pct": null, "variacao_nota": null },
-        { "ticker": "RECV3", "nome": "PetroReconcavo", "variacao_pct": null, "variacao_nota": null },
-        { "ticker": "GRND3", "nome": "Grendene", "variacao_pct": null, "variacao_nota": null },
-        { "ticker": "EZTC3", "nome": "Eztec", "variacao_pct": null, "variacao_nota": null }
+        {
+          "ticker": "RENT3",
+          "nome": "Localiza",
+          "variacao_pct": 3.23,
+          "variacao_nota": "Alta de 3,23% às 16h19 (InfoMoney); ação mais negociada do pregão naquele momento."
+        },
+        {
+          "ticker": "ALOS3",
+          "nome": "Allos",
+          "variacao_pct": 5.83,
+          "variacao_nota": "Alta de 5,83% às 17h51 (InfoMoney, preliminar)."
+        },
+        {
+          "ticker": "RECV3",
+          "nome": "PetroReconcavo",
+          "variacao_pct": 2.36,
+          "variacao_nota": "Alta de 2,36% às 17h44 (InfoMoney, preliminar)."
+        },
+        {
+          "ticker": "GRND3",
+          "nome": "Grendene",
+          "variacao_pct": null,
+          "variacao_nota": null
+        },
+        {
+          "ticker": "EZTC3",
+          "nome": "Eztec",
+          "variacao_pct": null,
+          "variacao_nota": null
+        }
       ],
       "vies": {
         "direcao": "misto",
         "justificativa": "Resultados acima do esperado em Allos e PetroReconcavo pesam a favor; Grendene e Eztec com queda de lucro pesam contra. Só uma fonte cobre o conjunto.",
-        "riscos": ["Reação das ações ainda desconhecida", "Dependência de uma única fonte", "Petróleo em queda na semana (para RECV3)"],
+        "riscos": [
+          "Reação das ações ainda desconhecida",
+          "Dependência de uma única fonte",
+          "Petróleo em queda na semana (para RECV3)"
+        ],
         "confianca": "baixa"
       },
       "ri": null,
       "fontes": [
-        { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" }
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/",
+          "data": "2026-11-06"
+        }
       ]
     },
     {
       "id": "e5",
-      "titulo": "Techs derretem em Nova York e Ásia sente; payroll dos EUA no radar",
+      "titulo": "Payroll forte nos EUA aumenta aposta de alta de juros; techs oscilam",
       "categoria": "macro",
-      "resumo": "Na quinta, o Nasdaq caiu 5,52% e entrou em correção; S&P 500 e Dow Jones recuaram 4,36% e 3,44%. A venda refletiu dúvidas sobre o retorno dos investimentos em IA e o receio de mais fiscalização de data centers após a vitória democrata nas eleições legislativas. Na Ásia, o Kospi acionou o circuit breaker. Na sexta, saía o payroll de outubro (mediana esperada: 60 mil vagas) e o mercado dava cerca de 67% de chance de alta de juros pelo Fed em dezembro.",
+      "resumo": "O relatório de emprego dos EUA mostrou 165 mil vagas em outubro (esperado: 65 mil), desemprego de 4,1% e salários subindo 3,1% em 12 meses. Os contratos futuros passaram a precificar cerca de 80% de chance de nova alta de juros do Fed em dezembro, e o índice do dólar (DXY) subiu mais de 0,7%. Depois do tombo das techs na quinta, Nova York fechou misto na sexta (Nasdaq +1,06%, S&P 500 +0,35%, Dow -0,44%), mas a semana foi negativa. A bolsa brasileira seguiu a recuperação e subiu, apesar do dado.",
       "sentimento": "negativo",
       "tickers": [],
       "vies": {
         "direcao": "negativo",
         "justificativa": "Aversão a risco global costuma pressionar bolsa e câmbio de emergentes. Um payroll forte reforçaria a aposta de juros mais altos nos EUA.",
-        "riscos": ["Dado de emprego forte ou fraco demais", "Contágio das techs para outros setores", "Possível rebote técnico"],
+        "riscos": [
+          "Dado de emprego forte ou fraco demais",
+          "Contágio das techs para outros setores",
+          "Possível rebote técnico"
+        ],
         "confianca": "media"
       },
       "ri": null,
       "fontes": [
-        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" },
-        { "nome": "Forbes Brasil (Reuters)", "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/", "data": "2026-11-05" }
+        {
+          "nome": "InfoMoney (Ibovespa ao vivo)",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-06112026/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Forbes Brasil (Reuters)",
+          "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/",
+          "data": "2026-11-05"
+        }
       ]
     },
     {
@@ -142,41 +304,89 @@
       "resumo": "O Banco Central interrompeu o ciclo de cortes e manteve a Selic em 13,75%. A produção industrial caiu 0,8% em setembro, mais que o esperado (-0,2%). O mercado segue preocupado com o fiscal após a reeleição de Lula: o ministro da Fazenda disse que as medidas ficam para a segunda quinzena de novembro, e Lula deve falar no domingo. Das 40 instituições consultadas, 39 esperam manutenção da Selic em dezembro.",
       "sentimento": "negativo",
       "tickers": [
-        { "ticker": "ITUB4", "nome": "Itaú Unibanco", "variacao_pct": null, "variacao_nota": null },
-        { "ticker": "BBAS3", "nome": "Banco do Brasil", "variacao_pct": 3.88, "variacao_nota": "Alta citada pelo Investing.com na manhã de 6/11 (base não esclarecida); a matéria não liga a alta a este evento." }
+        {
+          "ticker": "ITUB4",
+          "nome": "Itaú Unibanco",
+          "variacao_pct": 1.63,
+          "variacao_nota": "Alta de 1,63% às 16h19 (InfoMoney)."
+        },
+        {
+          "ticker": "BBAS3",
+          "nome": "Banco do Brasil",
+          "variacao_pct": 3.88,
+          "variacao_nota": "Alta citada pelo Investing.com na manhã de 6/11 (base não esclarecida); a matéria não liga a alta a este evento."
+        }
       ],
       "vies": {
         "direcao": "negativo",
         "justificativa": "Juros altos por mais tempo e incerteza fiscal pesam sobre setores sensíveis a juros e sobre o prêmio de risco. Bancos tendem a lidar melhor com juros altos, mas sofrem com crédito e atividade fracos.",
-        "riscos": ["Anúncio de medidas fiscais melhor ou pior que o esperado", "Dados de inflação", "Efeito misto sobre bancos"],
+        "riscos": [
+          "Anúncio de medidas fiscais melhor ou pior que o esperado",
+          "Dados de inflação",
+          "Efeito misto sobre bancos"
+        ],
         "confianca": "media"
       },
       "ri": null,
       "fontes": [
-        { "nome": "Forbes Brasil (Reuters)", "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/", "data": "2026-11-05" },
-        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" }
+        {
+          "nome": "Forbes Brasil (Reuters)",
+          "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/",
+          "data": "2026-11-05"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849",
+          "data": "2026-11-06"
+        }
       ]
     },
     {
       "id": "e7",
       "titulo": "Petróleo sobe com ataques no Oriente Médio, mas semana é de queda forte",
       "categoria": "commodities",
-      "resumo": "O Brent subiu 3,88% na quinta, a US$ 98,29, após novos ataques a navios na região. Na manhã de sexta, o petróleo recuava, e Brent e WTI caminhavam para perdas acima de 13% na semana, com as negociações entre EUA e Irã no radar. A Petrobras PN recuou 1,33% na quinta.",
+      "resumo": "O Brent subiu 3,88% na quinta, a US$ 98,29, após novos ataques a navios na região. Na manhã de sexta, o petróleo recuava, e Brent e WTI caminhavam para perdas acima de 13% na semana, com as negociações entre EUA e Irã no radar. A Petrobras PN recuou 1,33% na quinta. No fechamento, o Brent (dez) ficou em US$ 98,32 (+0,03%) e o WTI em US$ 90,83 (+0,34%); Petrobras (PETR4 -1,5%) e Prio (PRIO3 -1,75%) recuaram e lideram as perdas da semana (cerca de -14% e -15%).",
       "sentimento": "misto",
       "tickers": [
-        { "ticker": "PETR4", "nome": "Petrobras", "variacao_pct": -1.33, "variacao_nota": "Queda citada pelo Investing.com para a quinta (5/11)." },
-        { "ticker": "RECV3", "nome": "PetroReconcavo", "variacao_pct": null, "variacao_nota": null }
+        {
+          "ticker": "PETR4",
+          "nome": "Petrobras",
+          "variacao_pct": -1.5,
+          "variacao_nota": "Queda de 1,50% às 17h49 (InfoMoney, preliminar)."
+        },
+        {
+          "ticker": "RECV3",
+          "nome": "PetroReconcavo",
+          "variacao_pct": 2.36,
+          "variacao_nota": "Alta de 2,36% às 17h44 (InfoMoney, preliminar)."
+        }
       ],
       "vies": {
         "direcao": "misto",
         "justificativa": "A volatilidade do Brent depende das negociações EUA-Irã: avanço derruba o preço (negativo para petroleiras), nova escalada o eleva.",
-        "riscos": ["Manchetes geopolíticas mudam o preço em minutos", "Dados sobre a oferta de petróleo"],
+        "riscos": [
+          "Manchetes geopolíticas mudam o preço em minutos",
+          "Dados sobre a oferta de petróleo"
+        ],
         "confianca": "baixa"
       },
       "ri": null,
       "fontes": [
-        { "nome": "Investing.com", "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849", "data": "2026-11-06" },
-        { "nome": "Forbes Brasil (Reuters)", "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/", "data": "2026-11-05" }
+        {
+          "nome": "InfoMoney (Ibovespa ao vivo)",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-06112026/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-payroll-queda-das-techs-e-fiscal-no-radar-2118849",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "Forbes Brasil (Reuters)",
+          "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-fecha-em-queda-pressionado-por-exterior-com-balancos-e-selic-no-radar/",
+          "data": "2026-11-05"
+        }
       ]
     },
     {
@@ -186,24 +396,46 @@
       "resumo": "O Itaú (ITUB4) teve lucro recorrente de R$ 12,6 bilhões no 3T26 (+6,7% em um ano), em linha com o consenso, e ROAE de 23,6%. A inadimplência acima de 90 dias subiu 0,1 p.p., para 2%, e o custo do crédito cresceu 10,2% em um ano, pressionado pelo varejo de pessoas físicas. O guidance foi mantido, exceto a alíquota efetiva de impostos, que foi reduzida.",
       "sentimento": "neutro",
       "tickers": [
-        { "ticker": "ITUB4", "nome": "Itaú Unibanco", "variacao_pct": null, "variacao_nota": null }
+        {
+          "ticker": "ITUB4",
+          "nome": "Itaú Unibanco",
+          "variacao_pct": 1.63,
+          "variacao_nota": "Alta de 1,63% às 16h19 (InfoMoney)."
+        }
       ],
       "vies": {
         "direcao": "neutro",
         "justificativa": "Resultado em linha, rentabilidade alta e guidance mantido, com sinal de atenção na qualidade do crédito do varejo.",
-        "riscos": ["Inadimplência de pessoa física", "Selic alta por mais tempo", "Atividade fraca"],
+        "riscos": [
+          "Inadimplência de pessoa física",
+          "Selic alta por mais tempo",
+          "Atividade fraca"
+        ],
         "confianca": "media"
       },
       "ri": {
         "empresa": "Itaú Unibanco",
         "trimestre": "3T26",
-        "destaques": ["Lucro recorrente R$ 12,6 bi (+6,7%)", "ROAE 23,6%", "Inadimplência 90d: 2,0%", "Carteira ampliada R$ 1,54 tri (+10,9%)"],
+        "destaques": [
+          "Lucro recorrente R$ 12,6 bi (+6,7%)",
+          "ROAE 23,6%",
+          "Inadimplência 90d: 2,0%",
+          "Carteira ampliada R$ 1,54 tri (+10,9%)"
+        ],
         "fonte_tipo": "noticia",
         "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/"
       },
       "fontes": [
-        { "nome": "Seu Dinheiro", "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/", "data": "2026-11-03" },
-        { "nome": "Times Brasil (calendário de balanços)", "url": "https://timesbrasil.com.br/empresas-e-negocios/balancos-do-3t26-itau-prio-suzano-e-vivara-divulgam-resultados-nesta-semana-veja-lista-completa/", "data": "2026-11-02" }
+        {
+          "nome": "Seu Dinheiro",
+          "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/",
+          "data": "2026-11-03"
+        },
+        {
+          "nome": "Times Brasil (calendário de balanços)",
+          "url": "https://timesbrasil.com.br/empresas-e-negocios/balancos-do-3t26-itau-prio-suzano-e-vivara-divulgam-resultados-nesta-semana-veja-lista-completa/",
+          "data": "2026-11-02"
+        }
       ]
     },
     {
@@ -213,24 +445,167 @@
       "resumo": "A Vale (VALE3) lucrou US$ 1,25 bilhão no 3T26 (-54% em um ano), abaixo dos cerca de US$ 1,5 bilhão esperados. O Ebitda proforma de US$ 3,5 bilhões ficou um pouco acima da mediana de analistas. O preço realizado do minério caiu 10%, para cerca de US$ 85 por tonelada, e o custo de produção até o porto subiu 12%. Real mais forte, diesel e frete mais caros também pesaram. Os veículos arredondam a queda em 53% ou 54%.",
       "sentimento": "negativo",
       "tickers": [
-        { "ticker": "VALE3", "nome": "Vale", "variacao_pct": null, "variacao_nota": null }
+        {
+          "ticker": "VALE3",
+          "nome": "Vale",
+          "variacao_pct": 1.9,
+          "variacao_nota": "Alta de 1,90% às 17h15 (InfoMoney)."
+        }
       ],
       "vies": {
         "direcao": "negativo",
         "justificativa": "Lucro abaixo do esperado, minério e margens mais fracos e custo maior. O Ebitda acima da mediana e a menção do CFO a oportunidades de recompra atenuam parte do quadro.",
-        "riscos": ["Preço do minério", "Demanda da China", "Possível recompra ou proventos como suporte"],
+        "riscos": [
+          "Preço do minério",
+          "Demanda da China",
+          "Possível recompra ou proventos como suporte"
+        ],
         "confianca": "media"
       },
       "ri": {
         "empresa": "Vale",
         "trimestre": "3T26",
-        "destaques": ["Lucro US$ 1,25 bi (-54%)", "Ebitda proforma US$ 3,508 bi (-20%)", "Minério realizado ~US$ 85,10/t (-10%)", "Dívida líquida US$ 16,41 bi"],
+        "destaques": [
+          "Lucro US$ 1,25 bi (-54%)",
+          "Ebitda proforma US$ 3,508 bi (-20%)",
+          "Minério realizado ~US$ 85,10/t (-10%)",
+          "Dívida líquida US$ 16,41 bi"
+        ],
         "fonte_tipo": "noticia",
         "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/"
       },
       "fontes": [
-        { "nome": "Investidor10", "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/", "data": "2026-10-29" },
-        { "nome": "Times Brasil (calendário de balanços)", "url": "https://timesbrasil.com.br/empresas-e-negocios/balancos-do-3t26-itau-prio-suzano-e-vivara-divulgam-resultados-nesta-semana-veja-lista-completa/", "data": "2026-11-02" }
+        {
+          "nome": "Investidor10",
+          "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/",
+          "data": "2026-10-29"
+        },
+        {
+          "nome": "Times Brasil (calendário de balanços)",
+          "url": "https://timesbrasil.com.br/empresas-e-negocios/balancos-do-3t26-itau-prio-suzano-e-vivara-divulgam-resultados-nesta-semana-veja-lista-completa/",
+          "data": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "titulo": "Cosan e CSN disparam cerca de 10% com venda de ativos e desalavancagem",
+      "categoria": "setor",
+      "resumo": "A Cosan (CSAN3) subiu cerca de 10% e acumula quase 20% em dois dias. O Valor/Pipeline informou que a empresa negocia vender 25% da Compass (dona da Comgás) a investidores de Abu Dhabi e sonda interessados na Moove; a Cosan não comentou. Na véspera, o UBS BB elevou a recomendação para compra depois de uma queda de cerca de 40%. A CSN (CSNA3) também subiu cerca de 10% depois de dar um passo para vender o negócio de cimentos por R$ 12,7 bilhões, o que reduziria a dívida.",
+      "sentimento": "positivo",
+      "tickers": [
+        {
+          "ticker": "CSAN3",
+          "nome": "Cosan",
+          "variacao_pct": 10.0,
+          "variacao_nota": "Alta de 10,00% às 17h51 (InfoMoney, preliminar)."
+        },
+        {
+          "ticker": "CSNA3",
+          "nome": "CSN",
+          "variacao_pct": 10.12,
+          "variacao_nota": "Alta de 10,12% às 16h31 (InfoMoney, intradia)."
+        }
+      ],
+      "vies": {
+        "direcao": "positivo",
+        "justificativa": "Notícias de venda de ativos atacam a principal preocupação dos investidores, a dívida. Os negócios ainda são reportados como negociações, sem confirmação oficial.",
+        "riscos": [
+          "Negociação pode não se concretizar",
+          "Preço da venda abaixo do esperado",
+          "As ações já subiram forte em poucos dias"
+        ],
+        "confianca": "baixa"
+      },
+      "ri": null,
+      "fontes": [
+        {
+          "nome": "Seu Dinheiro",
+          "url": "https://www.seudinheiro.com/2026/empresas/cosan-csan-dispara-quase-20-em-dois-dias-com-aposta-em-desalavancagem-mercado-repercute-possivel-venda-de-fatia-da-compass-pads/",
+          "data": "2026-11-06"
+        },
+        {
+          "nome": "InfoMoney (Ibovespa ao vivo)",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-06112026/",
+          "data": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "titulo": "Dasa e Ânima disparam após balanços; Vivara cai",
+      "categoria": "balanco",
+      "resumo": "A Dasa (DASA3) teve lucro de R$ 173 milhões no 3T26 (+78,7%) e geração de caixa acima das expectativas; a ação saltou cerca de 20% durante o pregão. A Ânima (ANIM3) subiu cerca de 10% com melhora operacional. Na contramão, a Vivara (VIVA3) caiu mais de 8% na abertura depois de lucro de R$ 114,8 milhões (-38,7%). Fleury (FLRY3) informou lucro 42,9% maior, mas a ação figurou entre as maiores baixas da manhã.",
+      "sentimento": "positivo",
+      "tickers": [
+        {
+          "ticker": "DASA3",
+          "nome": "Dasa",
+          "variacao_pct": 20.0,
+          "variacao_nota": "Salto de cerca de 20% às 13h40 (InfoMoney, intradia)."
+        },
+        {
+          "ticker": "ANIM3",
+          "nome": "Ânima",
+          "variacao_pct": 10.0,
+          "variacao_nota": "Alta de cerca de 10% às 14h00 (InfoMoney, intradia)."
+        },
+        {
+          "ticker": "VIVA3",
+          "nome": "Vivara",
+          "variacao_pct": -1.98,
+          "variacao_nota": "Queda de 1,98% às 13h55, depois de cair mais de 8% na abertura (InfoMoney, intradia)."
+        }
+      ],
+      "vies": {
+        "direcao": "positivo",
+        "justificativa": "Para Dasa e Ânima, a geração de caixa e a melhora operacional agradaram. Para Vivara, o lucro menor pesou.",
+        "riscos": [
+          "Altas fortes em um dia podem devolver parte do ganho",
+          "Juros altos pesam em saúde e educação"
+        ],
+        "confianca": "media"
+      },
+      "ri": null,
+      "fontes": [
+        {
+          "nome": "InfoMoney (Ibovespa ao vivo)",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-06112026/",
+          "data": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "titulo": "Bradesco e XP cortam PIB de 2027; incerteza fiscal após a reeleição de Lula",
+      "categoria": "juros_fiscal",
+      "resumo": "O Bradesco reduziu a projeção de PIB de 2027 de 1,0% para 0,4% e elevou a de inflação de 2027 de 4,1% para 5,3%. A XP cortou o PIB de 2027 para 0,3%. Lula disse que o governo tem responsabilidade fiscal, mas minimizou a dívida pública, e a equipe econômica e as medidas de ajuste ainda não foram anunciadas. Mesmo assim, o Ibovespa subiu cerca de 1,3% em um pregão de recuperação, com volume 30% a 40% abaixo da média, segundo uma mesa de renda variável.",
+      "sentimento": "negativo",
+      "tickers": [
+        {
+          "ticker": "BBDC4",
+          "nome": "Bradesco",
+          "variacao_pct": 2.9,
+          "variacao_nota": "Alta de 2,90% às 14h58 (InfoMoney, intradia)."
+        }
+      ],
+      "vies": {
+        "direcao": "neutro",
+        "justificativa": "O cenário macro piorou nas projeções, mas o preço já reflete boa parte disso: o Ibovespa tocou a mínima de 2026 e reagiu. O anúncio da equipe econômica é o próximo gatilho.",
+        "riscos": [
+          "Anúncio de medidas fiscais decepcionante",
+          "Selic alta por mais tempo",
+          "Dólar pressionado pelo Fed"
+        ],
+        "confianca": "baixa"
+      },
+      "ri": null,
+      "fontes": [
+        {
+          "nome": "InfoMoney (Ibovespa ao vivo)",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-06112026/",
+          "data": "2026-11-06"
+        }
       ]
     }
   ],
@@ -241,10 +616,15 @@
       "vies": "alta",
       "confianca": "media",
       "justificativa": "Lucro recorrente cresceu cerca de 55% e a empresa aprovou recompra de até 11 milhões de ações em 12 meses.",
-      "riscos": ["A ação já subiu forte na manhã de 6/11", "Consumo fraco"],
-      "evento_ids": ["e2"],
-      "variacao_pct": 5.09,
-      "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+      "riscos": [
+        "A ação já subiu forte na manhã de 6/11",
+        "Consumo fraco"
+      ],
+      "evento_ids": [
+        "e2"
+      ],
+      "variacao_pct": 5.44,
+      "variacao_nota": "Alta de 5,44% às 14h25 (InfoMoney, intradia)."
     },
     {
       "ticker": "ALOS3",
@@ -252,10 +632,15 @@
       "vies": "alta",
       "confianca": "baixa",
       "justificativa": "Lucro mais que dobrou, para R$ 291 milhões, acima das projeções. Só uma fonte.",
-      "riscos": ["Reação da ação ainda desconhecida", "Uma única fonte"],
-      "evento_ids": ["e4"],
-      "variacao_pct": null,
-      "variacao_nota": null
+      "riscos": [
+        "Reação da ação ainda desconhecida",
+        "Uma única fonte"
+      ],
+      "evento_ids": [
+        "e4"
+      ],
+      "variacao_pct": 5.83,
+      "variacao_nota": "Alta de 5,83% às 17h51 (InfoMoney, preliminar)."
     },
     {
       "ticker": "RECV3",
@@ -263,10 +648,16 @@
       "vies": "alta",
       "confianca": "baixa",
       "justificativa": "Lucro de R$ 236 milhões (+94%) no 3T26. O petróleo em forte queda na semana é um contrapeso.",
-      "riscos": ["Brent em queda", "Uma única fonte"],
-      "evento_ids": ["e4", "e7"],
-      "variacao_pct": null,
-      "variacao_nota": null
+      "riscos": [
+        "Brent em queda",
+        "Uma única fonte"
+      ],
+      "evento_ids": [
+        "e4",
+        "e7"
+      ],
+      "variacao_pct": 2.36,
+      "variacao_nota": "Alta de 2,36% às 17h44 (InfoMoney, preliminar)."
     },
     {
       "ticker": "LREN3",
@@ -274,10 +665,15 @@
       "vies": "baixa",
       "confianca": "baixa",
       "justificativa": "Lucro caiu 11,8% (24,5% sem extraordinários), vendas nas mesmas lojas recuaram 2,5% e a projeção de receita foi cancelada. A ação, porém, subiu na manhã de 6/11, o que reduz a confiança no sinal.",
-      "riscos": ["Mercado pode ter achado o resultado menos ruim que o temido", "Rebote de papéis muito vendidos"],
-      "evento_ids": ["e2"],
-      "variacao_pct": 4.62,
-      "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+      "riscos": [
+        "Mercado pode ter achado o resultado menos ruim que o temido",
+        "Rebote de papéis muito vendidos"
+      ],
+      "evento_ids": [
+        "e2"
+      ],
+      "variacao_pct": 4.3,
+      "variacao_nota": "Alta de 4,30% às 17h48 (InfoMoney, preliminar); balanço fraco segundo a XP, mas a ação subiu com o varejo."
     },
     {
       "ticker": "VALE3",
@@ -285,10 +681,16 @@
       "vies": "baixa",
       "confianca": "media",
       "justificativa": "Lucro 54% menor e abaixo do esperado, com minério mais barato e custo maior.",
-      "riscos": ["Ebitda acima da mediana", "Recompra/proventos como suporte", "Rebote do minério"],
-      "evento_ids": ["e9"],
-      "variacao_pct": null,
-      "variacao_nota": null
+      "riscos": [
+        "Ebitda acima da mediana",
+        "Recompra/proventos como suporte",
+        "Rebote do minério"
+      ],
+      "evento_ids": [
+        "e9"
+      ],
+      "variacao_pct": 1.9,
+      "variacao_nota": "Alta de 1,90% às 17h15 (InfoMoney)."
     },
     {
       "ticker": "EZTC3",
@@ -296,8 +698,13 @@
       "vies": "baixa",
       "confianca": "baixa",
       "justificativa": "Lucro trimestral recuou 53%. Faltam detalhes e há uma única fonte.",
-      "riscos": ["Pouca informação", "Efeitos pontuais não esclarecidos"],
-      "evento_ids": ["e4"],
+      "riscos": [
+        "Pouca informação",
+        "Efeitos pontuais não esclarecidos"
+      ],
+      "evento_ids": [
+        "e4"
+      ],
       "variacao_pct": null,
       "variacao_nota": null
     },
@@ -307,8 +714,12 @@
       "vies": "baixa",
       "confianca": "baixa",
       "justificativa": "Lucro ajustado caiu 18,2%, para cerca de R$ 151 milhões. Só uma fonte.",
-      "riscos": ["Reação da ação ainda desconhecida"],
-      "evento_ids": ["e4"],
+      "riscos": [
+        "Reação da ação ainda desconhecida"
+      ],
+      "evento_ids": [
+        "e4"
+      ],
       "variacao_pct": null,
       "variacao_nota": null
     },
@@ -318,10 +729,16 @@
       "vies": "neutro",
       "confianca": "baixa",
       "justificativa": "Lucro e Ebitda cresceram e ficaram em linha, mas a alavancagem subiu para 3,7x.",
-      "riscos": ["Alavancagem", "Câmbio", "Preço da celulose"],
-      "evento_ids": ["e1"],
-      "variacao_pct": null,
-      "variacao_nota": null
+      "riscos": [
+        "Alavancagem",
+        "Câmbio",
+        "Preço da celulose"
+      ],
+      "evento_ids": [
+        "e1"
+      ],
+      "variacao_pct": 1.3,
+      "variacao_nota": "Alta de 1,30% às 15h11 (InfoMoney, intradia)."
     },
     {
       "ticker": "ITUB4",
@@ -329,10 +746,16 @@
       "vies": "neutro",
       "confianca": "media",
       "justificativa": "Lucro em linha com o consenso e guidance mantido; inadimplência de 90 dias e custo do crédito em alta no varejo.",
-      "riscos": ["Crédito pessoa física", "Selic alta"],
-      "evento_ids": ["e8", "e6"],
-      "variacao_pct": null,
-      "variacao_nota": null
+      "riscos": [
+        "Crédito pessoa física",
+        "Selic alta"
+      ],
+      "evento_ids": [
+        "e8",
+        "e6"
+      ],
+      "variacao_pct": 1.63,
+      "variacao_nota": "Alta de 1,63% às 16h19 (InfoMoney)."
     },
     {
       "ticker": "SBSP3",
@@ -340,10 +763,15 @@
       "vies": "neutro",
       "confianca": "baixa",
       "justificativa": "Proventos de R$ 2,6 bilhões contra lucro ajustado 13,8% menor; ação já subiu forte.",
-      "riscos": ["Alta já realizada", "Lucro em queda"],
-      "evento_ids": ["e3"],
-      "variacao_pct": 6.35,
-      "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+      "riscos": [
+        "Alta já realizada",
+        "Lucro em queda"
+      ],
+      "evento_ids": [
+        "e3"
+      ],
+      "variacao_pct": 5.87,
+      "variacao_nota": "Alta de 5,87% às 16h19 (InfoMoney, intradia), após o balanço."
     },
     {
       "ticker": "RENT3",
@@ -351,194 +779,529 @@
       "vies": "neutro",
       "confianca": "baixa",
       "justificativa": "Lucro de cerca de R$ 1,1 bilhão (+29%), dentro das expectativas.",
-      "riscos": ["Reação da ação ainda desconhecida"],
-      "evento_ids": ["e4"],
-      "variacao_pct": null,
-      "variacao_nota": null
+      "riscos": [
+        "Reação da ação ainda desconhecida"
+      ],
+      "evento_ids": [
+        "e4"
+      ],
+      "variacao_pct": 3.23,
+      "variacao_nota": "Alta de 3,23% às 16h19 (InfoMoney); ação mais negociada do pregão naquele momento."
+    },
+    {
+      "ticker": "CSAN3",
+      "nome": "Cosan",
+      "vies": "alta",
+      "confianca": "baixa",
+      "justificativa": "Possível venda de 25% da Compass e de ativos como a Moove reforça a tese de desalavancagem; a ação subiu cerca de 20% em dois dias.",
+      "riscos": [
+        "Negociação não confirmada",
+        "Alta forte e rápida",
+        "Dívida ainda elevada"
+      ],
+      "evento_ids": [
+        "e10"
+      ],
+      "variacao_pct": 10.0,
+      "variacao_nota": "Alta de 10,00% às 17h51 (InfoMoney, preliminar)."
+    },
+    {
+      "ticker": "CSNA3",
+      "nome": "CSN",
+      "vies": "alta",
+      "confianca": "baixa",
+      "justificativa": "Passo para vender o negócio de cimentos por R$ 12,7 bilhões ajuda a reduzir a dívida; a ação subiu cerca de 10% no dia.",
+      "riscos": [
+        "Venda ainda não concluída",
+        "Aço e minério fracos"
+      ],
+      "evento_ids": [
+        "e10"
+      ],
+      "variacao_pct": 10.12,
+      "variacao_nota": "Alta de 10,12% às 16h31 (InfoMoney, intradia)."
+    },
+    {
+      "ticker": "DASA3",
+      "nome": "Dasa",
+      "vies": "alta",
+      "confianca": "media",
+      "justificativa": "Lucro de R$ 173 milhões (+78,7%) e geração de caixa acima das expectativas.",
+      "riscos": [
+        "Salto de cerca de 20% em um dia",
+        "Alavancagem",
+        "Juros altos"
+      ],
+      "evento_ids": [
+        "e11"
+      ],
+      "variacao_pct": 20.0,
+      "variacao_nota": "Salto de cerca de 20% às 13h40 (InfoMoney, intradia)."
+    },
+    {
+      "ticker": "ANIM3",
+      "nome": "Ânima",
+      "vies": "alta",
+      "confianca": "baixa",
+      "justificativa": "Resultado do 3T26 com melhora operacional contínua agradou o mercado.",
+      "riscos": [
+        "Alta de cerca de 10% já realizada",
+        "Juros altos e crédito estudantil"
+      ],
+      "evento_ids": [
+        "e11"
+      ],
+      "variacao_pct": 10.0,
+      "variacao_nota": "Alta de cerca de 10% às 14h00 (InfoMoney, intradia)."
+    },
+    {
+      "ticker": "VIVA3",
+      "nome": "Vivara",
+      "vies": "baixa",
+      "confianca": "media",
+      "justificativa": "Lucro caiu 38,7% no 3T26, para R$ 114,8 milhões.",
+      "riscos": [
+        "A ação já devolveu parte da queda da abertura",
+        "Canal digital pode ajudar a retomar o crescimento"
+      ],
+      "evento_ids": [
+        "e11"
+      ],
+      "variacao_pct": -1.98,
+      "variacao_nota": "Queda de 1,98% às 13h55, depois de cair mais de 8% na abertura (InfoMoney, intradia)."
+    },
+    {
+      "ticker": "PETR4",
+      "nome": "Petrobras",
+      "vies": "neutro",
+      "confianca": "baixa",
+      "justificativa": "A ação acumula queda de cerca de 14% na semana (mais de 20% em duas semanas, segundo o InfoMoney) após as eleições no Brasil e nos EUA e a queda do petróleo na semana. Os analistas citados ainda apontam forte geração de caixa e dividendos altos. Balanço previsto para 10/11.",
+      "riscos": [
+        "Interferência política na gestão",
+        "Petróleo volátil",
+        "Balanço do 3T26 em 10/11"
+      ],
+      "evento_ids": [
+        "e7"
+      ],
+      "variacao_pct": -1.5,
+      "variacao_nota": "Queda de 1,50% às 17h49 (InfoMoney, preliminar)."
     }
   ],
   "analise": {
-    "resumo_geral": "O dia foi dominado por cautela. Lá fora, o tombo das techs em Nova York, o payroll e a aposta de juros mais altos nos EUA reduzem o apetite por risco. Aqui, a Selic parada em 13,75%, a produção industrial fraca e o fiscal incerto reforçam a leitura de juros altos por mais tempo. Nesse pano de fundo, os balanços do 3T26 mostram dispersão: empresas com foco em rentabilidade e recompra (Assaí) foram melhor recebidas que as com vendas fracas (Renner), e as commodities estão divididas, com minério fraco (Vale) e petróleo volátil.",
+    "resumo_geral": "O dia foi de recuperação técnica depois da mínima de 2026: o Ibovespa subiu 1,3% mesmo com o payroll forte nos EUA, que reforça a aposta de mais juros do Fed e fortalece o dólar. No Brasil, o PIB de 2027 foi cortado por Bradesco e XP e a política fiscal segue indefinida, o que mantém o cenário cauteloso. O mercado premiou quem tem notícia de caixa ou desalavancagem (Cosan, CSN) e resultados melhores que o temido (Dasa, Ânima, Sabesp, varejo), e puniu quem decepcionou (Vivara). Petróleo e petroleiras seguem pressionados na semana.",
     "temas": [
       {
         "id": "t1",
         "titulo": "Aversão a risco global e juros altos no Brasil",
         "leitura": "Techs em queda, payroll e aposta de alta de juros nos EUA se somam à Selic em 13,75%, indústria fraca e fiscal incerto. Esse ambiente tende a favorecer cautela e a pesar sobre setores sensíveis a juros e consumo, enquanto exportadoras se beneficiam de um dólar mais alto.",
-        "evento_ids": ["e5", "e6"],
-        "tickers": ["ITUB4", "SUZB3", "LREN3"]
+        "evento_ids": [
+          "e5",
+          "e6"
+        ],
+        "tickers": [
+          "ITUB4",
+          "SUZB3",
+          "LREN3"
+        ]
       },
       {
         "id": "t2",
         "titulo": "Consumo e varejo: resultados dispersos",
         "leitura": "Assaí cresceu lucro e anunciou recompra; Renner teve queda de lucro, vendas mais fracas e projeção cancelada, mas a ação subiu, sinal de que o mercado esperava algo pior. Grendene e Eztec também recuaram, enquanto Localiza e Allos cresceram.",
-        "evento_ids": ["e2", "e4"],
-        "tickers": ["ASAI3", "LREN3", "GRND3", "EZTC3", "RENT3", "ALOS3"]
+        "evento_ids": [
+          "e2",
+          "e4"
+        ],
+        "tickers": [
+          "ASAI3",
+          "LREN3",
+          "GRND3",
+          "EZTC3",
+          "RENT3",
+          "ALOS3"
+        ]
       },
       {
         "id": "t3",
         "titulo": "Commodities: minério fraco, petróleo volátil",
         "leitura": "A Vale reportou lucro menor com minério mais barato e custos maiores. O petróleo oscila com as negociações EUA-Irã, com alta na quinta e queda forte na semana, o que torna incerta a leitura para petroleiras.",
-        "evento_ids": ["e9", "e7"],
-        "tickers": ["VALE3", "PETR4", "RECV3"]
+        "evento_ids": [
+          "e9",
+          "e7"
+        ],
+        "tickers": [
+          "VALE3",
+          "PETR4",
+          "RECV3"
+        ]
       },
       {
         "id": "t4",
         "titulo": "Bancos: resultado sólido, crédito de varejo no radar",
         "leitura": "O Itaú entregou lucro em linha e rentabilidade alta, mas com inadimplência de 90 dias e custo do crédito subindo no varejo. Juros altos sustentam receitas, e a atividade fraca é o ponto de atenção.",
-        "evento_ids": ["e8", "e6"],
-        "tickers": ["ITUB4"]
+        "evento_ids": [
+          "e8",
+          "e6"
+        ],
+        "tickers": [
+          "ITUB4"
+        ]
+      },
+      {
+        "id": "t5",
+        "titulo": "Recuperação técnica: varejo, small caps e empresas em desalavancagem",
+        "leitura": "Depois de quedas fortes desde a eleição, o mercado reagiu a notícias de redução de dívida e a balanços melhores que o temido. O volume foi baixo e o fiscal segue sem definição, então o movimento pode não se sustentar.",
+        "evento_ids": [
+          "e10",
+          "e11",
+          "e12",
+          "e2"
+        ],
+        "tickers": [
+          "CSAN3",
+          "CSNA3",
+          "DASA3",
+          "LREN3"
+        ]
       }
     ],
     "papeis": [
       {
-        "ticker": "ASAI3", "nome": "Assaí",
+        "ticker": "ASAI3",
+        "nome": "Assaí",
         "tese": "Fundamento forte, mas o preço já reagiu.",
-        "noticias": { "convergem": true, "n_fontes": 2, "nota": "NC News e Investing.com concordam: lucro recorrente de cerca de R$ 248 milhões, alta de 55%." },
+        "noticias": {
+          "convergem": true,
+          "n_fontes": 2,
+          "nota": "NC News e Investing.com concordam: lucro recorrente de cerca de R$ 248 milhões, alta de 55%."
+        },
         "ri": {
-          "pontos": ["Lucro recorrente de R$ 248 mi (+55%)", "Recompra de até 11 milhões de ações em 12 meses", "Foco em rentabilidade"],
-          "base": "noticia", "leitura": "consistente",
+          "pontos": [
+            "Lucro recorrente de R$ 248 mi (+55%)",
+            "Recompra de até 11 milhões de ações em 12 meses",
+            "Foco em rentabilidade"
+          ],
+          "base": "noticia",
+          "leitura": "consistente",
           "nota": "Números vêm de matérias sobre o balanço, não do release da empresa."
         },
         "macro": "Aversão a risco e Selic alta pesam sobre o consumo, mas lucro em alta e recompra sustentam o papel.",
-        "preco": { "ja_reagiu": true, "nota": "Alta de 5,09% citada pelo Investing.com na manhã de 6/11 (base não esclarecida)." },
+        "preco": {
+          "ja_reagiu": true,
+          "nota": "Alta de 5,44% às 14h25 (InfoMoney, intradia)."
+        },
         "conclusao": "O cruzamento aponta viés positivo com confiança média no fundamento. Para operações de curto prazo o risco é alto, porque boa parte da notícia parece já estar no preço.",
-        "vies": "alta", "confianca": "media",
+        "vies": "alta",
+        "confianca": "media",
         "o_que_mudaria": "Detalhes do release que contrariem as matérias (margem, endividamento) ou devolução do ganho sem fato novo.",
-        "evento_ids": ["e2"]
+        "evento_ids": [
+          "e2"
+        ]
       },
       {
-        "ticker": "LREN3", "nome": "Lojas Renner",
+        "ticker": "LREN3",
+        "nome": "Lojas Renner",
         "tese": "Fundamento fraco, mas o mercado esperava pior.",
-        "noticias": { "convergem": true, "n_fontes": 2, "nota": "As fontes concordam nos números (lucro -11,8%, vendas nas mesmas lojas -2,5%, projeção cancelada). O Investing.com destaca que o lucro ficou acima da mediana, o que ajuda a explicar a alta." },
+        "noticias": {
+          "convergem": true,
+          "n_fontes": 2,
+          "nota": "As fontes concordam nos números (lucro -11,8%, vendas nas mesmas lojas -2,5%, projeção cancelada). O Investing.com destaca que o lucro ficou acima da mediana, o que ajuda a explicar a alta."
+        },
         "ri": {
-          "pontos": ["Lucro de R$ 246,4 mi (-11,8%); sem extraordinários, R$ 187,1 mi (-24,5%)", "Receita de cerca de R$ 3 bi (-1,6%)", "Vendas nas mesmas lojas -2,5%", "Projeção de receita cancelada"],
-          "base": "noticia", "leitura": "consistente",
+          "pontos": [
+            "Lucro de R$ 246,4 mi (-11,8%); sem extraordinários, R$ 187,1 mi (-24,5%)",
+            "Receita de cerca de R$ 3 bi (-1,6%)",
+            "Vendas nas mesmas lojas -2,5%",
+            "Projeção de receita cancelada"
+          ],
+          "base": "noticia",
+          "leitura": "consistente",
           "nota": "Motivos citados: consumo de moda mais fraco e dificuldades nos serviços financeiros."
         },
         "macro": "Consumo de moda fraco e juros altos pesam sobre o setor. O cenário não explica a alta recente do papel.",
-        "preco": { "ja_reagiu": true, "nota": "Alta de 4,62% citada pelo Investing.com na manhã de 6/11 (base não esclarecida), apesar do balanço fraco." },
+        "preco": {
+          "ja_reagiu": true,
+          "nota": "Alta de 4,30% às 17h48 (InfoMoney, preliminar); balanço fraco segundo a XP, mas a ação subiu com o varejo."
+        },
         "conclusao": "Os fundamentos apontam para baixa, mas a reação positiva sugere que o pior já estava no preço. Leitura de baixa com confiança baixa.",
-        "vies": "baixa", "confianca": "baixa",
+        "vies": "baixa",
+        "confianca": "baixa",
         "o_que_mudaria": "Sustentação da alta nos próximos pregões ou retomada da projeção de receita.",
-        "evento_ids": ["e2"]
+        "evento_ids": [
+          "e2"
+        ]
       },
       {
-        "ticker": "VALE3", "nome": "Vale",
+        "ticker": "VALE3",
+        "nome": "Vale",
         "tese": "Lucro caiu, mas Ebitda e recompra atenuam.",
-        "noticias": { "convergem": true, "n_fontes": 2, "nota": "Investidor10 e Times Brasil concordam na queda do lucro; divergem só no arredondamento (53% x 54%)." },
+        "noticias": {
+          "convergem": true,
+          "n_fontes": 2,
+          "nota": "Investidor10 e Times Brasil concordam na queda do lucro; divergem só no arredondamento (53% x 54%)."
+        },
         "ri": {
-          "pontos": ["Lucro de US$ 1,25 bi (-54%), abaixo dos cerca de US$ 1,5 bi esperados", "Ebitda proforma de US$ 3,508 bi, acima da mediana (US$ 3,324 bi)", "Minério realizado de cerca de US$ 85,10/t (-10%)", "Custo de produção até o porto de US$ 23,1/t (+12%)", "Dívida líquida de US$ 16,41 bi"],
-          "base": "noticia", "leitura": "consistente",
+          "pontos": [
+            "Lucro de US$ 1,25 bi (-54%), abaixo dos cerca de US$ 1,5 bi esperados",
+            "Ebitda proforma de US$ 3,508 bi, acima da mediana (US$ 3,324 bi)",
+            "Minério realizado de cerca de US$ 85,10/t (-10%)",
+            "Custo de produção até o porto de US$ 23,1/t (+12%)",
+            "Dívida líquida de US$ 16,41 bi"
+          ],
+          "base": "noticia",
+          "leitura": "consistente",
           "nota": "Real mais forte, diesel e frete mais caros foram citados como pressão de custo."
         },
         "macro": "Minério mais barato e real mais forte pesam sobre a margem. A demanda da China não foi analisada nesta rodada.",
-        "preco": { "ja_reagiu": null, "nota": "Reação da ação ao balanço (divulgado em 29/10) não confirmada nesta rodada." },
+        "preco": {
+          "ja_reagiu": null,
+          "nota": "Alta de 1,90% às 17h15 (InfoMoney)."
+        },
         "conclusao": "O quadro é negativo para lucro e caixa. O Ebitda acima da mediana e a recompra limitam o pessimismo. Para proventos, é um ponto de atenção.",
-        "vies": "baixa", "confianca": "media",
+        "vies": "baixa",
+        "confianca": "media",
         "o_que_mudaria": "Alta do minério ou anúncio de proventos acima do esperado.",
-        "evento_ids": ["e9"]
+        "evento_ids": [
+          "e9"
+        ]
       },
       {
-        "ticker": "ITUB4", "nome": "Itaú Unibanco",
+        "ticker": "ITUB4",
+        "nome": "Itaú Unibanco",
         "tese": "Resultado sólido e previsível; crédito de varejo é o ponto de atenção.",
-        "noticias": { "convergem": null, "n_fontes": 1, "nota": "Só o Seu Dinheiro traz o balanço em detalhe; o Times Brasil apenas antecipou o que observar (crédito, inadimplência, provisões)." },
+        "noticias": {
+          "convergem": null,
+          "n_fontes": 1,
+          "nota": "Só o Seu Dinheiro traz o balanço em detalhe; o Times Brasil apenas antecipou o que observar (crédito, inadimplência, provisões)."
+        },
         "ri": {
-          "pontos": ["Lucro recorrente de R$ 12,6 bi (+6,7%), em linha com o consenso", "ROAE de 23,6%", "Inadimplência acima de 90 dias de 2,0% (+0,1 p.p.)", "Custo do crédito de R$ 10,4 bi (+10,2%)", "Guidance mantido, exceto a alíquota de impostos"],
-          "base": "noticia", "leitura": "parcial",
+          "pontos": [
+            "Lucro recorrente de R$ 12,6 bi (+6,7%), em linha com o consenso",
+            "ROAE de 23,6%",
+            "Inadimplência acima de 90 dias de 2,0% (+0,1 p.p.)",
+            "Custo do crédito de R$ 10,4 bi (+10,2%)",
+            "Guidance mantido, exceto a alíquota de impostos"
+          ],
+          "base": "noticia",
+          "leitura": "parcial",
           "nota": "Números de uma única matéria."
         },
         "macro": "Selic em 13,75% sustenta receitas de crédito, mas atividade fraca e juros altos pressionam a inadimplência do varejo.",
-        "preco": { "ja_reagiu": null, "nota": "Reação ao balanço (divulgado em 3/11) não confirmada nesta rodada." },
+        "preco": {
+          "ja_reagiu": null,
+          "nota": "Alta de 1,63% às 16h19 (InfoMoney)."
+        },
         "conclusao": "Leitura neutra com confiança média: resultado em linha, rentabilidade alta e guidance mantido, com sinal de atenção na qualidade do crédito.",
-        "vies": "neutro", "confianca": "media",
+        "vies": "neutro",
+        "confianca": "media",
         "o_que_mudaria": "Piora da inadimplência acima de 90 dias ou mudança no guidance.",
-        "evento_ids": ["e8", "e6"]
+        "evento_ids": [
+          "e8",
+          "e6"
+        ]
       },
       {
-        "ticker": "SUZB3", "nome": "Suzano",
+        "ticker": "SUZB3",
+        "nome": "Suzano",
         "tese": "Crescimento em linha, alavancagem em alta.",
-        "noticias": { "convergem": true, "n_fontes": 2, "nota": "NC News e Investing.com trazem os mesmos números (lucro de cerca de R$ 2,1 bi, +6%; Ebitda de R$ 5,7 bi, +9%). Divergem no tom: um diz levemente abaixo da expectativa, o outro, em linha." },
+        "noticias": {
+          "convergem": true,
+          "n_fontes": 2,
+          "nota": "NC News e Investing.com trazem os mesmos números (lucro de cerca de R$ 2,1 bi, +6%; Ebitda de R$ 5,7 bi, +9%). Divergem no tom: um diz levemente abaixo da expectativa, o outro, em linha."
+        },
         "ri": {
-          "pontos": ["Lucro de cerca de R$ 2,1 bi (+6%)", "Receita líquida de R$ 16,5 bi", "Ebitda ajustado de R$ 5,7 bi (+9%)", "Dívida líquida/Ebitda em dólar de 3,7x (3,3x um ano antes)"],
-          "base": "noticia", "leitura": "parcial",
+          "pontos": [
+            "Lucro de cerca de R$ 2,1 bi (+6%)",
+            "Receita líquida de R$ 16,5 bi",
+            "Ebitda ajustado de R$ 5,7 bi (+9%)",
+            "Dívida líquida/Ebitda em dólar de 3,7x (3,3x um ano antes)"
+          ],
+          "base": "noticia",
+          "leitura": "parcial",
           "nota": "A alavancagem subiu e é o principal ponto de atenção."
         },
         "macro": "Dólar mais alto (R$ 5,49 na véspera) favorece a receita em reais de uma exportadora, mas a alavancagem em dólar subiu.",
-        "preco": { "ja_reagiu": null, "nota": "Reação da ação ao balanço não confirmada nesta rodada." },
+        "preco": {
+          "ja_reagiu": null,
+          "nota": "Alta de 1,30% às 15h11 (InfoMoney, intradia)."
+        },
         "conclusao": "Leitura neutra com confiança baixa: lucro e Ebitda crescem em linha, compensados pela alavancagem maior.",
-        "vies": "neutro", "confianca": "baixa",
+        "vies": "neutro",
+        "confianca": "baixa",
         "o_que_mudaria": "Preço da celulose, câmbio e trajetória da alavancagem.",
-        "evento_ids": ["e1"]
+        "evento_ids": [
+          "e1"
+        ]
       },
       {
-        "ticker": "RECV3", "nome": "PetroReconcavo",
+        "ticker": "RECV3",
+        "nome": "PetroReconcavo",
         "tese": "Lucro forte, mas petróleo em queda e fonte única.",
-        "noticias": { "convergem": null, "n_fontes": 1, "nota": "Só o NC News traz o resultado." },
+        "noticias": {
+          "convergem": null,
+          "n_fontes": 1,
+          "nota": "Só o NC News traz o resultado."
+        },
         "ri": {
-          "pontos": ["Lucro de R$ 236 mi (+94%)"],
-          "base": "noticia", "leitura": "indisponivel",
+          "pontos": [
+            "Lucro de R$ 236 mi (+94%)"
+          ],
+          "base": "noticia",
+          "leitura": "indisponivel",
           "nota": "Sem detalhes de Ebitda, produção ou proventos nas fontes lidas."
         },
         "macro": "Brent com perda superior a 13% na semana pesa sobre petroleiras, e as negociações EUA-Irã mudam o cenário rapidamente.",
-        "preco": { "ja_reagiu": null, "nota": "Reação da ação ao balanço não confirmada nesta rodada." },
+        "preco": {
+          "ja_reagiu": null,
+          "nota": "Alta de 2,36% às 17h44 (InfoMoney, preliminar)."
+        },
         "conclusao": "O resultado é forte, mas o cruzamento é frágil: uma fonte, sem dados de RI e com petróleo instável. Viés de alta com confiança baixa.",
-        "vies": "alta", "confianca": "baixa",
+        "vies": "alta",
+        "confianca": "baixa",
         "o_que_mudaria": "Confirmação do resultado em outra fonte ou no release, e direção do Brent.",
-        "evento_ids": ["e4", "e7"]
+        "evento_ids": [
+          "e4",
+          "e7"
+        ]
+      },
+      {
+        "ticker": "CSAN3",
+        "nome": "Cosan",
+        "tese": "Tese de desalavancagem ganhou notícia concreta, mas ainda não confirmada.",
+        "noticias": {
+          "convergem": true,
+          "n_fontes": 2,
+          "nota": "Seu Dinheiro (com base no Valor/Pipeline) e InfoMoney registram a alta; a venda é reportada por uma fonte primária e a Cosan não comentou."
+        },
+        "ri": {
+          "pontos": [],
+          "base": "noticia",
+          "leitura": "nao_avaliado",
+          "nota": "O balanço e o fato relevante da Cosan não foram lidos nesta rodada."
+        },
+        "macro": "Juros altos tornam a dívida o ponto central da tese; um dólar alto ajuda parte dos ativos do grupo.",
+        "preco": {
+          "ja_reagiu": true,
+          "nota": "Alta de 10,00% às 17h51 (InfoMoney, preliminar). Quase 20% em dois dias."
+        },
+        "conclusao": "Viés positivo com confiança baixa: a notícia ataca o ponto certo (dívida), mas é uma negociação sem confirmação e o preço já subiu muito.",
+        "vies": "alta",
+        "confianca": "baixa",
+        "o_que_mudaria": "Fato relevante confirmando ou negando a venda, ou queda sem notícia nova.",
+        "evento_ids": [
+          "e10"
+        ]
       }
     ]
   },
   "frentes": {
     "daytrade": {
-      "resumo": "Leitura feita após o fechamento de sexta, para a próxima sessão. O cenário externo (techs em queda, payroll) e o petróleo instável aumentam o risco de qualquer operação de curtíssimo prazo, e boa parte dos gatilhos de balanço já apareceu nos preços.",
+      "resumo": "Pregão de recuperação, com varejo, small caps e empresas em reestruturação à frente. Boa parte das notícias já estava no preço no fim do dia. Sem cotação intradiária, o motor não indica entrada, alvo ou stop.",
       "papeis": [
         {
-          "ticker": "ASAI3", "nome": "Assaí",
-          "vies": "alta", "confianca": "baixa",
+          "ticker": "ASAI3",
+          "nome": "Assaí",
+          "vies": "alta",
+          "confianca": "baixa",
           "gatilho": "Balanço do 3T26 com lucro recorrente +55% e recompra de até 11 milhões de ações (matérias de 6/11).",
           "ja_reagiu": true,
           "risco_nivel": "alto",
           "invalidacao": "Devolução do ganho recente sem novo fato que a sustente.",
           "justificativa": "O fundamento é forte, mas a ação já foi citada entre as maiores altas da manhã de 6/11, o que reduz o espaço para a notícia ainda render.",
-          "riscos": ["Alta já realizada", "Realização de lucros", "Cenário externo negativo"],
-          "evento_ids": ["e2"],
-          "variacao_pct": 5.09, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+          "riscos": [
+            "Alta já realizada",
+            "Realização de lucros",
+            "Cenário externo negativo"
+          ],
+          "evento_ids": [
+            "e2"
+          ],
+          "variacao_pct": 5.44,
+          "variacao_nota": "Alta de 5,44% às 14h25 (InfoMoney, intradia)."
         },
         {
-          "ticker": "LREN3", "nome": "Lojas Renner",
-          "vies": "baixa", "confianca": "baixa",
+          "ticker": "LREN3",
+          "nome": "Lojas Renner",
+          "vies": "baixa",
+          "confianca": "baixa",
           "gatilho": "Balanço do 3T26 com lucro -11,8%, vendas nas mesmas lojas -2,5% e projeção de receita cancelada (matérias de 6/11).",
           "ja_reagiu": true,
           "risco_nivel": "alto",
           "invalidacao": "Se a alta da manhã de 6/11 se sustentar, a leitura negativa perde força.",
           "justificativa": "Fundamentos fracos, mas a ação subiu apesar do balanço, sinal de que o mercado esperava algo pior. Operar contra o movimento é arriscado.",
-          "riscos": ["Rebote de papel muito vendido", "Resultado menos ruim que o temido"],
-          "evento_ids": ["e2"],
-          "variacao_pct": 4.62, "variacao_nota": "Citada pelo Investing.com na manhã de 6/11 (base não esclarecida)."
+          "riscos": [
+            "Rebote de papel muito vendido",
+            "Resultado menos ruim que o temido"
+          ],
+          "evento_ids": [
+            "e2"
+          ],
+          "variacao_pct": 4.3,
+          "variacao_nota": "Alta de 4,30% às 17h48 (InfoMoney, preliminar); balanço fraco segundo a XP, mas a ação subiu com o varejo."
         },
         {
-          "ticker": "RECV3", "nome": "PetroReconcavo",
-          "vies": "alta", "confianca": "baixa",
+          "ticker": "RECV3",
+          "nome": "PetroReconcavo",
+          "vies": "alta",
+          "confianca": "baixa",
           "gatilho": "Lucro do 3T26 de R$ 236 milhões (+94%), de uma única fonte (NC News, 6/11).",
           "ja_reagiu": null,
           "risco_nivel": "alto",
           "invalidacao": "Nova queda forte do Brent ou ausência de reação positiva da ação ao balanço.",
           "justificativa": "Resultado forte, mas o petróleo caminhava para uma queda semanal superior a 13% e a reação da ação é desconhecida.",
-          "riscos": ["Brent volátil", "Uma única fonte", "Reação desconhecida"],
-          "evento_ids": ["e4", "e7"],
-          "variacao_pct": null, "variacao_nota": null
+          "riscos": [
+            "Brent volátil",
+            "Uma única fonte",
+            "Reação desconhecida"
+          ],
+          "evento_ids": [
+            "e4",
+            "e7"
+          ],
+          "variacao_pct": 2.36,
+          "variacao_nota": "Alta de 2,36% às 17h44 (InfoMoney, preliminar)."
         },
         {
-          "ticker": "PETR4", "nome": "Petrobras",
-          "vies": "neutro", "confianca": "baixa",
+          "ticker": "PETR4",
+          "nome": "Petrobras",
+          "vies": "neutro",
+          "confianca": "baixa",
           "gatilho": "Brent +3,88% na quinta (ataques a navios no Oriente Médio) e perda semanal superior a 13% com as negociações EUA-Irã.",
           "ja_reagiu": null,
           "risco_nivel": "alto",
           "invalidacao": "Um avanço ou fracasso claro nas negociações EUA-Irã desfaz a leitura de neutralidade.",
           "justificativa": "O petróleo se move por manchetes geopolíticas e o sinal muda em minutos. Sem direção clara, o papel fica sujeito a ruído.",
-          "riscos": ["Manchetes geopolíticas", "Volatilidade do Brent"],
-          "evento_ids": ["e7"],
-          "variacao_pct": -1.33, "variacao_nota": "Queda citada pelo Investing.com para a quinta (5/11)."
+          "riscos": [
+            "Manchetes geopolíticas",
+            "Volatilidade do Brent"
+          ],
+          "evento_ids": [
+            "e7"
+          ],
+          "variacao_pct": -1.5,
+          "variacao_nota": "Queda de 1,50% às 17h49 (InfoMoney, preliminar)."
+        },
+        {
+          "ticker": "CSAN3",
+          "nome": "Cosan",
+          "vies": "alta",
+          "confianca": "baixa",
+          "gatilho": "Notícia de possível venda de 25% da Compass e recomendação de compra do UBS BB.",
+          "ja_reagiu": true,
+          "risco_nivel": "alto",
+          "invalidacao": "Negativa ou fracasso das negociações, ou devolução do ganho sem novo fato.",
+          "justificativa": "Subiu quase 20% em dois dias. O motivo é de fundamento (dívida), mas o movimento já foi grande e a notícia ainda não foi confirmada pela empresa.",
+          "riscos": [
+            "Ganho já realizado",
+            "Notícia não confirmada",
+            "Realização de lucros"
+          ],
+          "evento_ids": [
+            "e10"
+          ],
+          "variacao_pct": 10.0,
+          "variacao_nota": "Alta de 10,00% às 17h51 (InfoMoney, preliminar)."
         }
       ]
     },
@@ -546,53 +1309,106 @@
       "resumo": "Poucos dados de proventos foram levantados nesta rodada de teste. Dividend yield e payout só aparecem quando uma fonte traz o número; onde não achei, está em branco.",
       "papeis": [
         {
-          "ticker": "ITUB4", "nome": "Itaú Unibanco",
-          "leitura": "favoravel", "confianca": "media",
+          "ticker": "ITUB4",
+          "nome": "Itaú Unibanco",
+          "leitura": "favoravel",
+          "confianca": "media",
           "justificativa": "Lucro recorrente de R$ 12,6 bi (+6,7%), ROAE de 23,6% e guidance mantido sustentam a capacidade de distribuir. O banco paga JCP mensal desde o início de 2026.",
           "proventos": {
             "descricao": "JCP mensal de R$ 0,01765 bruto por ação em 2026, pago no primeiro dia útil de cada mês (matéria de dez/2025; valor não confirmado em fonte mais recente).",
-            "valor_por_acao": 0.01765, "data_com": null, "data_pagamento": null
+            "valor_por_acao": 0.01765,
+            "data_com": null,
+            "data_pagamento": null
           },
-          "dy_estimado_pct": null, "payout_pct": null,
+          "dy_estimado_pct": null,
+          "payout_pct": null,
           "sustentabilidade": "alta",
-          "riscos": ["Inadimplência do varejo em alta", "Selic alta por mais tempo", "Mudanças regulatórias ou tributárias sobre proventos"],
-          "evento_ids": ["e8", "e6"],
+          "riscos": [
+            "Inadimplência do varejo em alta",
+            "Selic alta por mais tempo",
+            "Mudanças regulatórias ou tributárias sobre proventos"
+          ],
+          "evento_ids": [
+            "e8",
+            "e6"
+          ],
           "fontes": [
-            { "nome": "Seu Dinheiro", "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/", "data": "2026-11-03" },
-            { "nome": "Investidor10", "url": "https://investidor10.com.br/amp/noticias/itau-itub4-pagara-jcp-mensais-em-2026-veja-calendario-117260/", "data": "2025-12-09" }
+            {
+              "nome": "Seu Dinheiro",
+              "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/",
+              "data": "2026-11-03"
+            },
+            {
+              "nome": "Investidor10",
+              "url": "https://investidor10.com.br/amp/noticias/itau-itub4-pagara-jcp-mensais-em-2026-veja-calendario-117260/",
+              "data": "2025-12-09"
+            }
           ]
         },
         {
-          "ticker": "VALE3", "nome": "Vale",
-          "leitura": "atencao", "confianca": "media",
+          "ticker": "VALE3",
+          "nome": "Vale",
+          "leitura": "atencao",
+          "confianca": "media",
           "justificativa": "O lucro do 3T26 caiu 54% e o minério realizado ficou 10% menor, o que pressiona a geração de caixa. A política de proventos para os próximos trimestres não foi detalhada nas fontes lidas.",
           "proventos": {
             "descricao": "R$ 2,0307 por ação (JCP e dividendos), cerca de R$ 8,6 bi, anunciado em 31/07/2026; equivale a cerca de 2,7% sobre a cotação de 30/07 (R$ 75,98). Nova recompra de até 100 milhões de ações aprovada.",
-            "valor_por_acao": 2.0307, "data_com": "2026-08-11", "data_pagamento": "2026-09-02"
+            "valor_por_acao": 2.0307,
+            "data_com": "2026-08-11",
+            "data_pagamento": "2026-09-02"
           },
-          "dy_estimado_pct": null, "payout_pct": null,
+          "dy_estimado_pct": null,
+          "payout_pct": null,
           "sustentabilidade": "media",
-          "riscos": ["Preço do minério", "Demanda da China", "Proventos menores se o lucro seguir em queda"],
-          "evento_ids": ["e9"],
+          "riscos": [
+            "Preço do minério",
+            "Demanda da China",
+            "Proventos menores se o lucro seguir em queda"
+          ],
+          "evento_ids": [
+            "e9"
+          ],
           "fontes": [
-            { "nome": "Forbes Brasil", "url": "https://forbes.com.br/forbes-money/2026/07/vale-distribui-r-203-por-acao-e-lanca-nova-recompra-de-ate-100-milhoes-de-papeis/", "data": "2026-07-31" },
-            { "nome": "Investidor10", "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/", "data": "2026-10-29" }
+            {
+              "nome": "Forbes Brasil",
+              "url": "https://forbes.com.br/forbes-money/2026/07/vale-distribui-r-203-por-acao-e-lanca-nova-recompra-de-ate-100-milhoes-de-papeis/",
+              "data": "2026-07-31"
+            },
+            {
+              "nome": "Investidor10",
+              "url": "https://investidor10.com.br/noticias/vale-vale3-lucra-us-1-25-bilhao-no-3t26-tombo-de-54-123604/",
+              "data": "2026-10-29"
+            }
           ]
         },
         {
-          "ticker": "SBSP3", "nome": "Sabesp",
-          "leitura": "neutra", "confianca": "baixa",
+          "ticker": "SBSP3",
+          "nome": "Sabesp",
+          "leitura": "neutra",
+          "confianca": "baixa",
           "justificativa": "Proventos de R$ 2,6 bi aprovados com o 3T26, mas o lucro ajustado caiu 13,8% (com Ebitda +15,2%). Valor por ação e datas não foram encontrados nesta rodada.",
           "proventos": {
             "descricao": "R$ 2,6 bi em proventos aprovados com o balanço do 3T26 (NC News, 6/11); valor por ação e datas não confirmados.",
-            "valor_por_acao": null, "data_com": null, "data_pagamento": null
+            "valor_por_acao": null,
+            "data_com": null,
+            "data_pagamento": null
           },
-          "dy_estimado_pct": null, "payout_pct": null,
+          "dy_estimado_pct": null,
+          "payout_pct": null,
           "sustentabilidade": "media",
-          "riscos": ["Lucro ajustado em queda", "Detalhes do provento não confirmados"],
-          "evento_ids": ["e3"],
+          "riscos": [
+            "Lucro ajustado em queda",
+            "Detalhes do provento não confirmados"
+          ],
+          "evento_ids": [
+            "e3"
+          ],
           "fontes": [
-            { "nome": "NC News", "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/", "data": "2026-11-06" }
+            {
+              "nome": "NC News",
+              "url": "https://ncnews.com.br/2026/11/06/suzano-lucra-r-21-bilhoes-localiza-cresce-29-e-renner-recua-veja-destaques-da-bolsa/",
+              "data": "2026-11-06"
+            }
           ]
         }
       ]
@@ -600,13 +1416,14 @@
   },
   "historico": [],
   "limitacoes": [
-    "Fechamento do Ibovespa e do dólar de 6/11 ainda não confirmado nesta rodada.",
-    "Relatórios de RI lidos via notícias, não direto na CVM ou no site de RI das empresas.",
-    "O Prio (3T26) não foi encontrado nesta rodada.",
-    "Variações de preço de 6/11 vêm de uma única matéria (Investing.com) e a base de cálculo não está esclarecida.",
+    "Fechamento do Ibovespa é preliminar (17h55). Variações por papel vêm do InfoMoney em horários diferentes (alguns intradia, não de fechamento).",
+    "Relatórios de RI foram lidos via notícias, não direto na CVM ou no site de RI das empresas.",
+    "Prio (3T26) e Petrobras (balanço em 10/11) não têm resultado nesta rodada.",
+    "Cosan/Compass é informação do Valor/Pipeline, não confirmada pela empresa.",
     "Cotações e cálculo da carteira são feitos pelo navegador, não pelo motor.",
-    "Frente de dividendos: dividend yield e payout não foram levantados; só entram quando uma fonte traz o número.",
-    "Frente de day trade: sem cotação intradiária, o motor não indica preço de entrada, alvo ou stop."
+    "Frente de dividendos: dividend yield e payout só entram quando uma fonte traz o número.",
+    "Frente de day trade: sem cotação intradiária, o motor não indica preço de entrada, alvo ou stop.",
+    "Esta rodada foi disparada manualmente a pedido do usuário, às 18h05."
   ],
   "aviso": "Não é recomendação de investimento."
 }
