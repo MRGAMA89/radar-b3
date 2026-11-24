@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treino de Matemática</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: friendly school practice, calm and encouraging
+   IDEA: a graph-paper notebook with a three-way selector and two flash cards
+   PICTURE: two big number cards side by side with × between, answer slot below
+   COLOUR and TYPE: paper white, notebook blue ink, red margin line, pencil-yellow accent; Baloo 2
+   LAYOUT: one centered column, cards on top, answer + buttons, progress and history below */
+:root{color-scheme:light dark;
+--bg:light-dark(#fdfdfb,#0f1a2b);--grid:light-dark(#dbe7f5,#1b2a42);--ink:light-dark(#16325c,#e6eefb);
+--soft:light-dark(#5a6f8f,#9fb2cf);--card:light-dark(#ffffff,#16243a);--line:light-dark(#c9d7ea,#2a3d5c);
+--margin:light-dark(#e2584f,#ff7a70);--accent:light-dark(#ffd23f,#ffd23f);--ok:light-dark(#178a43,#4ad27c);--bad:light-dark(#d1312a,#ff6b63)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;color:var(--ink);font:17px/1.5 "Baloo 2",system-ui,sans-serif;overflow-x:clip;min-height:100vh;
+background-color:var(--bg);
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+background-size:28px 28px}
+body::before{content:"";position:fixed;top:0;bottom:0;left:max(3vw,10px);width:2px;background:var(--margin);opacity:.7;pointer-events:none}
+main{max-width:640px;margin:0 auto;padding:clamp(20px,4vw,48px) max(5vw,20px) 48px}
+h1{font-size:clamp(32px,6vw,44px);line-height:1.05;margin:0 0 4px;font-weight:800;text-wrap:balance}
+.sub{margin:0 0 22px;color:var(--soft)}
+.board{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:clamp(10px,3vw,22px)}
+.col{text-align:center}
+.col small{display:block;color:var(--soft);font-size:14px;margin-bottom:6px}
+.num{background:var(--card);border:2px solid var(--line);border-radius:22px;height:clamp(130px,30vw,180px);
+display:grid;place-items:center;font-size:clamp(72px,18vw,112px);font-weight:800;line-height:1;
+box-shadow:0 6px 0 var(--line);transition:transform .25s}
+.num.pop{animation:pop .35s ease}
+@keyframes pop{0%{transform:scale(.85) rotate(-3deg)}60%{transform:scale(1.05)}100%{transform:none}}
+.times{font-size:clamp(40px,10vw,60px);font-weight:700;color:var(--margin);padding-top:22px}
+.answer{display:flex;gap:12px;align-items:center;margin-top:28px;flex-wrap:wrap}
+.answer label{font-size:40px;font-weight:700}
+input{flex:1 1 140px;font:700 32px "Baloo 2",system-ui,sans-serif;color:var(--ink);background:var(--card);
+border:2px solid var(--line);border-radius:14px;padding:6px 16px;height:64px;text-align:center}
+input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+input:disabled{opacity:.6}
+.btns{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+button{font:700 18px "Baloo 2",system-ui,sans-serif;min-height:52px;padding:0 22px;border-radius:14px;cursor:pointer;
+border:2px solid var(--ink);background:var(--card);color:var(--ink);flex:1 1 160px}
+button.main{background:var(--accent);border-color:#1b1b1b;color:#1b1b1b;box-shadow:0 4px 0 #1b1b1b}
+button.main:active{transform:translateY(3px);box-shadow:0 1px 0 #1b1b1b}
+button:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
+.fb{min-height:64px;margin-top:18px;font-size:22px;font-weight:700;border-radius:14px;padding:12px 18px;display:none}
+.fb.ok{display:block;color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent);border:2px solid var(--ok)}
+.fb.bad{display:block;color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent);border:2px solid var(--bad)}
+.fb.done{display:block;color:var(--ink);background:color-mix(in srgb,var(--accent) 30%,transparent);border:2px solid var(--accent)}
+.fb span{display:block;font-size:17px;font-weight:500;color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:26px}
+.stat{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:10px;text-align:center}
+.stat b{display:block;font-size:28px;line-height:1.1}
+.stat small{color:var(--soft);font-size:14px}
+.stat.g b{color:var(--ok)}.stat.r b{color:var(--bad)}
+.bar{height:14px;border-radius:8px;background:var(--line);margin-top:14px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.prog{font-size:14px;color:var(--soft);margin-top:4px}
+h2{font-size:22px;margin:28px 0 8px}
+.hist{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.hist li{font-size:15px;padding:4px 10px;border-radius:10px;border:2px solid;white-space:nowrap;background:var(--card)}
+.hist li.ok{border-color:var(--ok);color:var(--ok)}
+.hist li.bad{border-color:var(--bad);color:var(--bad)}
+.empty{color:var(--soft);font-size:15px}
+.reset{margin-top:22px;flex:none;min-height:44px;font-size:15px;border-width:1.5px}
+@media(prefers-reduced-motion:reduce){.num.pop{animation:none}.bar i{transition:none}}
+
+.modos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 22px;padding:6px;background:var(--card);border:2px solid var(--line);border-radius:18px}
+.modos button{flex:none;min-height:56px;border:0;border-radius:12px;background:transparent;color:var(--soft);padding:0 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1;font-size:16px}
+.modos button b{font-size:24px;line-height:1}
+.modos button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.modos button[aria-pressed=true] b{color:var(--accent)}
+.lista{margin-top:22px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:10px 16px}
+.lista summary{cursor:pointer;font-weight:700;min-height:28px}
+.lista p{margin:8px 0 2px;font-size:16px}
+@media(max-width:420px){.modos button{font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Treino de matemática</h1>
+  <p class="sub" id="sub"></p>
+
+  <div class="modos" role="group" aria-label="Escolha a operação">
+    <button type="button" data-m="mult"><b>×</b>Multiplicar</button>
+    <button type="button" data-m="div"><b>÷</b>Dividir</button>
+    <button type="button" data-m="pot"><b>^</b>Potência</button>
+  </div>
+
+  <div class="board" aria-live="polite">
+    <div class="col"><small id="la"></small><div class="num" id="a">?</div></div>
+    <div class="times" id="sym" aria-hidden="true">×</div>
+    <div class="col"><small id="lb"></small><div class="num" id="b">?</div></div>
+  </div>
+
+  <form class="answer" id="form" autocomplete="off">
+    <label for="resp">=</label>
+    <input id="resp" type="text" inputmode="numeric" placeholder="resposta" disabled>
+  </form>
+  <div class="btns">
+    <button type="button" class="main" id="gerar">Gerar números</button>
+    <button type="button" id="conferir" disabled>Conferir</button>
+  </div>
+
+  <div class="fb" id="fb" role="status"></div>
+
+  <div class="stats">
+    <div class="stat g"><b id="certos">0</b><small>certos</small></div>
+    <div class="stat r"><b id="errados">0</b><small>errados</small></div>
+    <div class="stat"><b id="faltam">0</b><small>faltam</small></div>
+  </div>
+  <div class="bar"><i id="barra"></i></div>
+  <div class="prog" id="prog"></div>
+
+  <details class="lista" id="listaPot" hidden><summary>Quais potências estão no treino</summary>
+    <p>Quadrados de 2 a 20 · cubos de 2 a 10 · potências de 2 até 2<sup>10</sup> · 3<sup>4</sup>, 3<sup>5</sup>, 3<sup>6</sup> · 4<sup>4</sup>, 4<sup>5</sup> · 5<sup>4</sup> · 10<sup>0</sup>, 10<sup>4</sup>, 10<sup>5</sup>, 10<sup>6</sup>. Pode digitar números grandes com ou sem ponto (1.024 ou 1024).</p>
+  </details>
+
+  <h2>Contas feitas</h2>
+  <ul class="hist" id="hist"></ul>
+  <p class="empty" id="vazio">Nenhuma conta ainda. Clique em “Gerar números” para começar.</p>
+
+  <button type="button" class="reset" id="reiniciar">Recomeçar este treino</button>
+</main>
+
+<script>
+{
+const $=id=>document.getElementById(id);
+const KEY='treino-mat-v1';
+const fmt=n=>n.toLocaleString('pt-BR');
+const pot=[];
+for(let b=2;b<=20;b++)pot.push([b,2]);
+for(let b=2;b<=10;b++)pot.push([b,3]);
+for(let e=4;e<=10;e++)pot.push([2,e]);
+pot.push([3,4],[3,5],[3,6],[4,4],[4,5],[5,4],[10,0],[10,4],[10,5],[10,6]);
+const mul=[],dv=[];
+for(let a=2;a<=9;a++)for(let b=1;b<=10;b++){mul.push([a,b]);dv.push([a*b,a])}
+
+const MODOS={
+  mult:{lista:mul,sym:'×',la:'2 a 9',lb:'1 a 10',nome:'multiplicações',calc:(a,b)=>a*b,txt:(a,b)=>a+' × '+b,
+    sub:'Gere uma conta, digite o resultado e confira. As 80 combinações aparecem sem repetir.'},
+  div:{lista:dv,sym:'÷',la:'dividendo',lb:'divisor (2 a 9)',nome:'divisões',calc:(a,b)=>a/b,txt:(a,b)=>a+' ÷ '+b,
+    sub:'Divisões sempre exatas, com resultado de 1 a 10. As 80 combinações aparecem sem repetir.'},
+  pot:{lista:pot,sym:'^',la:'base',lb:'expoente',nome:'potências',calc:(a,b)=>a**b,txt:(a,b)=>a+'<sup>'+b+'</sup>',
+    sub:'As '+pot.length+' potências que mais caem em provas e vestibulares, sem repetir até completar todas.'}
+};
+
+let st;
+const baralho=m=>{const d=MODOS[m].lista.map(x=>x.slice());
+  for(let i=d.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[d[i],d[j]]=[d[j],d[i]]}return d};
+const novo=m=>({deck:baralho(m),atual:null,respondida:true,certos:0,errados:0,hist:[]});
+function carregar(){
+  try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.d&&MODOS[s.modo]){for(const m in MODOS)if(!s.d[m])s.d[m]=novo(m);st=s;return}}catch(e){}
+  st={modo:'mult',d:{}};for(const m in MODOS)st.d[m]=novo(m);
+}
+const salvar=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const cur=()=>st.d[st.modo], M=()=>MODOS[st.modo];
+
+function limparFb(){$('fb').className='fb';$('fb').textContent=''}
+
+function render(){
+  const c=cur(),m=M(),total=m.lista.length,feitas=c.hist.length;
+  document.querySelectorAll('.modos button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===st.modo));
+  $('sub').textContent=m.sub;$('sym').textContent=m.sym;$('la').textContent=m.la;$('lb').textContent=m.lb;
+  $('listaPot').hidden=st.modo!=='pot';
+  $('certos').textContent=c.certos;$('errados').textContent=c.errados;$('faltam').textContent=total-feitas;
+  $('barra').style.width=(feitas/total*100)+'%';
+  $('prog').textContent=feitas+' de '+total+' '+m.nome+' feitas';
+  $('hist').innerHTML=c.hist.slice().reverse().map(h=>
+    `<li class="${h.ok?'ok':'bad'}">${m.txt(h.a,h.b)} = ${fmt(m.calc(h.a,h.b))}${h.ok?' ✓':' ✗ ('+fmt(h.r)+')'}</li>`).join('');
+  $('vazio').style.display=feitas?'none':'block';
+  $('a').textContent=c.atual?c.atual[0]:'?';$('b').textContent=c.atual?c.atual[1]:'?';
+  const aguardando=c.atual&&!c.respondida, acabou=!c.deck.length&&!aguardando;
+  $('resp').disabled=!aguardando;$('conferir').disabled=!aguardando;
+  $('gerar').disabled=aguardando||acabou;
+  $('gerar').textContent=feitas?'Próxima conta':'Gerar números';
+  if(acabou&&feitas===total){const fb=$('fb');fb.className='fb done';
+    fb.innerHTML='Você completou as '+total+' '+m.nome+'!<span>Acertou '+c.certos+' e errou '+c.errados+'. Clique em “Recomeçar este treino” para treinar de novo.</span>'}
+}
+
+function pop(){for(const id of['a','b']){const el=$(id);el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}}
+
+function gerar(){
+  const c=cur();if(!c.deck.length)return;
+  c.atual=c.deck.pop();c.respondida=false;
+  limparFb();$('resp').value='';pop();salvar();render();$('resp').focus();
+}
+
+function conferir(){
+  const c=cur(),m=M();if(!c.atual||c.respondida)return;
+  const v=$('resp').value.trim();if(v===''){$('resp').focus();return}
+  const r=Number(v.replace(/[.\s]/g,'').replace(',','.'));
+  if(!Number.isFinite(r)){$('resp').focus();return}
+  const [a,b]=c.atual,certo=m.calc(a,b),ok=r===certo;
+  c.respondida=true;if(ok)c.certos++;else c.errados++;
+  c.hist.push({a,b,r,ok});
+  const fb=$('fb');fb.className='fb '+(ok?'ok':'bad');
+  fb.innerHTML=ok?'Certo! ✓<span>'+m.txt(a,b)+' = '+fmt(certo)+'</span>'
+    :'Errado ✗<span>Você respondeu '+fmt(r)+'. O valor correto é '+m.txt(a,b)+' = <b>'+fmt(certo)+'</b>.</span>';
+  salvar();render();if(c.deck.length)$('gerar').focus();
+}
+
+document.querySelectorAll('.modos button').forEach(b=>b.addEventListener('click',()=>{
+  if(st.modo===b.dataset.m)return;
+  st.modo=b.dataset.m;$('resp').value='';limparFb();salvar();render();
+  if(cur().atual&&!cur().respondida)$('resp').focus();
+}));
+$('gerar').addEventListener('click',gerar);
+$('conferir').addEventListener('click',conferir);
+$('form').addEventListener('submit',e=>{e.preventDefault();conferir()});
+$('reiniciar').addEventListener('click',()=>{st.d[st.modo]=novo(st.modo);limparFb();salvar();render()});
+
+carregar();render();
+}
+</script>
+</body>
+</html>
