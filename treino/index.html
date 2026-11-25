@@ -142,14 +142,14 @@ for(let a=2;a<=9;a++)for(let b=1;b<=10;b++){mul.push([a,b]);dv.push([a*b,a])}
 
 const MODOS={
   mult:{lista:mul,sym:'×',la:'2 a 9',lb:'1 a 10',nome:'multiplicações',calc:(a,b)=>a*b,txt:(a,b)=>a+' × '+b,
-    sub:'Gere uma conta, digite o resultado e confira. As 80 combinações aparecem sem repetir.'},
+    sub:'Gere uma conta, digite o resultado e aperte Enter. Acertou, passa sozinho para a próxima; errou, a conta volta para o sorteio.'},
   div:{lista:dv,sym:'÷',la:'dividendo',lb:'divisor (2 a 9)',nome:'divisões',calc:(a,b)=>a/b,txt:(a,b)=>a+' ÷ '+b,
-    sub:'Divisões sempre exatas, com resultado de 1 a 10. As 80 combinações aparecem sem repetir.'},
+    sub:'Divisões sempre exatas, com resultado de 1 a 10. Acertou, passa sozinho; errou, a conta volta para o sorteio.'},
   pot:{lista:pot,sym:'^',la:'base',lb:'expoente',nome:'potências',calc:(a,b)=>a**b,txt:(a,b)=>a+'<sup>'+b+'</sup>',
-    sub:'As '+pot.length+' potências que mais caem em provas e vestibulares, sem repetir até completar todas.'}
+    sub:'As '+pot.length+' potências que mais caem em provas e vestibulares. Acertou, passa sozinho; errou, volta para o sorteio.'}
 };
 
-let st;
+let st,auto;
 const baralho=m=>{const d=MODOS[m].lista.map(x=>x.slice());
   for(let i=d.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[d[i],d[j]]=[d[j],d[i]]}return d};
 const novo=m=>({deck:baralho(m),atual:null,respondida:true,certos:0,errados:0,hist:[]});
@@ -163,13 +163,13 @@ const cur=()=>st.d[st.modo], M=()=>MODOS[st.modo];
 function limparFb(){$('fb').className='fb';$('fb').textContent=''}
 
 function render(){
-  const c=cur(),m=M(),total=m.lista.length,feitas=c.hist.length;
+  const c=cur(),m=M(),total=m.lista.length,feitas=c.hist.length,pend=c.atual&&!c.respondida?1:0,faltam=c.deck.length+pend,acertadas=total-faltam;
   document.querySelectorAll('.modos button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===st.modo));
   $('sub').textContent=m.sub;$('sym').textContent=m.sym;$('la').textContent=m.la;$('lb').textContent=m.lb;
   $('listaPot').hidden=st.modo!=='pot';
-  $('certos').textContent=c.certos;$('errados').textContent=c.errados;$('faltam').textContent=total-feitas;
-  $('barra').style.width=(feitas/total*100)+'%';
-  $('prog').textContent=feitas+' de '+total+' '+m.nome+' feitas';
+  $('certos').textContent=c.certos;$('errados').textContent=c.errados;$('faltam').textContent=faltam;
+  $('barra').style.width=(acertadas/total*100)+'%';
+  $('prog').textContent=acertadas+' de '+total+' '+m.nome+' acertadas · as erradas voltam para o sorteio';
   $('hist').innerHTML=c.hist.slice().reverse().map(h=>
     `<li class="${h.ok?'ok':'bad'}">${m.txt(h.a,h.b)} = ${fmt(m.calc(h.a,h.b))}${h.ok?' ✓':' ✗ ('+fmt(h.r)+')'}</li>`).join('');
   $('vazio').style.display=feitas?'none':'block';
@@ -178,13 +178,14 @@ function render(){
   $('resp').disabled=!aguardando;$('conferir').disabled=!aguardando;
   $('gerar').disabled=aguardando||acabou;
   $('gerar').textContent=feitas?'Próxima conta':'Gerar números';
-  if(acabou&&feitas===total){const fb=$('fb');fb.className='fb done';
-    fb.innerHTML='Você completou as '+total+' '+m.nome+'!<span>Acertou '+c.certos+' e errou '+c.errados+'. Clique em “Recomeçar este treino” para treinar de novo.</span>'}
+  if(acabou&&acertadas===total){const fb=$('fb');fb.className='fb done';
+    fb.innerHTML='Você acertou as '+total+' '+m.nome+'!<span>Foram '+c.certos+' acertos e '+c.errados+' erros pelo caminho. Clique em “Recomeçar este treino” para treinar de novo.</span>'}
 }
 
 function pop(){for(const id of['a','b']){const el=$(id);el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}}
 
 function gerar(){
+  clearTimeout(auto);
   const c=cur();if(!c.deck.length)return;
   c.atual=c.deck.pop();c.respondida=false;
   limparFb();$('resp').value='';pop();salvar();render();$('resp').focus();
@@ -198,21 +199,24 @@ function conferir(){
   const [a,b]=c.atual,certo=m.calc(a,b),ok=r===certo;
   c.respondida=true;if(ok)c.certos++;else c.errados++;
   c.hist.push({a,b,r,ok});
+  if(!ok){const i=c.deck.length?Math.floor(Math.random()*c.deck.length):0;c.deck.splice(i,0,[a,b])}
   const fb=$('fb');fb.className='fb '+(ok?'ok':'bad');
-  fb.innerHTML=ok?'Certo! ✓<span>'+m.txt(a,b)+' = '+fmt(certo)+'</span>'
-    :'Errado ✗<span>Você respondeu '+fmt(r)+'. O valor correto é '+m.txt(a,b)+' = <b>'+fmt(certo)+'</b>.</span>';
-  salvar();render();if(c.deck.length)$('gerar').focus();
+  fb.innerHTML=ok?'Certo! ✓<span>'+m.txt(a,b)+' = '+fmt(certo)+(c.deck.length?'. Indo para a próxima…':'')+'</span>'
+    :'Errado ✗<span>Você respondeu '+fmt(r)+'. O valor correto é '+m.txt(a,b)+' = <b>'+fmt(certo)+'</b>. Essa conta voltou para o sorteio.</span>';
+  salvar();render();
+  if(ok&&c.deck.length){const modo=st.modo;clearTimeout(auto);auto=setTimeout(()=>{if(st.modo===modo&&cur().respondida)gerar()},1200)}
+  else if(c.deck.length)$('gerar').focus();
 }
 
 document.querySelectorAll('.modos button').forEach(b=>b.addEventListener('click',()=>{
   if(st.modo===b.dataset.m)return;
-  st.modo=b.dataset.m;$('resp').value='';limparFb();salvar();render();
+  clearTimeout(auto);st.modo=b.dataset.m;$('resp').value='';limparFb();salvar();render();
   if(cur().atual&&!cur().respondida)$('resp').focus();
 }));
 $('gerar').addEventListener('click',gerar);
 $('conferir').addEventListener('click',conferir);
 $('form').addEventListener('submit',e=>{e.preventDefault();conferir()});
-$('reiniciar').addEventListener('click',()=>{st.d[st.modo]=novo(st.modo);limparFb();salvar();render()});
+$('reiniciar').addEventListener('click',()=>{clearTimeout(auto);st.d[st.modo]=novo(st.modo);limparFb();salvar();render()});
 
 carregar();render();
 }
