@@ -74,6 +74,13 @@ h2{font-size:22px;margin:28px 0 8px}
 .modos button b{font-size:24px;line-height:1}
 .modos button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
 .modos button[aria-pressed=true] b{color:var(--accent)}
+.pad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px;max-width:440px;margin-inline:auto}
+.pad .k{flex:none;min-height:62px;font-size:30px;font-weight:700;padding:0;border-radius:16px;border:2px solid var(--line);background:var(--card);color:var(--ink);box-shadow:0 4px 0 var(--line);touch-action:manipulation;-webkit-user-select:none;user-select:none}
+.pad .k:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--line)}
+.pad .k.apagar{color:var(--bad);font-size:26px}
+.pad .k.ok{background:var(--ok);border-color:var(--ok);color:#fff;box-shadow:0 4px 0 color-mix(in srgb,var(--ok) 60%,#000);font-size:24px}
+.pad .k:disabled{opacity:.4;box-shadow:none}
+.btns{max-width:440px;margin-inline:auto}
 .lista{margin-top:22px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:10px 16px}
 .lista summary{cursor:pointer;font-weight:700;min-height:28px}
 .lista p{margin:8px 0 2px;font-size:16px}
@@ -99,11 +106,13 @@ h2{font-size:22px;margin:28px 0 8px}
 
   <form class="answer" id="form" autocomplete="off">
     <label for="resp">=</label>
-    <input id="resp" type="text" inputmode="numeric" placeholder="resposta" disabled>
+    <input id="resp" type="text" inputmode="none" placeholder="resposta" disabled>
   </form>
+  <div class="pad" id="pad" aria-label="Teclado numérico">
+    <button type="button" class="k" data-k="1">1</button><button type="button" class="k" data-k="2">2</button><button type="button" class="k" data-k="3">3</button><button type="button" class="k" data-k="4">4</button><button type="button" class="k" data-k="5">5</button><button type="button" class="k" data-k="6">6</button><button type="button" class="k" data-k="7">7</button><button type="button" class="k" data-k="8">8</button><button type="button" class="k" data-k="9">9</button><button type="button" class="k apagar" data-k="del" aria-label="Apagar">⌫</button><button type="button" class="k" data-k="0">0</button><button type="button" class="k ok" id="conferir" disabled aria-label="Enviar resposta">OK</button>
+  </div>
   <div class="btns">
     <button type="button" class="main" id="gerar">Gerar números</button>
-    <button type="button" id="conferir" disabled>Conferir</button>
   </div>
 
   <div class="fb" id="fb" role="status"></div>
@@ -176,6 +185,7 @@ function render(){
   $('a').textContent=c.atual?c.atual[0]:'?';$('b').textContent=c.atual?c.atual[1]:'?';
   const aguardando=c.atual&&!c.respondida, acabou=!c.deck.length&&!aguardando;
   $('resp').disabled=!aguardando;$('conferir').disabled=!aguardando;
+  document.querySelectorAll('.pad .k:not(.ok)').forEach(k=>k.disabled=!aguardando);
   $('gerar').disabled=aguardando||acabou;
   $('gerar').textContent=feitas?'Próxima conta':'Gerar números';
   if(acabou&&acertadas===total){const fb=$('fb');fb.className='fb done';
@@ -214,6 +224,11 @@ document.querySelectorAll('.modos button').forEach(b=>b.addEventListener('click'
   if(cur().atual&&!cur().respondida)$('resp').focus();
 }));
 $('gerar').addEventListener('click',gerar);
+document.querySelectorAll('.pad .k[data-k]').forEach(k=>k.addEventListener('click',()=>{
+  const r=$('resp');if(r.disabled)return;
+  if(k.dataset.k==='del')r.value=r.value.slice(0,-1);
+  else if(r.value.replace(/\D/g,'').length<9)r.value+=k.dataset.k;
+}));
 $('conferir').addEventListener('click',conferir);
 $('form').addEventListener('submit',e=>{e.preventDefault();conferir()});
 $('reiniciar').addEventListener('click',()=>{clearTimeout(auto);st.d[st.modo]=novo(st.modo);limparFb();salvar();render()});
